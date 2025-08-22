@@ -38,6 +38,12 @@
       padding: 15px 40px;
     }
 
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
@@ -58,46 +64,20 @@
       color: #000;
     }
 
-    /* Hamburger Icon */
+    /* Hamburger Menu */
     .menu-toggle {
       display: none;
       flex-direction: column;
+      gap: 5px;
       cursor: pointer;
     }
 
-    .menu-toggle span {
-      background: #fff;
-      height: 3px;
+    .menu-toggle div {
       width: 25px;
-      margin: 5px 0;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
       transition: 0.3s;
-    }
-
-    /* Mobile Menu */
-    @media (max-width: 768px) {
-      nav ul {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: rgba(17, 17, 17, 0.95);
-        width: 200px;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all 0.4s ease;
-      }
-
-      nav ul.active {
-        display: flex;
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
     }
 
     /* Hero Section */
@@ -108,8 +88,10 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: #0d0d0d;
       padding: 0 20px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
     }
 
     .hero h1 {
@@ -145,12 +127,7 @@
       padding: 0 20px;
       opacity: 0;
       transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
+      animation: fadeUp 1s ease forwards;
     }
 
     .section-title {
@@ -190,7 +167,7 @@
 
     .project-card img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 8px;
       margin-bottom: 15px;
     }
 
@@ -266,24 +243,61 @@
       font-size: 0.9rem;
       color: #666666;
     }
+
+    /* Animations */
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0,0,0,0.95);
+        flex-direction: column;
+        width: 200px;
+        gap: 15px;
+        padding: 20px;
+        display: none;
+        animation: fadeIn 0.5s ease forwards;
+      }
+
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
   </style>
 </head>
 <body>
   <header id="navbar">
-    <h2 style="color:#00bcd4;">SD</h2>
-    <div class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <div class="logo">Siva</div>
     <nav>
-      <ul id="nav-links">
+      <ul id="menu">
         <li><a href="#about" class="active">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="menu-toggle" id="toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -304,17 +318,17 @@
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="plant-finder.jpg" alt="Plant Finder App">
+        <img src="https://via.placeholder.com/400x250" alt="Plant Finder App">
         <h3>Plant Finder App 🌿</h3>
         <p>A mobile app for plant identification and care guidance, focusing on usability and clean UI.</p>
-        <a href="#">View Project →</a>
+        <a href="https://www.behance.net/gallery/232742189/Plant-Finder" target="_blank">View Project →</a>
       </div>
 
       <div class="project-card">
-        <img src="chatbot.jpg" alt="AI Chatbot">
+        <img src="https://via.placeholder.com/400x250" alt="AI Chatbot">
         <h3>AI Chatbot for Customer Support 🤖</h3>
-        <p>Developed an AI-powered chatbot for customer support using NLP and Python Flask with LLaMA 3.2 integration.</p>
-        <a href="#">View Project →</a>
+        <p>Developed an AI-powered chatbot for customer support using NLP to automate query responses and improve efficiency.</p>
+        <a href="https://github.com/your-repo-link" target="_blank">View Project →</a>
       </div>
     </div>
   </section>
@@ -322,7 +336,7 @@
   <!-- Resume Section -->
   <section id="resume" class="resume">
     <h2 class="section-title">Resume</h2>
-    <a href="#" target="_blank">📄 Download My Resume</a>
+    <a href="https://drive.google.com/file/d/1aRtXL7nReteO5JyQf97tyXIa0BPdL70X/view?usp=drivesdk" target="_blank">📄 Download My Resume</a>
   </section>
 
   <!-- Contact Section -->
@@ -330,8 +344,8 @@
     <h2 class="section-title">Contact</h2>
     <p>Email: <a href="mailto:shivcreations317@gmail.com">shivcreations317@gmail.com</a></p>
     <p>
-      <a href="#" target="_blank">LinkedIn</a> |
-      <a href="#" target="_blank">Behance</a>
+      <a href="https://www.linkedin.com/in/siva-dhanushu-b922ab26a" target="_blank">LinkedIn</a> |
+      <a href="https://www.behance.net/shivcreations" target="_blank">Behance</a>
     </p>
   </section>
 
@@ -340,11 +354,10 @@
   </footer>
 
   <script>
-    // Navbar Scroll Effect & Active Link
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('nav a');
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-links');
+    const toggle = document.getElementById('toggle');
+    const menu = document.getElementById('menu');
 
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
@@ -369,23 +382,14 @@
       });
     });
 
-    // Fade-in sections on scroll
-    const sections = document.querySelectorAll('section');
-    const showSection = () => {
-      const triggerBottom = window.innerHeight * 0.85;
-      sections.forEach(sec => {
-        const secTop = sec.getBoundingClientRect().top;
-        if (secTop < triggerBottom) {
-          sec.classList.add('visible');
-        }
-      });
-    };
-    window.addEventListener('scroll', showSection);
-    showSection();
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
 
-    // Mobile Menu Toggle
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
     });
   </script>
 </body>
