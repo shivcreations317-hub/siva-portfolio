@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sivadhanushu A — UI/UX Portfolio</title>
+  <meta name="description" content="Portfolio of Sivadhanushu A — UI/UX Designer focused on user-centered, accessible digital products.">
+  <style>
+    :root{
+      --bg:#15171b;
+      --contrast:#22252b;
+      --primary:#66fcf1;
+      --accent:#45a29e;
+      --muted:#bfc0c0;
+      --highlight:#ff8c42;
+      --white:#fff;
+      --shadow:0 6px 24px rgba(0,0,0,.18);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+      background:var(--bg); color:var(--white); line-height:1.7; min-height:100vh;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(180deg,rgba(102,252,241,.06),rgba(0,0,0,.21));
+      text-align:center; padding:62px 20px 44px; border-bottom:1px solid rgba(255,255,255,.04);
+    }
+    header h1{font-size:2.5rem; font-weight:800; letter-spacing:.5px}
+    header p{margin-top:10px; color:var(--muted); font-size:1.13rem}
+    .resume-btn{
+      display:inline-flex; align-items:center; gap:10px; margin-top:24px;
+      padding:13px 24px; background:var(--primary); color:#181818; font-weight:700;
+      border-radius:10px; text-decoration:none; box-shadow:var(--shadow);
+      transition:background .2s,color .2s,transform .2s;
+    }
+    .resume-btn:hover{background:var(--highlight); color:#fff; transform:translateY(-1px)}
+
+    /* Nav */
+    nav{
+      display:flex; justify-content:center; gap:23px; background:var(--contrast);
+      padding:13px 0; position:sticky; top:0; z-index:20; box-shadow:0 2px 16px rgba(0,0,0,.05);
+    }
+    .nav-link{
+      color:var(--muted); font-weight:600; text-decoration:none; font-size:1.04rem;
+      padding:7px 16px; border-radius:8px; transition:background .2s,color .2s;
+    }
+    .nav-link:hover,.nav-link.active{background:var(--highlight); color:#fff}
+
+    /* Layout */
+    main{max-width:1100px; margin:0 auto; padding:40px 20px 20px}
+    section{margin-bottom:60px}
+    h2{
+      color:var(--primary); font-size:1.45rem; margin-bottom:18px;
+      border-left:4px solid var(--highlight); padding-left:12px; font-weight:800; letter-spacing:.6px;
+    }
+
+    /* Cards & grids */
+    .grid{display:grid; gap:20px}
+    .skills{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+    .projects{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+    .contact{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{
+      background:var(--contrast); padding:21px 20px 19px; border-radius:14px;
+      box-shadow:var(--shadow); transition:transform .23s, box-shadow .23s;
+    }
+    .card:hover{transform:translateY(-6px) scale(1.01); box-shadow:0 14px 34px rgba(0,0,0,.20)}
+    .muted{color:var(--muted); font-size:1.02rem}
+
+    /* About */
+    .about-description{font-size:1.08rem; color:var(--muted); font-weight:500}
+
+    /* Skills */
+    .skill{ text-align:center; font-weight:700; font-size:1.02rem; letter-spacing:.4px }
+
+    /* Projects */
+    .project-img{
+      width:100%; height:158px; object-fit:cover; border-radius:10px; margin-bottom:14px; background:#0f1013;
+      display:block
+    }
+    .project-title{font-size:1.18rem; font-weight:800; margin-bottom:6px}
+    .pill{
+      display:inline-block; margin-top:12px; padding:9px 14px; border-radius:999px;
+      background:var(--accent); color:#fff; font-weight:700; text-decoration:none; font-size:.98rem;
+      transition:background .2s, transform .2s;
+    }
+    .pill:hover{background:var(--highlight); transform:translateY(-1px)}
+
+    /* Contact */
+    .contact a{ color:var(--primary); text-decoration:none }
+    .contact a:hover{ text-decoration:underline }
+
+    /* Footer */
+    footer{
+      text-align:center; padding:34px 0 18px; color:var(--muted); font-size:1.02rem;
+      border-top:1px solid rgba(255,255,255,.06); background:var(--contrast)
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:600px){
+      header{padding:34px 12px 24px}
+      main{padding:24px 10px 10px}
+      .project-img{height:120px}
+      .card{padding:16px 12px}
+      h2{font-size:1.08rem}
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <header>
+    <h1>Sivadhanushu A</h1>
+    <p>UI/UX Designer crafting accessible, user-first interfaces with Figma, prototyping, and design systems.</p>
+    <a class="resume-btn" href="https://drive.google.com/file/d/1aRtXL7nReteO5JyQf97tyXIa0BPdL70X/view?usp=drivesdk" target="_blank" rel="noopener">📄 Download Resume</a>
+  </header>
+
+  <!-- Sticky Nav -->
+  <nav aria-label="Primary">
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#skills">Skills</a>
+    <a class="nav-link" href="#projects">Projects</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Me</h2>
+      <div class="card about-description">
+        Passionate UI/UX designer focused on creating engaging, intuitive digital experiences.
+        I specialize in user research, wireframing, responsive design, and accessible design systems.
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="grid skills">
+        <div class="card skill">User Research & Wireframing</div>
+        <div class="card skill">Figma & Prototyping</div>
+        <div class="card skill">Responsive UI</div>
+        <div class="card skill">Design Systems</div>
+        <div class="card skill">Accessibility</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="grid projects">
+        <div class="card">
+          <img class="project-img" src="https://images.unsplash.com/photo-1524594227083-6bff97fcd593?q=80&w=1400&auto=format&fit=crop" alt="Plant Finder App mockup">
+          <div class="project-title">Plant Finder App 🌿</div>
+          <p class="muted">Figma prototype that helps users identify plants and learn care tips. Built with accessible flows and intuitive navigation.</p>
+          <a class="pill" href="https://www.behance.net/gallery/232742189/Plant-Finder" target="_blank" rel="noopener">View Project</a>
+        </div>
+        <!-- Add more project cards below as you like
+        <div class="card">
+          <img class="project-img" src="IMAGE_URL" alt="Project thumbnail">
+          <div class="project-title">Project Name</div>
+          <p class="muted">Short description about the work, problem, and impact.</p>
+          <a class="pill" href="LINK" target="_blank" rel="noopener">Case Study</a>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="grid contact">
+        <div class="card">Email: <a href="mailto:shivcreations317@gmail.com">shivcreations317@gmail.com</a></div>
+        <div class="card">LinkedIn: <a href="https://www.linkedin.com/in/siva-dhanushu-b922ab26a" target="_blank" rel="noopener">Profile</a></div>
+        <div class="card">Behance: <a href="https://www.behance.net/shivcreations" target="_blank" rel="noopener">Profile</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Sivadhanushu A
+  </footer>
+
+  <script>
+    // Smooth click scroll
+    document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('href');
+      document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }));
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll('main section');
+    const navLinks = document.querySelectorAll('nav a');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const id = entry.target.id;
+        const link = document.querySelector('nav a[href="#' + id + '"]');
+        if (entry.isIntersecting) {
+          navLinks.forEach(n => n.classList.remove('active'));
+          link?.classList.add('active');
+          history.replaceState(null, '', '#' + id);
+        }
+      });
+    }, { threshold: 0.55 });
+    sections.forEach(s => io.observe(s));
+  </script>
+</body>
+</html>
