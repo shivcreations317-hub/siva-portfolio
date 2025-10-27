@@ -22,7 +22,7 @@
     header {
       width: 100%;
       background: transparent;
-      padding: 20px 40px;
+      padding: 20px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -35,7 +35,7 @@
     header.scrolled {
       background: rgba(17, 17, 17, 0.95);
       box-shadow: 0 4px 15px rgba(0,0,0,0.8);
-      padding: 15px 40px;
+      padding: 15px 25px;
     }
 
     .logo {
@@ -64,7 +64,6 @@
       color: #000;
     }
 
-    /* Hamburger Menu */
     .menu-toggle {
       display: none;
       flex-direction: column;
@@ -80,7 +79,6 @@
       transition: 0.3s;
     }
 
-    /* Hero Section */
     .hero {
       height: 100vh;
       display: flex;
@@ -95,13 +93,13 @@
     }
 
     .hero h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: #00bcd4;
       margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: #cccccc;
       margin-bottom: 20px;
     }
@@ -131,15 +129,10 @@
     }
 
     .section-title {
-      font-size: 2.2rem;
+      font-size: 2rem;
       text-align: center;
       margin-bottom: 30px;
       color: #00bcd4;
-    }
-
-    /* About Section */
-    .about {
-      text-align: center;
     }
 
     .about p {
@@ -147,12 +140,12 @@
       margin: 20px auto;
       font-size: 1.1rem;
       color: #cccccc;
+      text-align: center;
     }
 
-    /* Projects Section */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
 
@@ -199,8 +192,7 @@
       color: #ffffff;
     }
 
-    /* Resume Section */
-    .resume {
+    .resume, .contact {
       text-align: center;
       padding: 30px 20px;
     }
@@ -222,22 +214,6 @@
       transform: scale(1.05);
     }
 
-    /* Contact Section */
-    .contact {
-      text-align: center;
-    }
-
-    .contact a {
-      color: #00bcd4;
-      text-decoration: none;
-      margin: 0 10px;
-      transition: 0.3s;
-    }
-
-    .contact a:hover {
-      color: #ffffff;
-    }
-
     footer {
       background: #111111;
       text-align: center;
@@ -246,7 +222,6 @@
       color: #666666;
     }
 
-    /* Animations */
     @keyframes fadeUp {
       to {
         opacity: 1;
@@ -254,7 +229,6 @@
       }
     }
 
-    /* Responsive Design */
     @media (max-width: 768px) {
       nav ul {
         position: absolute;
@@ -269,11 +243,6 @@
         animation: fadeIn 0.5s ease forwards;
       }
 
-      @keyframes fadeIn {
-        from {opacity: 0;}
-        to {opacity: 1;}
-      }
-
       nav ul.active {
         display: flex;
       }
@@ -283,11 +252,11 @@
       }
 
       .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
 
       .hero p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
   </style>
@@ -304,26 +273,21 @@
       </ul>
     </nav>
     <div class="menu-toggle" id="toggle">
-      <div></div>
-      <div></div>
-      <div></div>
+      <div></div><div></div><div></div>
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <h1>Siva Dhanushu</h1>
     <p>UI/UX Designer</p>
     <a href="#projects">View My Work</a>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="about">
     <h2 class="section-title">About Me</h2>
     <p>I am a passionate UI/UX designer dedicated to creating intuitive and engaging digital experiences. My skills include user research, wireframing, prototyping, and usability testing, with a focus on delivering user-friendly solutions.</p>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
     <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
@@ -331,7 +295,7 @@
         <img src="https://via.placeholder.com/400x250" alt="Plant Finder App">
         <h3>Plant Finder App 🌿</h3>
         <p>A mobile app prototype for plant identification and care guidance, focusing on usability, intuitive navigation, and accessibility.</p>
-        <a href="https://www.behance.net/gallery/232742189/Plant-Finder" target="_blank">View Project →</a>
+        <a href="https://www.behance.net/gallery/237288151/Plant-Identifier-application/modules/1364772023" target="_blank">View Project →</a>
       </div>
 
       <div class="project-card">
@@ -347,16 +311,21 @@
         <p>Arduino-based IoT solution using ultrasonic sensors to detect parking availability in real-time, improving parking efficiency.</p>
         <a href="https://github.com/shivcreations317-hub/Smart-parking-system-IOT" target="_blank">View Project →</a>
       </div>
+
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x250" alt="Automobile Rental App Design">
+        <h3>Automobile Rental App Design 🚘</h3>
+        <p>Designed a modern and intuitive automobile rental mobile application using Figma, enabling users to rent vehicles or hire professional drivers with real-time availability tracking and a seamless booking interface.</p>
+        <a href="https://www.behance.net/gallery/237289573/Automobile-Rental-app/modules/1364780723" target="_blank">View Project →</a>
+      </div>
     </div>
   </section>
 
-  <!-- Resume Section -->
   <section id="resume" class="resume">
     <h2 class="section-title">Resume</h2>
-    <a href="https://drive.google.com/file/d/1KJ3XwNrpg3pMCM8cUlWR0LJH7sokJMkv/view?usp=drivesdk" target="_blank">📄 View & Download My Resume</a>
+    <a href="https://drive.google.com/file/d/1YLBG78mmSSqbtUEKPIyIFi4HLHHLbtXb/view?usp=drivesdk" target="_blank">📄 View & Download My Resume</a>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2 class="section-title">Contact</h2>
     <p>Email: <a href="mailto:shivcreations317@gmail.com">shivcreations317@gmail.com</a></p>
@@ -372,42 +341,19 @@
 
   <script>
     const navbar = document.getElementById('navbar');
-    const navLinks = document.querySelectorAll('nav a');
     const toggle = document.getElementById('toggle');
     const menu = document.getElementById('menu');
 
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-
-      let current = '';
-      document.querySelectorAll('section').forEach(section => {
-        const sectionTop = section.offsetTop - 100;
-        if (pageYOffset >= sectionTop) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('active');
-        }
-      });
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
     });
 
-    toggle.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.remove('active');
-      });
-    });
+    toggle.addEventListener('click', () => menu.classList.toggle('active'));
+    document.querySelectorAll('nav a').forEach(link =>
+      link.addEventListener('click', () => menu.classList.remove('active'))
+    );
   </script>
 </body>
 </html>
+
