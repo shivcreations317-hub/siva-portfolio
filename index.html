@@ -17,6 +17,8 @@
     --border: rgba(255,255,255,0.07);
     --accent: #c8f060;
     --accent2: #60f0c8;
+    --accent3: #8b5cf6;
+    --grad: linear-gradient(90deg,#c8f060,#60f0c8,#8b5cf6);
     --text: #e8eaf0;
     --muted: #6b7280;
     --card-bg: rgba(17,22,32,0.8);
@@ -55,10 +57,28 @@
     animation:prePulse 1.15s ease-in-out infinite;
   }
   .pre-bar{width:170px;height:1px;background:rgba(255,255,255,.1);overflow:hidden}
-  .pre-bar span{display:block;height:100%;width:0;background:var(--accent);transition:width .9s cubic-bezier(.65,0,.35,1)}
+  .pre-bar span{
+    display:block;height:100%;width:0;
+    background:var(--grad);
+    background-size:200% auto;
+    animation:gradShift 3s linear infinite;
+    transition:width .9s cubic-bezier(.65,0,.35,1);
+  }
   #preloader.done .pre-logo{opacity:0;transition:opacity .3s}
   @keyframes prePulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.94)}}
   body.locked{overflow:hidden}
+  @keyframes gradShift{
+    from{background-position:0% 50%}
+    to{background-position:200% 50%}
+  }
+  .grad-text{
+    background:var(--grad);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:gradShift 6s linear infinite;
+  }
 
   /* ─── CURSOR ─── */
   #cursor{
@@ -66,6 +86,7 @@
     width:12px;height:12px;
     border-radius:50%;
     background:var(--accent);
+    box-shadow:0 0 14px rgba(200,240,96,.7);
     pointer-events:none;
     z-index:9999;
     transform:translate(-50%,-50%);
@@ -113,7 +134,11 @@
     font-family:'Bebas Neue',sans-serif;
     font-size:1.7rem;
     letter-spacing:.12em;
-    color:var(--accent);
+    background:var(--grad);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
     text-decoration:none;
     transition:letter-spacing .3s;
   }
@@ -185,6 +210,7 @@
   #mobile-menu a:nth-child(2){transition-delay:.2s}
   #mobile-menu a:nth-child(3){transition-delay:.28s}
   #mobile-menu a:nth-child(4){transition-delay:.36s}
+  #mobile-menu a:nth-child(5){transition-delay:.44s}
   #mobile-menu a:hover{color:var(--accent)}
 
   /* ─── HERO ─── */
@@ -220,7 +246,7 @@
   }
   .a3{
     width:34vw;height:34vw;bottom:-16%;left:26%;
-    background:radial-gradient(circle,rgba(120,140,255,.10),transparent 62%);
+    background:radial-gradient(circle,rgba(139,92,246,.14),transparent 62%);
     animation:aurora 24s -12s ease-in-out infinite alternate;
   }
   @keyframes aurora{
@@ -269,12 +295,21 @@
     margin-top:2rem;
     font-size:1.05rem;
     color:var(--muted);
-    max-width:480px;
+    max-width:520px;
     font-weight:300;
     opacity:0;transform:translateY(18px);
     animation:fadeUp .7s var(--ease-out) 1.6s forwards;
     position:relative;z-index:1;
   }
+  .typed-text{color:var(--text);font-weight:500}
+  .typed-caret{
+    display:inline-block;width:2px;height:1.05em;
+    background:var(--grad);
+    background-size:200% auto;
+    animation:gradShift 4s linear infinite,blink 1s step-end infinite;
+    vertical-align:-.12em;margin-left:3px;
+  }
+  @keyframes blink{50%{opacity:0}}
   .hero-cta{
     margin-top:3rem;
     display:flex;gap:1.2rem;
@@ -285,7 +320,9 @@
   .btn-primary{
     display:inline-flex;align-items:center;gap:.6rem;
     padding:.85rem 2rem;
-    background:var(--accent);
+    background:var(--grad);
+    background-size:200% auto;
+    animation:gradShift 6s linear infinite;
     color:#080a0e;
     border-radius:3px;
     font-weight:600;
@@ -294,7 +331,7 @@
     text-transform:uppercase;
     text-decoration:none;
     position:relative;overflow:hidden;z-index:1;
-    transition:box-shadow .22s;
+    transition:box-shadow .22s,transform .22s;
   }
   .btn-primary::after{
     content:'';position:absolute;top:0;left:-75%;width:50%;height:100%;
@@ -303,7 +340,8 @@
     transition:left .55s ease;z-index:-1;
   }
   .btn-primary:hover{
-    box-shadow:0 8px 32px rgba(200,240,96,.35);
+    box-shadow:0 8px 36px rgba(200,240,96,.35),0 4px 24px rgba(139,92,246,.25);
+    transform:translateY(-2px);
   }
   .btn-primary:hover::after{left:125%}
   .btn-ghost{
@@ -348,7 +386,13 @@
     font-family:'Bebas Neue',sans-serif;
     font-size:32vw;
     line-height:1;
-    color:rgba(255,255,255,.018);
+    background:var(--grad);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    opacity:.1;
+    animation:gradShift 10s linear infinite;
     pointer-events:none;
     user-select:none;
     z-index:0;
@@ -398,7 +442,10 @@
     margin-bottom:1.2rem;
   }
   .section-label::before{
-    content:'';width:36px;height:1px;background:var(--accent);
+    content:'';width:36px;height:1px;
+    background:var(--grad);
+    background-size:200% auto;
+    animation:gradShift 5s linear infinite;
   }
   .section-title{
     font-family:'DM Serif Display',serif;
@@ -407,7 +454,15 @@
     color:var(--text);
     margin-bottom:1.4rem;
   }
-  .section-title em{color:var(--accent);font-style:italic}
+  .section-title em{
+    background:var(--grad);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-style:italic;
+    animation:gradShift 6s linear infinite;
+  }
   .section-title .tw{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
   .section-title .tw-in{
     display:inline-block;
@@ -424,6 +479,7 @@
   }
   .orb-1{width:34vw;height:34vw;top:6%;right:-8%;background:radial-gradient(circle,rgba(200,240,96,.14),transparent 62%)}
   .orb-2{width:30vw;height:30vw;bottom:-4%;left:-6%;background:radial-gradient(circle,rgba(96,240,200,.10),transparent 62%)}
+  .orb-3{width:32vw;height:32vw;top:16%;left:-10%;background:radial-gradient(circle,rgba(139,92,246,.12),transparent 62%)}
 
   /* ─── ABOUT ─── */
   #about{
@@ -451,13 +507,14 @@
     letter-spacing:.08em;
     text-transform:uppercase;
     color:var(--muted);
-    transition:color .25s,border-color .25s,background .25s,transform .25s;
+    transition:color .25s,border-color .25s,background .25s,transform .25s,box-shadow .25s;
   }
   .skill-tag:hover{
     color:var(--accent);
-    border-color:var(--accent);
-    background:rgba(200,240,96,.06);
-    transform:translateY(-2px);
+    border-color:transparent;
+    background:linear-gradient(var(--bg),var(--bg)) padding-box,var(--grad) border-box;
+    box-shadow:0 0 20px rgba(200,240,96,.18);
+    transform:translateY(-2px) scale(1.04);
   }
   .stats{
     display:grid;grid-template-columns:repeat(4,1fr);
@@ -469,7 +526,13 @@
   .stat + .stat{border-left:1px solid var(--border);padding-left:1.4rem}
   .stat-num{
     font-family:'Bebas Neue',sans-serif;
-    font-size:2.6rem;color:var(--accent);line-height:1;
+    font-size:2.6rem;line-height:1;
+    background:var(--grad);
+    background-size:200% auto;
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    animation:gradShift 5s linear infinite;
   }
   .stat-label{
     font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
@@ -543,6 +606,79 @@
   @keyframes float{
     0%,100%{transform:translateZ(60px) translateY(0)}
     50%{transform:translateZ(60px) translateY(-10px)}
+  }
+
+  /* ─── EXPERIENCE ─── */
+  #experience{background:var(--bg2)}
+  .timeline{
+    position:relative;
+    max-width:740px;
+    margin:3rem auto 0;
+    padding-left:2.4rem;
+  }
+  .timeline::before{
+    content:'';position:absolute;left:0;top:0;bottom:0;width:1px;
+    background:rgba(255,255,255,.08);
+  }
+  .timeline::after{
+    content:'';position:absolute;left:0;top:0;width:1px;height:100%;
+    background:var(--grad);
+    background-size:200% auto;
+    animation:gradShift 5s linear infinite;
+    transform:scaleY(0);
+    transform-origin:top;
+    transition:transform 1.4s var(--ease-out);
+  }
+  .timeline.drawn::after{transform:scaleY(1)}
+  .tl-item{
+    position:relative;
+    padding:0 0 3.2rem 1.6rem;
+    opacity:0;transform:translateY(34px);
+    transition:opacity .7s var(--ease-out),transform .7s var(--ease-out);
+  }
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item.visible{opacity:1;transform:none}
+  .tl-item .dot{
+    position:absolute;left:-2.35rem;top:.5rem;
+    width:11px;height:11px;border-radius:50%;
+    background:var(--bg2);
+    border:2px solid var(--accent);
+    transform:scale(0);
+    transition:transform .45s var(--ease-out) .25s;
+  }
+  .tl-item.visible .dot{
+    transform:scale(1);
+    animation:pulse 2.4s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(200,240,96,.5)}
+    100%{box-shadow:0 0 0 12px rgba(200,240,96,0)}
+  }
+  .tl-date{
+    display:inline-block;
+    font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;
+    padding:.3rem .9rem;
+    border:1px solid rgba(200,240,96,.25);
+    border-radius:20px;
+    margin-bottom:.9rem;
+    background:rgba(200,240,96,.05);
+  }
+  .tl-item h3{
+    font-family:'DM Serif Display',serif;
+    font-size:1.45rem;
+    margin-bottom:.55rem;
+    color:var(--text);
+  }
+  .tl-item p{
+    color:var(--muted);
+    font-size:.95rem;
+    line-height:1.8;
+    font-weight:300;
+  }
+  .tl-tags{
+    display:flex;flex-wrap:wrap;gap:.5rem;
+    margin-top:1.1rem;
   }
 
   /* ─── PROJECTS ─── */
@@ -719,10 +855,12 @@
   }
   .contact-big .fill{
     position:absolute;inset:0;
-    background:linear-gradient(100deg,var(--accent),var(--accent2));
+    background:var(--grad);
+    background-size:200% auto;
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent;
+    animation:gradShift 6s linear infinite;
     opacity:0;
     transition:opacity .5s;
     pointer-events:none;
@@ -867,7 +1005,10 @@
   /* progress bar */
   #progress{
     position:fixed;top:0;left:0;
-    height:2px;background:var(--accent);
+    height:2px;
+    background:var(--grad);
+    background-size:200% auto;
+    animation:gradShift 4s linear infinite;
     width:0%;z-index:200;
     box-shadow:0 0 12px rgba(200,240,96,.8);
     transition:width .1s linear;
@@ -900,6 +1041,7 @@
   <a href="#" class="nav-logo">SD</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#resume">Resume</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -911,6 +1053,7 @@
 <!-- MOBILE MENU -->
 <div id="mobile-menu">
   <a href="#about">About</a>
+  <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
   <a href="#resume">Resume</a>
   <a href="#contact">Contact</a>
@@ -925,7 +1068,7 @@
   <h1 class="hero-name" id="hero-name">
     <span class="word">Siva </span><span class="word outline">Dhanushu</span>
   </h1>
-  <p class="hero-sub">UI/UX Designer crafting intuitive and engaging digital experiences — from research to pixel-perfect prototypes.</p>
+  <p class="hero-sub">UI/UX Designer crafting <span class="typed-text" id="typed"></span><span class="typed-caret"></span></p>
   <div class="hero-cta">
     <a href="#projects" class="btn-primary" data-magnetic="0.25">View My Work ↓</a>
     <a href="#contact" class="btn-ghost" data-magnetic="0.25">Get in Touch</a>
@@ -941,7 +1084,8 @@
         <span class="mq-item">User Research</span><span class="mq-star">✦</span>
         <span class="mq-item">Wireframing</span><span class="mq-star">✦</span>
         <span class="mq-item">Prototyping</span><span class="mq-star">✦</span>
-        <span class="mq-item">Usability Testing</span><span class="mq-star">✦</span>
+        <span class="mq-item">MS SQL</span><span class="mq-star">✦</span>
+        <span class="mq-item">ERP Solutions</span><span class="mq-star">✦</span>
         <span class="mq-item">Figma</span><span class="mq-star">✦</span>
       </div>
     </div>
@@ -958,7 +1102,7 @@
     <h2 class="section-title reveal">Designing for <em>humans</em>, not screens.</h2>
     <div class="reveal reveal-delay-1">
       <p>I am a passionate UI/UX designer dedicated to creating intuitive and engaging digital experiences. My skills include user research, wireframing, prototyping, and usability testing, with a focus on delivering user-friendly solutions.</p>
-      <p>Every pixel has a purpose. I bridge empathy and craft to build products people love to use.</p>
+      <p>Every pixel has a purpose. I bridge empathy and craft to build products people love to use — and I bring that same care to ERP projects, designing and querying databases with MS SQL.</p>
     </div>
     <div class="skills-grid reveal reveal-delay-2">
       <span class="skill-tag">User Research</span>
@@ -969,11 +1113,13 @@
       <span class="skill-tag">Interaction Design</span>
       <span class="skill-tag">Design Systems</span>
       <span class="skill-tag">Accessibility</span>
+      <span class="skill-tag">MS SQL</span>
+      <span class="skill-tag">ERP Solutions</span>
     </div>
     <div class="stats reveal reveal-delay-3">
       <div class="stat"><div class="stat-num" data-count="4" data-suffix="+">0</div><div class="stat-label">Selected Projects</div></div>
-      <div class="stat"><div class="stat-num" data-count="8" data-suffix="+">0</div><div class="stat-label">Core Skills</div></div>
-      <div class="stat"><div class="stat-num" data-count="3" data-suffix="+">0</div><div class="stat-label">Platforms</div></div>
+      <div class="stat"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-label">Core Skills</div></div>
+      <div class="stat"><div class="stat-num" data-count="3" data-suffix=" mo">0</div><div class="stat-label">ERP · MS SQL</div></div>
       <div class="stat"><div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-label">User Focus</div></div>
     </div>
   </div>
@@ -989,6 +1135,39 @@
   </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-orb orb-3" data-parallax="0.2"></div>
+  <p class="section-label reveal" style="justify-content:center">Experience</p>
+  <h2 class="section-title reveal reveal-delay-1">Data-driven <em>by design.</em></h2>
+  <div class="timeline" id="timeline">
+    <div class="tl-item" data-delay="0">
+      <span class="dot"></span>
+      <span class="tl-date">2026 · 3 Months</span>
+      <h3>ERP Projects — MS SQL</h3>
+      <p>Worked on ERP solutions where I built and managed relational databases with Microsoft SQL Server — writing optimized queries and stored procedures, modelling data across modules, and powering real-time reports that keep the system accurate and fast.</p>
+      <div class="tl-tags">
+        <span class="ptag">MS SQL</span>
+        <span class="ptag">ERP</span>
+        <span class="ptag">Stored Procedures</span>
+        <span class="ptag">Data Modelling</span>
+      </div>
+    </div>
+    <div class="tl-item" data-delay="1">
+      <span class="dot"></span>
+      <span class="tl-date">Portfolio · Ongoing</span>
+      <h3>UI/UX Product Design</h3>
+      <p>Designing intuitive digital products end-to-end — user research, wireframing, interactive prototyping, and polished design systems in Figma, with accessibility baked in from the start.</p>
+      <div class="tl-tags">
+        <span class="ptag">Figma</span>
+        <span class="ptag">Prototyping</span>
+        <span class="ptag">Design Systems</span>
+        <span class="ptag">Usability Testing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- SKILLS MARQUEE -->
 <div id="skills-marquee">
   <div class="marquee">
@@ -997,6 +1176,8 @@
       <span class="mq-item lime">Wireframing</span><span class="mq-star">✦</span>
       <span class="mq-item lime">Prototyping</span><span class="mq-star">✦</span>
       <span class="mq-item lime">Usability Testing</span><span class="mq-star">✦</span>
+      <span class="mq-item lime">MS SQL</span><span class="mq-star">✦</span>
+      <span class="mq-item lime">ERP Solutions</span><span class="mq-star">✦</span>
       <span class="mq-item lime">Design Systems</span><span class="mq-star">✦</span>
       <span class="mq-item lime">Interaction Design</span><span class="mq-star">✦</span>
     </div>
@@ -1120,7 +1301,7 @@
 <!-- FOOTER -->
 <footer>
   <span>© 2026 Siva Dhanushu. All Rights Reserved.</span>
-  <span style="color:var(--accent);font-family:'Bebas Neue',sans-serif;letter-spacing:.2em">SD</span>
+  <span class="grad-text" style="font-family:'Bebas Neue',sans-serif;letter-spacing:.2em">SD</span>
 </footer>
 
 <button id="toTop" aria-label="Back to top">↑</button>
@@ -1467,6 +1648,65 @@ if(cBig){
     cBig.style.webkitTextStroke='1px rgba(255,255,255,.2)';
   });
 }
+
+// ─── TYPED ROLES ───
+const typedWords = ['intuitive experiences','engaging interfaces','pixel-perfect prototypes','data-driven products'];
+const typedEl = document.getElementById('typed');
+if(typedEl){
+  if(reducedMotion){
+    typedEl.textContent = typedWords[0];
+  }else{
+    let tw=0, tc=0, deleting=false;
+    function typeLoop(){
+      const word = typedWords[tw];
+      typedEl.textContent = word.slice(0,tc);
+      if(!deleting && tc<word.length){tc++;setTimeout(typeLoop,65)}
+      else if(!deleting){deleting=true;setTimeout(typeLoop,1900)}
+      else if(tc>0){tc--;setTimeout(typeLoop,32)}
+      else{deleting=false;tw=(tw+1)%typedWords.length;setTimeout(typeLoop,250)}
+    }
+    setTimeout(typeLoop,2000);
+  }
+}
+
+// ─── SCRAMBLE TEXT ON HOVER ───
+const scrambleChars = '!<>-_\\/[]{}—=+*^?#';
+function scrambleText(el){
+  if(reducedMotion) return;
+  const original = el.dataset.original || el.textContent;
+  el.dataset.original = original;
+  let frame = 0;
+  function tick(){
+    el.textContent = original.split('').map((ch,i)=>{
+      if(ch===' ') return ' ';
+      return frame%3===0 ? scrambleChars[Math.floor(Math.random()*scrambleChars.length)] : original[i];
+    }).join('');
+    if(frame++<7){requestAnimationFrame(tick)}
+    else{el.textContent = original}
+  }
+  tick();
+}
+document.querySelectorAll('.project-title').forEach(t=>{
+  t.addEventListener('mouseenter',()=>scrambleText(t));
+});
+
+// ─── EXPERIENCE TIMELINE ───
+const timeline = document.getElementById('timeline');
+const tlItems = document.querySelectorAll('.tl-item');
+const tlObs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting) return;
+    if(e.target === timeline){
+      timeline.classList.add('drawn');
+    }else{
+      const delay = parseFloat(e.target.dataset.delay||0);
+      setTimeout(()=>e.target.classList.add('visible'),delay*180);
+      tlObs.unobserve(e.target);
+    }
+  });
+},{threshold:.18,rootMargin:'0px 0px -30px 0px'});
+if(timeline) tlObs.observe(timeline);
+tlItems.forEach(item=>tlObs.observe(item));
 </script>
 </body>
 </html>
