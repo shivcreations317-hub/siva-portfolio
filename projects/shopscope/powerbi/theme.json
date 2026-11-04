@@ -1,0 +1,109 @@
+{
+  "name": "ShopScope Dark",
+  "dataColors": [
+    "#C8F060",
+    "#60F0C8",
+    "#8B5CF6",
+    "#FFB86B",
+    "#FF7EB6",
+    "#6EA8FE",
+    "#7EE787",
+    "#FFC857"
+  ],
+  "background": "#080A0E",
+  "foreground": "#E8EAF0",
+  "tableAccent": "#C8F060",
+  "good": "#7EE787",
+  "neutral": "#FFC857",
+  "bad": "#FF6B7A",
+  "textClasses": {
+    "callout": {
+      "fontSize": 28,
+      "fontFace": "Outfit",
+      "color": "#E8EAF0"
+    },
+    "title": {
+      "fontSize": 14,
+      "fontFace": "Outfit",
+      "color": "#E8EAF0"
+    },
+    "header": {
+      "fontSize": 11,
+      "fontFace": "Outfit",
+      "color": "#8A93A6"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Outfit",
+      "color": "#5C6577"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#10151F"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1D2635"
+              }
+            },
+            "show": true,
+            "radius": 8
+          }
+        ],
+        "title": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#E8EAF0"
+              }
+            },
+            "background": {
+              "solid": {
+                "color": "#10151F"
+              }
+            },
+            "alignment": "left",
+            "fontSize": 12,
+            "fontFamily": "Outfit"
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#080A0E"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#080A0E"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+return_id,order_id,return_date,customer_id,category,product,units,reason,refund_amount
+RET-0001,ORD-2025-0003,2025-01-15,CUST-0155,Electronics,Smart Band,1,Changed mind,2119.15
+RET-0002,ORD-2025-0027,2025-01-15,CUST-0427,Footwear,Running Shoes,1,Changed mind,3460.69
+RET-0003,ORD-2025-0034,2025-01-18,CUST-0465,Footwear,Block Heels,3,Size / fit,6172.82
+RET-0004,ORD-2025-0029,2025-01-20,CUST-0235,Apparel,Denim Jacket,1,Quality issue,2439.02
+RET-0005,ORD-2025-0043,2025-01-26,CUST-0222,Beauty,Matte Lipstick,1,Damaged in transit,591.35
+RET-0006,ORD-2025-0052,2025-02-02,CUST-0308,Home & Living,Cushion Cover Set,1,Damaged in transit,1287.64
+RET-0007,ORD-2025-0053,2025-02-02,CUST-0487,Footwear,Block Heels,1,Size / fit,1905.87
+RET-0008,ORD-2025-0068,2025-02-05,CUST-0807,Electronics,Portable Speaker,1,Damaged in transit,3166.6
+RET-0009,ORD-2025-0080,2025-02-11,CUST-0832,Apparel,Denim Jacket,2,Size / fit,4213.31
+RET-0010,ORD-2025-0077,2025-02-12,CUST-0143,Apparel,Oversized Cotton Tee,1,Changed mind,810.9
+RET-0011,ORD-2025-0075,2025-02-16,CUST-0100,Apparel,Oversized Cotton Tee,1,Not as described,689.53
+RET-0012,ORD-2025-0093,2025-02-22,CUST-0617,Apparel,Oversized Cotton Tee,1,Not as described,744.37
+RET-0013,ORD-2025-0099,2025-02-22,CUST-0135,Accessories,Baseball Cap,2,Changed mind,947.62
+RET-0014,ORD-2025-0118,2025-02-28,CUST-0698,Footwear,Everyday Sneakers,1,Size / fit,2414.19
+RET-0015,ORD-2025-0134,2025-03-01,CUST-0439,Electronics,Smart Band,1,Changed mind,1661.84
+RET-0016,ORD-2025-0148,2025-03-04,CUST-0482,Apparel,Slim Fit Chinos,1,Size / fit,1485.97
+RET-0017,ORD-2025-0154,2025-03-05,CUST-0413,Apparel,Oversized Cotton Tee,1,Changed mind,727.29
+RET-0018,ORD-2025-0139,2025-03-08,CUST-0715,Home & Living,Cotton Bedsheet Set,1,Changed mind,2439.02
+RET-0019,ORD-2025-0150,2025-03-15,CUST-0111,Accessories,Canvas Tote,1,Late delivery,576.08
+RET-0020,ORD-2025-0156,2025-03-17,CUST-0626,Beauty,Matte Lipstick,2,Changed mind,1091.84
+RET-0021,ORD-2025-0188,2025-03-26,CUST-0115,Home & Living,Ceramic Mug Set,1,Quality issue,1025.14
+RET-0022,ORD-2025-0196,2025-03-26,CUST-0934,Apparel,Slim Fit Chinos,1,Changed mind,1718.04
+RET-0023,ORD-2025-0200,2025-03-26,CUST-0173,Footwear,Block Heels,1,Size / fit,2280.61
+RET-0024,ORD-2025-0195,2025-03-28,CUST-0861,Apparel,Slim Fit Chinos,1,Changed mind,1448.19
+RET-0025,ORD-2025-0208,2025-04-01,CUST-0323,Electronics,Wireless Earbuds,1,Late delivery,2111.3
+RET-0026,ORD-2025-0230,2025-04-04,CUST-0691,Beauty,Vitamin C Serum,1,Changed mind,1071.67
+RET-0027,ORD-2025-0246,2025-04-11,CUST-0612,Apparel,Linen Blend Shirt,1,Size / fit,1443.54
+RET-0028,ORD-2025-0271,2025-04-13,CUST-0626,Apparel,Slim Fit Chinos,1,Size / fit,1405.02
+RET-0029,ORD-2025-0301,2025-04-19,CUST-0929,Footwear,Block Heels,1,Size / fit,2119.68
+RET-0030,ORD-2025-0304,2025-04-19,CUST-0278,Apparel,Slim Fit Chinos,1,Changed mind,1566.93
+RET-0031,ORD-2025-0268,2025-04-20,CUST-0695,Apparel,Denim Jacket,1,Changed mind,2364.05
+RET-0032,ORD-2025-0292,2025-04-25,CUST-0832,Accessories,Baseball Cap,1,Not as described,599
+RET-0033,ORD-2025-0295,2025-04-25,CUST-0524,Apparel,Oversized Cotton Tee,1,Size / fit,781.23
+RET-0034,ORD-2025-0290,2025-04-26,CUST-0708,Accessories,Canvas Tote,1,Damaged in transit,600.05
+RET-0035,ORD-2025-0328,2025-04-29,CUST-0285,Apparel,Slim Fit Chinos,1,Not as described,1593.91
+RET-0036,ORD-2025-0320,2025-04-30,CUST-0192,Apparel,Linen Blend Shirt,1,Size / fit,1335.61
+RET-0037,ORD-2025-0312,2025-05-01,CUST-0337,Apparel,Linen Blend Shirt,3,Changed mind,3885.41
+RET-0038,ORD-2025-0322,2025-05-01,CUST-0350,Apparel,Linen Blend Shirt,4,Damaged in transit,5270.48
+RET-0039,ORD-2025-0346,2025-05-01,CUST-0605,Apparel,Oversized Cotton Tee,2,Quality issue,1355.69
+RET-0040,ORD-2025-0344,2025-05-04,CUST-0751,Apparel,Oversized Cotton Tee,1,Late delivery,819.89
+RET-0041,ORD-2025-0359,2025-05-06,CUST-0443,Apparel,Linen Blend Shirt,1,Changed mind,1412.06
+RET-0042,ORD-2025-0354,2025-05-07,CUST-0657,Footwear,Everyday Sneakers,1,Size / fit,2267.24
+RET-0043,ORD-2025-0360,2025-05-07,CUST-0495,Electronics,Portable Speaker,2,Quality issue,6508.14
+RET-0044,ORD-2025-0401,2025-05-13,CUST-0457,Accessories,Minimal Watch,1,Changed mind,3731.07
+RET-0045,ORD-2025-0374,2025-05-15,CUST-0527,Beauty,Vitamin C Serum,1,Late delivery,944.37
+RET-0046,ORD-2025-0381,2025-05-16,CUST-0254,Footwear,Leather Loafers,1,Size / fit,3138.6
+RET-0047,ORD-2025-0383,2025-05-16,CUST-0153,Electronics,Smart Band,1,Changed mind,2356.56
+RET-0048,ORD-2025-0385,2025-05-16,CUST-0241,Home & Living,Scented Candle,2,Not as described,1508.52
+RET-0049,ORD-2025-0380,2025-05-17,CUST-0129,Footwear,Everyday Sneakers,1,Late delivery,2888.04
+RET-0050,ORD-2025-0426,2025-05-17,CUST-0705,Apparel,Slim Fit Chinos,1,Size / fit,1793.6
+RET-0051,ORD-2025-0414,2025-05-18,CUST-0562,Electronics,Smart Band,1,Damaged in transit,2329.07
+RET-0052,ORD-2025-0432,2025-05-21,CUST-0955,Footwear,Leather Loafers,1,Changed mind,2795.7
+RET-0053,ORD-2025-0403,2025-05-22,CUST-0185,Electronics,Wireless Earbuds,3,Quality issue,7548.48
+RET-0054,ORD-2025-0433,2025-05-29,CUST-0026,Apparel,Linen Blend Shirt,1,Not as described,1298.13
+RET-0055,ORD-2025-0471,2025-05-29,CUST-0037,Apparel,Oversized Cotton Tee,1,Changed mind,813.6
+RET-0056,ORD-2025-0438,2025-05-30,CUST-0945,Home & Living,Scented Candle,3,Damaged in transit,2281.66
+RET-0057,ORD-2025-0470,2025-05-30,CUST-0918,Apparel,Denim Jacket,1,Quality issue,1826.77
+RET-0058,ORD-2025-0445,2025-05-31,CUST-0440,Apparel,Linen Blend Shirt,1,Not as described,1206.69
+RET-0059,ORD-2025-0456,2025-06-04,CUST-0626,Apparel,Slim Fit Chinos,1,Damaged in transit,1419.41
+RET-0060,ORD-2025-0484,2025-06-05,CUST-0724,Accessories,Baseball Cap,1,Not as described,521.13
+RET-0061,ORD-2025-0487,2025-06-06,CUST-0350,Footwear,Running Shoes,1,Quality issue,4243.11
+RET-0062,ORD-2025-0462,2025-06-07,CUST-0745,Apparel,Linen Blend Shirt,1,Size / fit,1307.13
+RET-0063,ORD-2025-0490,2025-06-07,CUST-0322,Apparel,Slim Fit Chinos,2,Size / fit,2878.4
+RET-0064,ORD-2025-0492,2025-06-09,CUST-0695,Footwear,Everyday Sneakers,2,Late delivery,4564.48
+RET-0065,ORD-2025-0477,2025-06-10,CUST-0011,Beauty,Sunscreen SPF 50,2,Damaged in transit,1458.18
+RET-0066,ORD-2025-0485,2025-06-10,CUST-0839,Apparel,Slim Fit Chinos,3,Late delivery,4576.66
+RET-0067,ORD-2025-0504,2025-06-12,CUST-0294,Beauty,Matte Lipstick,1,Quality issue,506.77
+RET-0068,ORD-2025-0497,2025-06-13,CUST-0780,Apparel,Denim Jacket,1,Quality issue,2486.51
+RET-0069,ORD-2025-0503,2025-06-16,CUST-0098,Home & Living,Scented Candle,1,Size / fit,731.79
+RET-0070,ORD-2025-0530,2025-06-17,CUST-0969,Footwear,Running Shoes,1,Size / fit,4182.93
+RET-0071,ORD-2025-0533,2025-06-20,CUST-0301,Apparel,Floral Midi Dress,1,Size / fit,2104.44
+RET-0072,ORD-2025-0555,2025-06-24,CUST-0825,Footwear,Running Shoes,1,Changed mind,3404.81
+RET-0073,ORD-2025-0562,2025-06-25,CUST-0436,Footwear,Everyday Sneakers,1,Size / fit,2462.18
+RET-0074,ORD-2025-0542,2025-06-26,CUST-0153,Accessories,Baseball Cap,1,Not as described,535.51
+RET-0075,ORD-2025-0570,2025-06-29,CUST-0172,Accessories,Sunglasses,1,Not as described,872.93
+RET-0076,ORD-2025-0579,2025-06-29,CUST-0660,Home & Living,Cotton Bedsheet Set,1,Not as described,2144.14
+RET-0077,ORD-2025-0574,2025-07-01,CUST-0904,Footwear,Leather Loafers,1,Size / fit,2858.68
+RET-0078,ORD-2025-0565,2025-07-02,CUST-0219,Footwear,Running Shoes,1,Changed mind,3164.06
+RET-0079,ORD-2025-0596,2025-07-04,CUST-0683,Accessories,Canvas Tote,2,Late delivery,1372.68
+RET-0080,ORD-2025-0582,2025-07-05,CUST-0056,Apparel,Denim Jacket,3,Not as described,6492.4
+RET-0081,ORD-2025-0581,2025-07-06,CUST-0941,Accessories,Minimal Watch,1,Changed mind,3471.13
+RET-0082,ORD-2025-0617,2025-07-09,CUST-0217,Footwear,Leather Loafers,1,Changed mind,2995.14
+RET-0083,ORD-2025-0614,2025-07-10,CUST-0062,Footwear,Running Shoes,1,Size / fit,3464.99
+RET-0084,ORD-2025-0598,2025-07-12,CUST-0765,Footwear,Everyday Sneakers,2,Changed mind,4744.42
+RET-0085,ORD-2025-0587,2025-07-13,CUST-0776,Apparel,Linen Blend Shirt,1,Changed mind,1128.75
+RET-0086,ORD-2025-0592,2025-07-13,CUST-0257,Home & Living,Scented Candle,2,Damaged in transit,1271.19
+RET-0087,ORD-2025-0606,2025-07-14,CUST-0980,Beauty,Vitamin C Serum,1,Not as described,963.86
+RET-0088,ORD-2025-0610,2025-07-15,CUST-0437,Apparel,Linen Blend Shirt,1,Size / fit,1452.53
+RET-0089,ORD-2025-0646,2025-07-15,CUST-0578,Beauty,Matte Lipstick,1,Damaged in transit,617.92
+RET-0090,ORD-2025-0605,2025-07-16,CUST-0575,Apparel,Oversized Cotton Tee,1,Size / fit,800.11
+RET-0091,ORD-2025-0624,2025-07-16,CUST-0024,Beauty,Matte Lipstick,1,Damaged in transit,659.86
+RET-0092,ORD-2025-0639,2025-07-16,CUST-0227,Apparel,Floral Midi Dress,1,Changed mind,1959.31
+RET-0093,ORD-2025-0626,2025-07-17,CUST-0521,Apparel,Slim Fit Chinos,1,Not as described,1584.92
+RET-0094,ORD-2025-0653,2025-07-17,CUST-0460,Beauty,Vitamin C Serum,2,Changed mind,2127.76
+RET-0095,ORD-2025-0645,2025-07-18,CUST-0405,Apparel,Linen Blend Shirt,1,Size / fit,1220.19
+RET-0096,ORD-2025-0629,2025-07-19,CUST-0271,Apparel,Linen Blend Shirt,3,Size / fit,3979.85
+RET-0097,ORD-2025-0671,2025-07-19,CUST-0140,Home & Living,Cotton Bedsheet Set,1,Quality issue,2151.64
+RET-0098,ORD-2025-0630,2025-07-20,CUST-0499,Footwear,Running Shoes,1,Size / fit,3039.39
+RET-0099,ORD-2025-0672,2025-07-22,CUST-0150,Footwear,Running Shoes,2,Size / fit,8073.52
+RET-0100,ORD-2025-0657,2025-07-24,CUST-0645,Apparel,Denim Jacket,3,Damaged in transit,6567.37
+RET-0101,ORD-2025-0664,2025-07-24,CUST-0410,Apparel,Slim Fit Chinos,2,Size / fit,3259.79
+RET-0102,ORD-2025-0659,2025-07-28,CUST-0800,Accessories,Canvas Tote,2,Changed mind,1433.41
+RET-0103,ORD-2025-0717,2025-07-28,CUST-0548,Beauty,Matte Lipstick,3,Not as described,1474.19
+RET-0104,ORD-2025-0677,2025-07-29,CUST-0063,Electronics,Smart Band,1,Size / fit,2161.63
+RET-0105,ORD-2025-0696,2025-08-01,CUST-0181,Home & Living,Ceramic Mug Set,1,Changed mind,949.61
+RET-0106,ORD-2025-0692,2025-08-02,CUST-0019,Apparel,Floral Midi Dress,1,Size / fit,1849.36
+RET-0107,ORD-2025-0695,2025-08-02,CUST-0644,Apparel,Oversized Cotton Tee,1,Quality issue,898.1
+RET-0108,ORD-2025-0707,2025-08-02,CUST-0610,Footwear,Block Heels,1,Size / fit,1802.42
+RET-0109,ORD-2025-0723,2025-08-04,CUST-0570,Apparel,Denim Jacket,1,Damaged in transit,2319.07
+RET-0110,ORD-2025-0740,2025-08-05,CUST-0107,Electronics,Smart Band,1,Damaged in transit,2499
+RET-0111,ORD-2025-0755,2025-08-05,CUST-0281,Electronics,Portable Speaker,1,Changed mind,2358.33
+RET-0112,ORD-2025-0758,2025-08-12,CUST-0797,Beauty,Vitamin C Serum,2,Damaged in transit,2088.79
+RET-0113,ORD-2025-0786,2025-08-13,CUST-0161,Apparel,Oversized Cotton Tee,1,Size / fit,854.05
+RET-0114,ORD-2025-0804,2025-08-16,CUST-0491,Footwear,Running Shoes,1,Size / fit,3090.98
+RET-0115,ORD-2025-0754,2025-08-17,CUST-0118,Home & Living,Cushion Cover Set,3,Changed mind,3201.86
+RET-0116,ORD-2025-0809,2025-08-17,CUST-0236,Apparel,Oversized Cotton Tee,3,Size / fit,2341.0
+RET-0117,ORD-2025-0796,2025-08-20,CUST-0397,Footwear,Leather Loafers,2,Size / fit,6564.12
+RET-0118,ORD-2025-0774,2025-08-21,CUST-0182,Electronics,Wireless Earbuds,2,Quality issue,5344.22
+RET-0119,ORD-2025-0829,2025-08-21,CUST-0420,Footwear,Running Shoes,2,Size / fit,6190.56
+RET-0120,ORD-2025-0805,2025-08-25,CUST-0495,Footwear,Running Shoes,1,Changed mind,3267.24
+RET-0121,ORD-2025-0803,2025-08-26,CUST-0784,Apparel,Linen Blend Shirt,1,Size / fit,1122.75
+RET-0122,ORD-2025-0854,2025-08-26,CUST-0060,Footwear,Everyday Sneakers,1,Size / fit,2483.17
+RET-0123,ORD-2025-0820,2025-08-30,CUST-0422,Apparel,Linen Blend Shirt,1,Not as described,1152.73
+RET-0124,ORD-2025-0837,2025-09-01,CUST-0522,Beauty,Sunscreen SPF 50,1,Changed mind,635.59
+RET-0125,ORD-2025-0843,2025-09-01,CUST-0364,Footwear,Leather Loafers,1,Late delivery,2911.17
+RET-0126,ORD-2025-0872,2025-09-07,CUST-0208,Home & Living,Scented Candle,2,Changed mind,1307.15
+RET-0127,ORD-2025-0871,2025-09-09,CUST-0061,Electronics,Portable Speaker,1,Quality issue,2564.77
+RET-0128,ORD-2025-0873,2025-09-09,CUST-0339,Apparel,Floral Midi Dress,2,Size / fit,3667.93
+RET-0129,ORD-2025-0876,2025-09-10,CUST-0170,Footwear,Leather Loafers,1,Changed mind,3275.06
+RET-0130,ORD-2025-0892,2025-09-11,CUST-0081,Footwear,Leather Loafers,1,Size / fit,2627.75
+RET-0131,ORD-2025-0908,2025-09-12,CUST-0017,Footwear,Running Shoes,1,Quality issue,3215.65
+RET-0132,ORD-2025-0932,2025-09-15,CUST-0369,Footwear,Everyday Sneakers,2,Size / fit,4888.37
+RET-0133,ORD-2025-0938,2025-09-15,CUST-0154,Apparel,Linen Blend Shirt,1,Not as described,1409.06
+RET-0134,ORD-2025-0940,2025-09-19,CUST-0526,Apparel,Slim Fit Chinos,1,Not as described,1557.93
+RET-0135,ORD-2025-0939,2025-09-21,CUST-0275,Apparel,Floral Midi Dress,1,Size / fit,1895.54
+RET-0136,ORD-2025-0941,2025-09-22,CUST-0623,Home & Living,Cushion Cover Set,1,Damaged in transit,1340.11
+RET-0137,ORD-2025-0990,2025-09-24,CUST-0454,Apparel,Oversized Cotton Tee,2,Size / fit,1251.41
+RET-0138,ORD-2025-0996,2025-09-24,CUST-0325,Electronics,Portable Speaker,1,Not as described,3296.06
+RET-0139,ORD-2025-0998,2025-09-24,CUST-0491,Apparel,Floral Midi Dress,1,Not as described,2106.64
+RET-0140,ORD-2025-0976,2025-09-25,CUST-0534,Apparel,Linen Blend Shirt,1,Late delivery,1448.03
+RET-0141,ORD-2025-1028,2025-09-27,CUST-0573,Accessories,Canvas Tote,1,Not as described,708.71
+RET-0142,ORD-2025-1009,2025-09-28,CUST-0688,Footwear,Running Shoes,1,Quality issue,4122.74
+RET-0143,ORD-2025-1017,2025-09-28,CUST-0836,Apparel,Denim Jacket,1,Size / fit,2491.5
+RET-0144,ORD-2025-1014,2025-10-01,CUST-0939,Apparel,Floral Midi Dress,1,Size / fit,1728.41
+RET-0145,ORD-2025-1027,2025-10-04,CUST-0555,Apparel,Linen Blend Shirt,1,Not as described,1230.68
+RET-0146,ORD-2025-1052,2025-10-04,CUST-0371,Footwear,Leather Loafers,1,Size / fit,3460.51
+RET-0147,ORD-2025-1057,2025-10-09,CUST-0291,Electronics,Wireless Earbuds,1,Not as described,2873.04
+RET-0148,ORD-2025-1097,2025-10-10,CUST-0054,Footwear,Everyday Sneakers,2,Size / fit,5122.29
+RET-0149,ORD-2025-1074,2025-10-13,CUST-0857,Electronics,Smart Band,1,Late delivery,2334.07
+RET-0150,ORD-2025-1098,2025-10-13,CUST-0140,Footwear,Everyday Sneakers,1,Size / fit,2915.03
+RET-0151,ORD-2025-1061,2025-10-14,CUST-0969,Footwear,Running Shoes,3,Late delivery,10807.69
+RET-0152,ORD-2025-1086,2025-10-14,CUST-0144,Footwear,Leather Loafers,1,Size / fit,2981.15
+RET-0153,ORD-2025-1108,2025-10-14,CUST-0826,Apparel,Denim Jacket,2,Changed mind,4398.24
+RET-0154,ORD-2025-1073,2025-10-16,CUST-0819,Footwear,Everyday Sneakers,2,Size / fit,5446.18
+RET-0155,ORD-2025-1124,2025-10-16,CUST-0183,Apparel,Denim Jacket,1,Size / fit,2016.69
+RET-0156,ORD-2025-1082,2025-10-18,CUST-0591,Footwear,Running Shoes,2,Size / fit,6328.13
+RET-0157,ORD-2025-1151,2025-10-18,CUST-0854,Apparel,Floral Midi Dress,1,Changed mind,2064.86
+RET-0158,ORD-2025-1143,2025-10-19,CUST-0314,Apparel,Oversized Cotton Tee,2,Size / fit,1492.34
+RET-0159,ORD-2025-1099,2025-10-21,CUST-0354,Electronics,Smart Band,1,Late delivery,1774.29
+RET-0160,ORD-2025-1154,2025-10-22,CUST-0632,Apparel,Oversized Cotton Tee,1,Changed mind,739.88
+RET-0161,ORD-2025-1120,2025-10-23,CUST-0636,Footwear,Block Heels,1,Changed mind,1912.77
+RET-0162,ORD-2025-1188,2025-10-24,CUST-0971,Apparel,Slim Fit Chinos,1,Size / fit,1489.57
+RET-0163,ORD-2025-1189,2025-10-24,CUST-0336,Footwear,Leather Loafers,1,Size / fit,2977.65
+RET-0164,ORD-2025-1171,2025-10-27,CUST-0397,Footwear,Everyday Sneakers,3,Changed mind,8997
+RET-0165,ORD-2025-1178,2025-10-29,CUST-0031,Apparel,Oversized Cotton Tee,1,Damaged in transit,722.8
+RET-0166,ORD-2025-1168,2025-10-30,CUST-0905,Home & Living,Ceramic Mug Set,1,Not as described,1040.73
+RET-0167,ORD-2025-1179,2025-10-31,CUST-0079,Apparel,Slim Fit Chinos,1,Size / fit,1521.95
+RET-0168,ORD-2025-1183,2025-11-02,CUST-0793,Apparel,Oversized Cotton Tee,2,Size / fit,1582.24
+RET-0169,ORD-2025-1217,2025-11-04,CUST-0228,Electronics,Smart Band,1,Changed mind,2041.68
+RET-0170,ORD-2025-1198,2025-11-05,CUST-0434,Apparel,Slim Fit Chinos,1,Size / fit,1593.91
+RET-0171,ORD-2025-1215,2025-11-09,CUST-0699,Home & Living,Ceramic Mug Set,1,Changed mind,896.85
+RET-0172,ORD-2025-1264,2025-11-10,CUST-0534,Electronics,Wireless Earbuds,1,Changed mind,2360.21
+RET-0173,ORD-2025-1222,2025-11-11,CUST-0967,Footwear,Everyday Sneakers,1,Size / fit,2738.09
+RET-0174,ORD-2025-1277,2025-11-12,CUST-0009,Footwear,Running Shoes,1,Not as described,3950.78
+RET-0175,ORD-2025-1229,2025-11-13,CUST-0677,Apparel,Linen Blend Shirt,1,Size / fit,1482.51
+RET-0176,ORD-2025-1294,2025-11-15,CUST-0250,Apparel,Floral Midi Dress,1,Size / fit,1935.12
+RET-0177,ORD-2025-1247,2025-11-17,CUST-0672,Apparel,Denim Jacket,1,Late delivery,1879.25
+RET-0178,ORD-2025-1254,2025-11-17,CUST-0827,Apparel,Oversized Cotton Tee,1,Size / fit,702.12
+RET-0179,ORD-2025-1253,2025-11-18,CUST-0667,Apparel,Oversized Cotton Tee,1,Size / fit,727.29
+RET-0180,ORD-2025-1309,2025-11-18,CUST-0206,Apparel,Oversized Cotton Tee,2,Size / fit,1522.91
+RET-0181,ORD-2025-1292,2025-11-21,CUST-0761,Footwear,Everyday Sneakers,1,Changed mind,2723.09
+RET-0182,ORD-2025-1339,2025-11-21,CUST-0918,Home & Living,Ceramic Mug Set,3,Changed mind,3021.48
+RET-0183,ORD-2025-1283,2025-11-22,CUST-0090,Apparel,Oversized Cotton Tee,1,Not as described,810.9
+RET-0184,ORD-2025-1296,2025-11-25,CUST-0023,Footwear,Block Heels,2,Quality issue,3356.54
+RET-0185,ORD-2025-1320,2025-11-26,CUST-0911,Apparel,Oversized Cotton Tee,1,Changed mind,675.15
+RET-0186,ORD-2025-1377,2025-11-26,CUST-0218,Apparel,Denim Jacket,1,Size / fit,2156.64
+RET-0187,ORD-2025-1346,2025-11-28,CUST-0764,Beauty,Vitamin C Serum,1,Late delivery,956.06
+RET-0188,ORD-2025-1348,2025-11-28,CUST-0866,Apparel,Denim Jacket,1,Changed mind,2229.11
+RET-0189,ORD-2025-1351,2025-11-28,CUST-0159,Accessories,Canvas Tote,1,Damaged in transit,656.78
+RET-0190,ORD-2025-1389,2025-11-28,CUST-0785,Footwear,Leather Loafers,1,Size / fit,3142.1
+RET-0191,ORD-2025-1373,2025-11-29,CUST-0668,Footwear,Everyday Sneakers,1,Size / fit,2381.21
+RET-0192,ORD-2025-1395,2025-11-29,CUST-0423,Footwear,Leather Loafers,1,Late delivery,3061.62
+RET-0193,ORD-2025-1397,2025-12-03,CUST-0829,Apparel,Oversized Cotton Tee,1,Size / fit,811.8
+RET-0194,ORD-2025-1376,2025-12-06,CUST-0216,Apparel,Linen Blend Shirt,2,Size / fit,2383.41
+RET-0195,ORD-2025-1421,2025-12-08,CUST-0370,Home & Living,Scented Candle,4,Late delivery,3056.6
+RET-0196,ORD-2025-1419,2025-12-09,CUST-0233,Footwear,Leather Loafers,1,Size / fit,3320.55
+RET-0197,ORD-2025-1403,2025-12-10,CUST-0557,Apparel,Linen Blend Shirt,2,Changed mind,2884.08
+RET-0198,ORD-2025-1443,2025-12-11,CUST-0087,Apparel,Floral Midi Dress,1,Size / fit,2181.41
+RET-0199,ORD-2025-1460,2025-12-11,CUST-0526,Apparel,Oversized Cotton Tee,1,Size / fit,756.96
+RET-0200,ORD-2025-1417,2025-12-13,CUST-0038,Apparel,Floral Midi Dress,2,Size / fit,3364.47
+RET-0201,ORD-2025-1432,2025-12-15,CUST-0673,Footwear,Leather Loafers,2,Size / fit,6879.03
+RET-0202,ORD-2025-1466,2025-12-15,CUST-0803,Apparel,Denim Jacket,1,Not as described,1881.75
+RET-0203,ORD-2025-1470,2025-12-15,CUST-0775,Apparel,Floral Midi Dress,1,Not as described,1981.3
+RET-0204,ORD-2025-1430,2025-12-16,CUST-0466,Apparel,Oversized Cotton Tee,1,Size / fit,793.82
+RET-0205,ORD-2025-1444,2025-12-16,CUST-0095,Home & Living,Cotton Bedsheet Set,1,Not as described,1696.82
+RET-0206,ORD-2025-1437,2025-12-18,CUST-0200,Footwear,Leather Loafers,2,Quality issue,6144.24
+RET-0207,ORD-2025-1472,2025-12-18,CUST-0209,Apparel,Slim Fit Chinos,1,Size / fit,1613.7
+RET-0208,ORD-2025-1475,2025-12-20,CUST-0472,Electronics,Wireless Earbuds,2,Quality issue,4990.34
+RET-0209,ORD-2025-1464,2025-12-22,CUST-0768,Footwear,Running Shoes,4,Size / fit,14650.99
+RET-0210,ORD-2025-1478,2025-12-22,CUST-0816,Footwear,Everyday Sneakers,1,Quality issue,2582.14
+RET-0211,ORD-2025-1529,2025-12-23,CUST-0616,Home & Living,Ceramic Mug Set,1,Changed mind,936.42
+RET-0212,ORD-2025-1484,2025-12-24,CUST-0726,Electronics,Smart Band,1,Quality issue,2256.6
+RET-0213,ORD-2025-1519,2025-12-25,CUST-0418,Electronics,Portable Speaker,2,Changed mind,6186.23
+RET-0214,ORD-2025-1520,2025-12-25,CUST-0483,Apparel,Denim Jacket,1,Changed mind,2139.14
+RET-0215,ORD-2025-1517,2025-12-27,CUST-0072,Footwear,Running Shoes,1,Size / fit,4036.76
+RET-0216,ORD-2025-1528,2025-12-27,CUST-0564,Apparel,Floral Midi Dress,1,Changed mind,1638.25
+RET-0217,ORD-2025-1549,2025-12-27,CUST-0475,Apparel,Denim Jacket,3,Size / fit,7009.7
+RET-0218,ORD-2025-1553,2025-12-30,CUST-0895,Footwear,Running Shoes,3,Late delivery,12522.99
+RET-0219,ORD-2025-1521,2025-12-31,CUST-0581,Apparel,Oversized Cotton Tee,1,Size / fit,826.18
+RET-0220,ORD-2025-1524,2025-12-31,CUST-0913,Beauty,Hair Mask,1,Damaged in transit,833.04
+RET-0221,ORD-2025-1526,2025-12-31,CUST-0376,Accessories,Baseball Cap,1,Damaged in transit,546.89
+RET-0222,ORD-2025-1527,2025-12-31,CUST-0537,Footwear,Running Shoes,1,Size / fit,3331.72
+RET-0223,ORD-2025-1533,2025-12-31,CUST-0335,Apparel,Linen Blend Shirt,2,Quality issue,2761.16
+RET-0224,ORD-2025-1542,2025-12-31,CUST-0454,Accessories,Baseball Cap,3,Late delivery,1434.01
+RET-0225,ORD-2025-1543,2025-12-31,CUST-0608,Accessories,Canvas Tote,1,Quality issue,594.46
+RET-0226,ORD-2025-1545,2025-12-31,CUST-0982,Electronics,Wireless Earbuds,1,Damaged in transit,2723.09
+RET-0227,ORD-2025-1557,2025-12-31,CUST-0511,Apparel,Oversized Cotton Tee,1,Size / fit,711.11
+RET-0228,ORD-2025-1577,2025-12-31,CUST-0113,Electronics,Portable Speaker,1,Changed mind,2533.28
+RET-0229,ORD-2025-1584,2025-12-31,CUST-0331,Apparel,Floral Midi Dress,1,Quality issue,2086.85
+RET-0230,ORD-2025-1587,2025-12-31,CUST-0642,Electronics,Portable Speaker,2,Changed mind,6606.11
+RET-0231,ORD-2025-1588,2025-12-31,CUST-0922,Accessories,Baseball Cap,3,Damaged in transit,1536.43

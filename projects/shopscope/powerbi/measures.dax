@@ -1,0 +1,155 @@
+/* ============================================================================
+   ShopScope — Power BI measures
+   Model: Orders (fact), Customers, Products, Returns, Date
+   Snapshot: 2025-12-31
+   ============================================================================ */
+
+/* ── Core sales ─────────────────────────────────────────────────────────── */
+Total Gross Revenue = SUM ( Orders[revenue] )
+
+Net Revenue = SUM ( Orders[net_revenue] )
+
+Gross Profit = SUM ( Orders[profit] )
+
+Gross Margin % = DIVIDE ( [Gross Profit], [Net Revenue] )
+
+Orders = DISTINCTCOUNT ( Orders[order_id] )
+
+Units Sold = SUM ( Orders[units] )
+
+Avg Order Value = DIVIDE ( [Net Revenue], [Orders] )
+
+Refund Value = SUM ( Orders[refund_amount] )
+
+
+/* ── Customer economics ─────────────────────────────────────────────────── */
+Customers = DISTINCTCOUNT ( Orders[customer_id] )
+
+Repeat Customers =
+CALCULATE (
+    DISTINCTCOUNT ( Orders[customer_id] ),
+    Orders[order_sequence] > 1
+)
+
+Repeat Customer Rate =
+DIVIDE ( [Repeat Customers], [Customers] )
+
+New Customers =
+CALCULATE (
+    DISTINCTCOUNT ( Orders[customer_id] ),
+    Orders[order_sequence] = 1
+)
+
+Revenue From Repeat Orders =
+CALCULATE (
+    [Net Revenue],
+    Orders[is_repeat] = 1
+)
+
+Repeat Revenue Share =
+DIVIDE ( [Revenue From Repeat Orders], [Net Revenue] )
+
+Avg Orders Per Customer =
+DIVIDE ( [Orders], [Customers] )
+
+
+/* ── Returns ────────────────────────────────────────────────────────────── */
+Returned Orders =
+CALCULATE (
+    [Orders],
+    Orders[is_returned] = 1
+)
+
+Return Rate =
+DIVIDE ( [Returned Orders], [Orders] )
+
+Return Rate (Category) =
+DIVIDE (
+    CALCULATE ( [Orders], Orders[is_returned] = 1 ),
+    [Orders]
+)
+
+
+/* ── RFM segments ───────────────────────────────────────────────────────── */
+Champions Revenue =
+CALCULATE ( [Net Revenue], Customers[segment] = "Champions" )
+
+Loyal Revenue =
+CALCULATE ( [Net Revenue], Customers[segment] = "Loyal Customers" )
+
+At Risk Customers =
+CALCULATE (
+    DISTINCTCOUNT ( Orders[customer_id] ),
+    Customers[segment] = "At Risk"
+)
+
+At Risk Revenue Share =
+DIVIDE (
+    CALCULATE ( [Net Revenue], Customers[segment] = "At Risk" ),
+    [Net Revenue]
+)
+
+Champions Revenue Share =
+DIVIDE ( [Champions Revenue], [Net Revenue] )
+
+Top Two Segment Share =
+DIVIDE (
+    [Champions Revenue] + [Loyal Revenue],
+    [Net Revenue]
+)
+
+
+/* ── Cohort retention ───────────────────────────────────────────────────── */
+Cohort Size =
+CALCULATE (
+    DISTINCTCOUNT ( Orders[customer_id] ),
+    Orders[cohort_index] = 0
+)
+
+Retained Customers =
+DISTINCTCOUNT ( Orders[customer_id] )
+
+Cohort Retention % =
+DIVIDE ( [Retained Customers], [Cohort Size] )
+
+/*
+   Matrix setup:
+     Rows:    Customers[cohort_month]
+     Columns: Orders[cohort_index]  (0–11)
+     Values:  [Cohort Retention %]
+   Filter out future periods with a visual-level filter:
+     Orders[cohort_index] <= 11 - MONTH (DATE ( 2025, cohort_month_number, 1 )) + 1
+*/
+
+
+/* ── Time intelligence ──────────────────────────────────────────────────── */
+Net Revenue MoM % =
+VAR CurrentRevenue = [Net Revenue]
+VAR PriorRevenue =
+    CALCULATE (
+        [Net Revenue],
+        DATEADD ( 'Date'[Date], -1, MONTH )
+    )
+RETURN
+    DIVIDE ( CurrentRevenue - PriorRevenue, PriorRevenue )
+
+Net Revenue YTD =
+TOTALYTD ( [Net Revenue], 'Date'[Date] )
+
+
+/* ── Conditional formatting helpers ─────────────────────────────────────── */
+Return Rate Colour =
+SWITCH (
+    TRUE (),
+    [Return Rate] >= 0.18, "#FF6B7A",
+    [Return Rate] >= 0.10, "#FFC857",
+    "#7EE787"
+)
+
+Margin Colour =
+SWITCH (
+    TRUE (),
+    [Gross Margin %] >= 0.40, "#7EE787",
+    [Gross Margin %] >= 0.25, "#FFC857",
+    "#FF6B7A"
+)

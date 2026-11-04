@@ -1,0 +1,1001 @@
+customer_id,customer_name,email,signup_date,region,city_tier,age_group,gender,acquisition_channel,first_order_date,last_order_date,total_orders,total_revenue,total_refunds,avg_order_value,is_repeat
+CUST-0001,Avni Nair,avni.nair1@example.com,2025-06-26,West,Tier 1,45-54,Female,Organic,2025-08-18,2025-10-29,2,3548.35,0.0,1774.18,1
+CUST-0002,Vihaan Singh,vihaan.singh2@example.com,2025-11-14,East,Tier 1,25-34,Male,Organic,2025-11-15,2025-11-15,1,2610.25,0.0,2610.25,0
+CUST-0003,Sneha Nair,sneha.nair3@example.com,2025-09-27,North,Metro,55+,Male,Referral,2025-12-17,2025-12-17,1,770.24,0.0,770.24,0
+CUST-0004,Pranav Desai,pranav.desai4@example.com,2025-04-15,South,Metro,25-34,Male,Social,2025-08-01,2025-10-02,2,2738.03,0.0,1369.01,1
+CUST-0005,Rahul Sharma,rahul.sharma5@example.com,2025-04-06,West,Tier 1,35-44,Female,Organic,2025-07-25,2025-10-04,2,4780.77,0.0,2390.39,1
+CUST-0006,Sneha Reddy,sneha.reddy6@example.com,2025-04-19,Central,Metro,25-34,Male,Social,2025-07-01,2025-07-01,1,2155.8,0.0,2155.8,0
+CUST-0007,Dhruv Chandra,dhruv.chandra7@example.com,2024-11-20,Central,Tier 1,35-44,Male,Paid Search,2025-03-08,2025-08-25,4,15641.84,0.0,3910.46,1
+CUST-0008,Shiv Shetty,shiv.shetty8@example.com,2025-09-07,South,Tier 3,55+,Female,Paid Search,2025-12-18,2025-12-18,1,2169.13,0.0,2169.13,0
+CUST-0009,Siddharth Reddy,siddharth.reddy9@example.com,2025-05-05,West,Metro,25-34,Female,Social,2025-08-15,2025-11-08,2,2642.12,3950.78,1321.06,1
+CUST-0010,Sneha Pillai,sneha.pillai10@example.com,2025-08-26,Central,Metro,25-34,Female,Marketplace,2025-11-18,2025-11-18,1,4294.7,0.0,4294.7,0
+CUST-0011,Nisha Nair,nisha.nair11@example.com,2025-02-11,West,Tier 2,25-34,Male,Email,2025-04-06,2025-08-08,3,5658.13,1458.18,1886.04,1
+CUST-0012,Siddharth Chopra,siddharth.chopra12@example.com,2025-02-18,South,Tier 3,25-34,Female,Marketplace,2025-03-01,2025-03-01,1,2417.19,0.0,2417.19,0
+CUST-0013,Vivaan Tiwari,vivaan.tiwari13@example.com,2025-07-16,Central,Metro,35-44,Female,Social,2025-10-09,2025-12-20,2,5139.88,0.0,2569.94,1
+CUST-0014,Priya Iyer,priya.iyer14@example.com,2025-06-28,North,Tier 2,35-44,Male,Marketplace,2025-09-05,2025-09-05,1,630.2,0.0,630.2,0
+CUST-0015,Vivaan Gupta,vivaan.gupta15@example.com,2025-09-17,Central,Tier 2,25-34,Female,Social,2025-12-26,2025-12-26,1,2441.52,0.0,2441.52,0
+CUST-0016,Om Sinha,om.sinha16@example.com,2025-01-28,West,Tier 2,25-34,Female,Organic,2025-02-03,2025-05-16,3,2929.83,0.0,976.61,1
+CUST-0017,Priya Bansal,priya.bansal17@example.com,2025-05-03,North,Tier 1,35-44,Female,Marketplace,2025-07-15,2025-09-05,2,3288.74,3215.65,1644.37,1
+CUST-0018,Ishaan Iyer,ishaan.iyer18@example.com,2025-08-28,South,Metro,35-44,Female,Organic,2025-10-18,2025-10-18,1,11966.58,0.0,11966.58,0
+CUST-0019,Isha Bhat,isha.bhat19@example.com,2025-04-01,South,Tier 3,18-24,Male,Social,2025-07-22,2025-07-22,1,0.0,1849.36,0.0,0
+CUST-0020,Tara Khan,tara.khan20@example.com,2025-04-07,East,Tier 1,55+,Female,Marketplace,2025-06-14,2025-06-14,1,2040.7,0.0,2040.7,0
+CUST-0021,Arjun Rao,arjun.rao21@example.com,2025-05-24,West,Tier 1,25-34,Female,Referral,2025-06-15,2025-06-15,1,1774.83,0.0,1774.83,0
+CUST-0022,Siddharth Shah,siddharth.shah22@example.com,2024-12-12,North,Tier 2,35-44,Male,Marketplace,2025-04-03,2025-04-03,1,5674.11,0.0,5674.11,0
+CUST-0023,Pranav Roy,pranav.roy23@example.com,2025-09-02,South,Tier 2,45-54,Female,Organic,2025-11-12,2025-12-22,2,1275.65,3356.54,637.83,1
+CUST-0024,Ved Khan,ved.khan24@example.com,2025-01-14,North,Tier 2,25-34,Female,Organic,2025-04-09,2025-07-08,2,1185.99,659.86,593.0,1
+CUST-0025,Aryan Malhotra,aryan.malhotra25@example.com,2025-08-02,North,Tier 1,18-24,Female,Paid Search,2025-10-21,2025-10-21,1,1680.27,0.0,1680.27,0
+CUST-0026,Pari Mehta,pari.mehta26@example.com,2024-10-06,South,Metro,45-54,Female,Paid Search,2025-01-28,2025-06-13,4,13816.87,1298.13,3454.22,1
+CUST-0027,Naina Roy,naina.roy27@example.com,2025-07-15,Central,Metro,25-34,Female,Organic,2025-08-28,2025-08-28,1,16095.46,0.0,16095.46,0
+CUST-0028,Shiv Yadav,shiv.yadav28@example.com,2025-05-20,South,Tier 2,18-24,Female,Social,2025-08-14,2025-09-17,2,5025.5,0.0,2512.75,1
+CUST-0029,Rahul Sinha,rahul.sinha29@example.com,2025-06-24,South,Tier 3,25-34,Male,Paid Search,2025-10-14,2025-10-14,1,2483.17,0.0,2483.17,0
+CUST-0030,Pranav Menon,pranav.menon30@example.com,2025-05-24,South,Tier 2,45-54,Female,Paid Search,2025-08-01,2025-11-02,2,6433.1,0.0,3216.55,1
+CUST-0031,Kabir Tripathi,kabir.tripathi31@example.com,2025-04-29,North,Tier 3,18-24,Female,Organic,2025-07-20,2025-12-29,5,10677.51,722.8,2135.5,1
+CUST-0032,Om Bansal,om.bansal32@example.com,2025-09-09,West,Metro,25-34,Female,Referral,2025-09-25,2025-09-25,1,3173.44,0.0,3173.44,0
+CUST-0033,Aditi Tiwari,aditi.tiwari33@example.com,2025-02-22,South,Tier 1,25-34,Female,Organic,2025-04-16,2025-04-16,1,4598.0,0.0,4598.0,0
+CUST-0034,Pari Gupta,pari.gupta34@example.com,2025-09-04,Central,Tier 1,45-54,Female,Social,2025-12-17,2025-12-17,1,4383.54,0.0,4383.54,0
+CUST-0035,Tara Nair,tara.nair35@example.com,2024-12-28,North,Tier 2,35-44,Female,Organic,2025-04-17,2025-04-17,1,2061.67,0.0,2061.67,0
+CUST-0036,Rohan Pillai,rohan.pillai36@example.com,2025-03-24,Central,Metro,45-54,Female,Organic,2025-05-21,2025-07-31,2,6983.51,0.0,3491.76,1
+CUST-0037,Siddharth Verma,siddharth.verma37@example.com,2025-03-22,West,Metro,25-34,Female,Organic,2025-05-27,2025-09-18,2,9416.23,813.6,4708.11,1
+CUST-0038,Advait Joshi,advait.joshi38@example.com,2025-09-24,North,Tier 1,35-44,Female,Referral,2025-12-01,2025-12-01,1,0.0,3364.47,0.0,0
+CUST-0039,Vivaan Mishra,vivaan.mishra39@example.com,2025-07-03,South,Tier 3,25-34,Male,Social,2025-09-06,2025-09-06,1,1759.42,0.0,1759.42,0
+CUST-0040,Diya Rao,diya.rao40@example.com,2025-02-01,West,Metro,18-24,Male,Referral,2025-03-10,2025-06-30,2,6977.27,0.0,3488.64,1
+CUST-0041,Priya Gupta,priya.gupta41@example.com,2025-05-30,Central,Metro,35-44,Female,Social,2025-07-14,2025-10-25,3,7028.99,0.0,2343.0,1
+CUST-0042,Ved Jain,ved.jain42@example.com,2024-11-02,South,Metro,25-34,Female,Organic,2025-02-22,2025-03-28,2,3827.05,0.0,1913.53,1
+CUST-0043,Aarav Pillai,aarav.pillai43@example.com,2024-12-11,North,Metro,25-34,Male,Paid Search,2025-02-11,2025-02-11,1,2987.0,0.0,2987.0,0
+CUST-0044,Ananya Rao,ananya.rao44@example.com,2025-04-24,North,Metro,18-24,Female,Social,2025-08-08,2025-08-08,1,1486.52,0.0,1486.52,0
+CUST-0045,Shiv Verma,shiv.verma45@example.com,2025-03-25,West,Metro,55+,Male,Referral,2025-04-22,2025-04-22,1,3838.46,0.0,3838.46,0
+CUST-0046,Sahil Sinha,sahil.sinha46@example.com,2025-01-24,South,Metro,45-54,Male,Social,2025-05-07,2025-09-06,2,4342.7,0.0,2171.35,1
+CUST-0047,Priya Patel,priya.patel47@example.com,2025-07-12,West,Tier 2,25-34,Female,Referral,2025-09-05,2025-09-05,1,3523.12,0.0,3523.12,0
+CUST-0048,Neel Shah,neel.shah48@example.com,2025-09-02,North,Tier 1,25-34,Female,Organic,2025-10-09,2025-10-09,1,3591.1,0.0,3591.1,0
+CUST-0049,Rohan Reddy,rohan.reddy49@example.com,2025-09-05,North,Tier 2,35-44,Female,Social,2025-12-22,2025-12-22,1,2690.1,0.0,2690.1,0
+CUST-0050,Ved Srinivasan,ved.srinivasan50@example.com,2024-10-21,North,Tier 1,25-34,Male,Referral,2025-01-18,2025-01-18,1,747.97,0.0,747.97,0
+CUST-0051,Pranav Verma,pranav.verma51@example.com,2025-01-26,South,Tier 1,35-44,Female,Marketplace,2025-05-02,2025-05-02,1,3190.54,0.0,3190.54,0
+CUST-0052,Avni Mehta,avni.mehta52@example.com,2025-02-19,West,Tier 2,35-44,Female,Social,2025-05-18,2025-05-18,1,1392.57,0.0,1392.57,0
+CUST-0053,Aarav Dubey,aarav.dubey53@example.com,2025-07-23,North,Tier 3,55+,Female,Social,2025-10-03,2025-10-03,1,1278.38,0.0,1278.38,0
+CUST-0054,Tara Verma,tara.verma54@example.com,2025-06-10,South,Metro,25-34,Female,Organic,2025-10-08,2025-10-08,1,0.0,5122.29,0.0,0
+CUST-0055,Pranav Nanda,pranav.nanda55@example.com,2024-12-30,West,Tier 1,25-34,Male,Marketplace,2025-01-16,2025-01-16,1,1136.24,0.0,1136.24,0
+CUST-0056,Rahul Malhotra,rahul.malhotra56@example.com,2025-05-13,East,Tier 1,25-34,Female,Referral,2025-05-19,2025-10-04,3,4014.36,6492.4,1338.12,1
+CUST-0057,Ananya Sinha,ananya.sinha57@example.com,2025-05-02,South,Tier 2,25-34,Female,Organic,2025-07-17,2025-07-17,1,10196.6,0.0,10196.6,0
+CUST-0058,Pari Nanda,pari.nanda58@example.com,2025-10-22,West,Metro,35-44,Male,Referral,2025-12-28,2025-12-28,1,2214.11,0.0,2214.11,0
+CUST-0059,Riya Dubey,riya.dubey59@example.com,2025-09-01,Central,Tier 3,18-24,Female,Paid Search,2025-11-05,2025-11-05,1,2499.0,0.0,2499.0,0
+CUST-0060,Neel Singh,neel.singh60@example.com,2025-06-16,North,Tier 2,45-54,Female,Social,2025-08-24,2025-08-24,1,0.0,2483.17,0.0,0
+CUST-0061,Yash Tripathi,yash.tripathi61@example.com,2025-06-02,South,Metro,18-24,Male,Referral,2025-08-26,2025-12-26,2,1426.61,2564.77,713.3,1
+CUST-0062,Neel Mishra,neel.mishra62@example.com,2025-04-09,Central,Metro,25-34,Female,Paid Search,2025-07-06,2025-07-06,1,0.0,3464.99,0.0,0
+CUST-0063,Isha Iyer,isha.iyer63@example.com,2025-07-07,West,Tier 1,45-54,Male,Paid Search,2025-07-18,2025-09-05,2,1797.0,2161.63,898.5,1
+CUST-0064,Saanvi Iyer,saanvi.iyer64@example.com,2025-02-27,Central,Metro,25-34,Female,Organic,2025-05-28,2025-08-06,2,3884.83,0.0,1942.41,1
+CUST-0065,Naina Nanda,naina.nanda65@example.com,2025-03-12,East,Metro,18-24,Male,Paid Search,2025-06-27,2025-06-27,1,1194.2,0.0,1194.2,0
+CUST-0066,Krishna Singh,krishna.singh66@example.com,2025-10-28,North,Metro,55+,Female,Paid Search,2025-11-23,2025-11-23,1,3460.69,0.0,3460.69,0
+CUST-0067,Sara Tripathi,sara.tripathi67@example.com,2024-11-29,South,Metro,45-54,Male,Organic,2025-02-23,2025-04-01,2,3867.94,0.0,1933.97,1
+CUST-0068,Ishaan Gandhi,ishaan.gandhi68@example.com,2024-10-15,North,Tier 2,18-24,Male,Email,2025-01-05,2025-07-27,4,8970.12,0.0,2242.53,1
+CUST-0069,Neel Menon,neel.menon69@example.com,2025-04-22,South,Tier 1,25-34,Female,Paid Search,2025-05-05,2025-09-09,2,7436.37,0.0,3718.18,1
+CUST-0070,Vihaan Kulkarni,vihaan.kulkarni70@example.com,2025-06-07,Central,Tier 1,35-44,Male,Marketplace,2025-09-11,2025-09-11,1,1467.98,0.0,1467.98,0
+CUST-0071,Arjun Sharma,arjun.sharma71@example.com,2025-11-06,West,Tier 1,35-44,Male,Email,2025-11-10,2025-11-10,1,797.41,0.0,797.41,0
+CUST-0072,Advait Chopra,advait.chopra72@example.com,2025-10-20,South,Tier 1,18-24,Male,Referral,2025-12-20,2025-12-20,1,0.0,4036.76,0.0,0
+CUST-0073,Diya Nair,diya.nair73@example.com,2025-12-15,North,Metro,18-24,Female,Paid Search,2025-12-24,2025-12-24,1,2813.2,0.0,2813.2,0
+CUST-0074,Tara Gandhi,tara.gandhi74@example.com,2024-12-30,South,Tier 2,25-34,Female,Email,2025-04-23,2025-07-10,2,9086.9,0.0,4543.45,1
+CUST-0075,Meera Reddy,meera.reddy75@example.com,2024-11-29,North,Tier 2,25-34,Female,Paid Search,2025-03-07,2025-03-07,1,9477.63,0.0,9477.63,0
+CUST-0076,Riya Shetty,riya.shetty76@example.com,2025-09-10,South,Tier 1,18-24,Male,Social,2025-10-10,2025-10-10,1,1545.34,0.0,1545.34,0
+CUST-0077,Sahil Verma,sahil.verma77@example.com,2025-02-21,North,Tier 1,25-34,Male,Organic,2025-05-07,2025-05-07,1,1949.22,0.0,1949.22,0
+CUST-0078,Ishaan Sharma,ishaan.sharma78@example.com,2025-01-01,West,Metro,18-24,Other,Paid Search,2025-01-07,2025-01-07,1,1080.3,0.0,1080.3,0
+CUST-0079,Ishaan Srinivasan,ishaan.srinivasan79@example.com,2025-07-11,North,Tier 1,25-34,Male,Organic,2025-10-21,2025-10-21,1,0.0,1521.95,0.0,0
+CUST-0080,Avni Shah,avni.shah80@example.com,2025-08-29,South,Metro,55+,Male,Social,2025-11-17,2025-11-17,1,659.16,0.0,659.16,0
+CUST-0081,Kabir Shetty,kabir.shetty81@example.com,2025-07-04,North,Metro,35-44,Female,Organic,2025-09-02,2025-10-19,2,3933.43,2627.75,1966.71,1
+CUST-0082,Ananya Tiwari,ananya.tiwari82@example.com,2025-06-01,North,Tier 1,35-44,Female,Marketplace,2025-08-08,2025-08-08,1,2231.61,0.0,2231.61,0
+CUST-0083,Arjun Kumar,arjun.kumar83@example.com,2024-12-25,North,Tier 1,25-34,Female,Social,2025-03-06,2025-03-06,1,2398.4,0.0,2398.4,0
+CUST-0084,Pranav Reddy,pranav.reddy84@example.com,2025-06-07,West,Tier 2,18-24,Female,Paid Search,2025-10-05,2025-12-06,2,12430.02,0.0,6215.01,1
+CUST-0085,Tara Kumar,tara.kumar85@example.com,2025-06-17,East,Tier 1,35-44,Male,Paid Search,2025-07-04,2025-07-04,1,2449.02,0.0,2449.02,0
+CUST-0086,Riya Desai,riya.desai86@example.com,2025-02-26,Central,Tier 1,25-34,Female,Social,2025-05-24,2025-09-07,2,5125.66,0.0,2562.83,1
+CUST-0087,Naina Kumar,naina.kumar87@example.com,2025-10-28,North,Tier 2,55+,Male,Social,2025-12-06,2025-12-06,1,0.0,2181.41,0.0,0
+CUST-0088,Aarav Bansal,aarav.bansal88@example.com,2025-04-20,West,Tier 2,35-44,Male,Paid Search,2025-07-06,2025-12-08,3,7672.24,0.0,2557.41,1
+CUST-0089,Siddharth Gandhi,siddharth.gandhi89@example.com,2024-12-14,North,Metro,25-34,Female,Email,2025-01-20,2025-11-30,5,6583.89,0.0,1316.78,1
+CUST-0090,Riya Agarwal,riya.agarwal90@example.com,2025-09-14,West,Metro,25-34,Female,Referral,2025-11-09,2025-11-09,1,0.0,810.9,0.0,0
+CUST-0091,Om Malhotra,om.malhotra91@example.com,2025-02-15,West,Tier 1,25-34,Male,Referral,2025-02-18,2025-02-18,1,3019.24,0.0,3019.24,0
+CUST-0092,Nisha Reddy,nisha.reddy92@example.com,2024-11-21,North,Tier 2,25-34,Male,Organic,2025-02-11,2025-04-03,2,6234.56,0.0,3117.28,1
+CUST-0093,Kavya Zutshi,kavya.zutshi93@example.com,2025-10-15,South,Tier 3,25-34,Female,Paid Search,2025-11-15,2025-11-15,1,2039.18,0.0,2039.18,0
+CUST-0094,Om Bhat,om.bhat94@example.com,2024-11-24,South,Tier 2,25-34,Male,Social,2025-02-13,2025-04-23,2,4090.76,0.0,2045.38,1
+CUST-0095,Aisha Zutshi,aisha.zutshi95@example.com,2025-04-04,West,Metro,35-44,Female,Paid Search,2025-06-23,2025-12-06,3,7659.44,1696.82,2553.15,1
+CUST-0096,Tanvi Menon,tanvi.menon96@example.com,2025-09-19,East,Tier 2,35-44,Female,Email,2025-10-17,2025-10-17,1,2552.15,0.0,2552.15,0
+CUST-0097,Tara Saxena,tara.saxena97@example.com,2025-04-24,West,Tier 3,25-34,Male,Paid Search,2025-08-12,2025-12-05,2,2783.17,0.0,1391.59,1
+CUST-0098,Aditi Dubey,aditi.dubey98@example.com,2025-04-21,North,Metro,35-44,Female,Referral,2025-06-07,2025-06-07,1,0.0,731.79,0.0,0
+CUST-0099,Arjun Dubey,arjun.dubey99@example.com,2025-09-12,North,Tier 1,25-34,Female,Social,2025-11-04,2025-11-04,1,4182.93,0.0,4182.93,0
+CUST-0100,Om Agarwal,om.agarwal100@example.com,2024-10-22,North,Metro,25-34,Female,Social,2025-02-04,2025-07-31,3,7040.77,689.53,2346.92,1
+CUST-0101,Pranav Yadav,pranav.yadav101@example.com,2025-09-08,North,Metro,25-34,Female,Email,2025-12-18,2025-12-18,1,3543.11,0.0,3543.11,0
+CUST-0102,Dhruv Desai,dhruv.desai102@example.com,2025-04-08,North,Tier 1,45-54,Female,Social,2025-07-12,2025-07-12,1,2471.51,0.0,2471.51,0
+CUST-0103,Aisha Roy,aisha.roy103@example.com,2025-02-05,North,Tier 2,25-34,Female,Paid Search,2025-02-06,2025-08-10,4,7819.49,0.0,1954.87,1
+CUST-0104,Yash Yadav,yash.yadav104@example.com,2025-05-16,East,Metro,45-54,Male,Social,2025-05-25,2025-05-25,1,2074.17,0.0,2074.17,0
+CUST-0105,Arjun Varma,arjun.varma105@example.com,2025-02-09,East,Metro,25-34,Male,Social,2025-04-27,2025-05-30,2,2336.5,0.0,1168.25,1
+CUST-0106,Tara Roy,tara.roy106@example.com,2025-10-14,North,Tier 1,25-34,Female,Paid Search,2025-11-09,2025-11-09,1,783.03,0.0,783.03,0
+CUST-0107,Vivaan Shah,vivaan.shah107@example.com,2025-04-06,North,Tier 2,25-34,Female,Organic,2025-08-01,2025-08-01,1,0,2499,0.0,0
+CUST-0108,Yash Nanda,yash.nanda108@example.com,2025-07-23,South,Tier 2,55+,Female,Paid Search,2025-09-20,2025-12-16,2,4233.6,0.0,2116.8,1
+CUST-0109,Aryan Pillai,aryan.pillai109@example.com,2025-02-24,East,Tier 3,35-44,Female,Paid Search,2025-06-01,2025-06-01,1,1256.13,0.0,1256.13,0
+CUST-0110,Priya Malhotra,priya.malhotra110@example.com,2025-08-10,East,Metro,25-34,Female,Organic,2025-10-18,2025-10-18,1,472.01,0.0,472.01,0
+CUST-0111,Avni Nanda,avni.nanda111@example.com,2025-02-21,West,Tier 1,45-54,Male,Paid Search,2025-03-02,2025-03-02,1,0.0,576.08,0.0,0
+CUST-0112,Aisha Pillai,aisha.pillai112@example.com,2025-07-14,Central,Tier 3,25-34,Female,Social,2025-07-20,2025-07-20,1,2241.6,0.0,2241.6,0
+CUST-0113,Aryan Roy,aryan.roy113@example.com,2025-09-25,North,Tier 2,18-24,Female,Referral,2025-12-28,2025-12-28,1,0.0,2533.28,0.0,0
+CUST-0114,Advait Gupta,advait.gupta114@example.com,2025-04-02,West,Tier 2,35-44,Male,Marketplace,2025-06-12,2025-08-22,2,8688.55,0.0,4344.27,1
+CUST-0115,Sara Kapoor,sara.kapoor115@example.com,2024-12-12,Central,Tier 1,18-24,Male,Email,2025-03-13,2025-03-13,1,0.0,1025.14,0.0,0
+CUST-0116,Shiv Varma,shiv.varma116@example.com,2025-06-25,West,Tier 1,35-44,Female,Organic,2025-10-04,2025-10-04,1,7967.22,0.0,7967.22,0
+CUST-0117,Kabir Mehta,kabir.mehta117@example.com,2025-10-07,Central,Tier 1,35-44,Female,Organic,2025-10-10,2025-10-10,1,2671.22,0.0,2671.22,0
+CUST-0118,Kabir Sharma,kabir.sharma118@example.com,2025-06-29,West,Tier 1,55+,Male,Organic,2025-08-03,2025-10-29,2,2411.2,3201.86,1205.6,1
+CUST-0119,Kabir Nanda,kabir.nanda119@example.com,2025-03-05,North,Metro,35-44,Male,Organic,2025-04-18,2025-07-29,3,5156.99,0.0,1719.0,1
+CUST-0120,Dhruv Jain,dhruv.jain120@example.com,2025-06-13,North,Tier 1,35-44,Female,Social,2025-07-07,2025-11-29,3,4038.04,0.0,1346.01,1
+CUST-0121,Rahul Shetty,rahul.shetty121@example.com,2025-07-23,North,Tier 1,18-24,Other,Referral,2025-10-02,2025-10-02,1,1100.68,0.0,1100.68,0
+CUST-0122,Krishna Mehta,krishna.mehta122@example.com,2025-11-10,West,Tier 3,45-54,Female,Paid Search,2025-11-23,2025-11-23,1,2960.15,0.0,2960.15,0
+CUST-0123,Avni Malhotra,avni.malhotra123@example.com,2025-08-29,Central,Tier 2,18-24,Female,Paid Search,2025-12-23,2025-12-23,1,2680.23,0.0,2680.23,0
+CUST-0124,Ananya Menon,ananya.menon124@example.com,2024-12-17,East,Metro,18-24,Female,Social,2025-01-11,2025-01-11,1,2855.05,0.0,2855.05,0
+CUST-0125,Pari Dubey,pari.dubey125@example.com,2025-07-19,North,Tier 3,45-54,Male,Social,2025-09-02,2025-12-05,3,6045.4,0.0,2015.13,1
+CUST-0126,Vikram Singh,vikram.singh126@example.com,2025-01-18,Central,Tier 1,25-34,Male,Paid Search,2025-05-18,2025-05-18,1,2019.19,0.0,2019.19,0
+CUST-0127,Tara Patel,tara.patel127@example.com,2025-08-16,East,Tier 1,35-44,Male,Marketplace,2025-10-14,2025-11-30,2,10634.31,0.0,5317.15,1
+CUST-0128,Aisha Yadav,aisha.yadav128@example.com,2025-08-28,North,Metro,35-44,Female,Social,2025-09-12,2025-09-12,1,1017.95,0.0,1017.95,0
+CUST-0129,Meera Saxena,meera.saxena129@example.com,2024-12-19,North,Metro,55+,Female,Social,2025-02-24,2025-05-05,2,2151.64,2888.04,1075.82,1
+CUST-0130,Isha Reddy,isha.reddy130@example.com,2025-01-29,Central,Tier 3,18-24,Female,Social,2025-03-25,2025-03-25,1,694.11,0.0,694.11,0
+CUST-0131,Sahil Tripathi,sahil.tripathi131@example.com,2025-06-08,West,Metro,25-34,Female,Organic,2025-08-20,2025-11-20,2,1196.68,0.0,598.34,1
+CUST-0132,Sneha Malhotra,sneha.malhotra132@example.com,2025-10-07,East,Tier 3,25-34,Male,Referral,2025-10-18,2025-10-18,1,6654.85,0.0,6654.85,0
+CUST-0133,Neel Joshi,neel.joshi133@example.com,2025-04-30,North,Metro,35-44,Female,Paid Search,2025-06-27,2025-06-27,1,537.9,0.0,537.9,0
+CUST-0134,Arjun Bhat,arjun.bhat134@example.com,2025-04-13,West,Tier 2,25-34,Male,Organic,2025-06-17,2025-06-17,1,1761.8,0.0,1761.8,0
+CUST-0135,Pari Roy,pari.roy135@example.com,2024-10-31,North,Tier 2,25-34,Male,Social,2025-02-11,2025-05-26,2,766.85,947.62,383.43,1
+CUST-0136,Pari Kulkarni,pari.kulkarni136@example.com,2025-10-25,North,Tier 2,18-24,Female,Organic,2025-12-25,2025-12-25,1,2246.6,0.0,2246.6,0
+CUST-0137,Tara Chopra,tara.chopra137@example.com,2025-11-03,East,Metro,45-54,Female,Organic,2025-12-20,2025-12-20,1,1373.08,0.0,1373.08,0
+CUST-0138,Vihaan Agarwal,vihaan.agarwal138@example.com,2025-09-05,South,Metro,18-24,Female,Social,2025-09-21,2025-09-21,1,2078.05,0.0,2078.05,0
+CUST-0139,Sneha Chandra,sneha.chandra139@example.com,2025-08-03,East,Tier 1,18-24,Male,Organic,2025-10-05,2025-10-05,1,1531.9,0.0,1531.9,0
+CUST-0140,Krishna Bhat,krishna.bhat140@example.com,2025-04-20,West,Metro,18-24,Female,Social,2025-07-17,2025-10-08,3,813.26,5066.67,271.09,1
+CUST-0141,Saanvi Reddy,saanvi.reddy141@example.com,2024-12-01,East,Tier 3,25-34,Female,Organic,2025-01-01,2025-02-10,2,8903.43,0.0,4451.71,1
+CUST-0142,Advait Chandra,advait.chandra142@example.com,2025-04-30,East,Metro,18-24,Male,Paid Search,2025-06-25,2025-10-10,2,1885.19,0.0,942.6,1
+CUST-0143,Sahil Singh,sahil.singh143@example.com,2024-12-14,North,Tier 3,18-24,Male,Marketplace,2025-02-05,2025-02-05,1,0.0,810.9,0.0,0
+CUST-0144,Tanvi Desai,tanvi.desai144@example.com,2025-02-28,East,Tier 2,45-54,Female,Organic,2025-05-16,2025-10-06,3,1454.58,2981.15,484.86,1
+CUST-0145,Vivaan Zutshi,vivaan.zutshi145@example.com,2024-11-15,North,Tier 1,25-34,Male,Marketplace,2025-03-02,2025-03-02,1,889.09,0.0,889.09,0
+CUST-0146,Sneha Dubey,sneha.dubey146@example.com,2025-09-05,West,Metro,25-34,Female,Referral,2025-11-20,2025-11-20,1,6469.91,0.0,6469.91,0
+CUST-0147,Nisha Singh,nisha.singh147@example.com,2025-09-09,Central,Tier 2,25-34,Female,Paid Search,2025-11-02,2025-11-02,1,969.32,0.0,969.32,0
+CUST-0148,Krishna Nanda,krishna.nanda148@example.com,2025-09-21,North,Tier 1,35-44,Female,Email,2025-11-19,2025-11-19,1,3555.27,0.0,3555.27,0
+CUST-0149,Vihaan Desai,vihaan.desai149@example.com,2025-09-10,North,Metro,45-54,Male,Email,2025-10-13,2025-10-13,1,3717.74,0.0,3717.74,0
+CUST-0150,Diya Srinivasan,diya.srinivasan150@example.com,2024-12-14,East,Tier 1,55+,Male,Referral,2025-03-17,2025-09-05,4,5697.43,8073.52,1424.36,1
+CUST-0151,Dhruv Mishra,dhruv.mishra151@example.com,2025-01-17,North,Metro,35-44,Female,Organic,2025-04-15,2025-11-05,3,7361.34,0.0,2453.78,1
+CUST-0152,Yash Pillai,yash.pillai152@example.com,2025-06-22,North,Metro,55+,Female,Email,2025-08-18,2025-08-18,1,1048.29,0.0,1048.29,0
+CUST-0153,Avni Sharma,avni.sharma153@example.com,2025-03-18,Central,Metro,18-24,Female,Social,2025-05-06,2025-06-17,2,0.0,2892.07,0.0,1
+CUST-0154,Sahil Kapoor,sahil.kapoor154@example.com,2025-03-12,Central,Tier 1,55+,Male,Marketplace,2025-06-02,2025-09-09,2,11288.24,1409.06,5644.12,1
+CUST-0155,Aryan Verma,aryan.verma155@example.com,2024-12-31,West,Metro,18-24,Female,Paid Search,2025-01-02,2025-01-02,1,0.0,2119.15,0.0,0
+CUST-0156,Kavya Tiwari,kavya.tiwari156@example.com,2025-02-02,West,Tier 2,35-44,Male,Paid Search,2025-04-05,2025-04-05,1,3722.93,0.0,3722.93,0
+CUST-0157,Rohan Nair,rohan.nair157@example.com,2024-10-13,East,Metro,18-24,Male,Paid Search,2025-01-23,2025-01-23,1,2489.0,0.0,2489.0,0
+CUST-0158,Kabir Singh,kabir.singh158@example.com,2025-06-01,Central,Tier 2,45-54,Male,Organic,2025-09-06,2025-12-19,2,3953.79,0.0,1976.89,1
+CUST-0159,Neel Kulkarni,neel.kulkarni159@example.com,2025-09-30,North,Tier 1,25-34,Female,Organic,2025-11-21,2025-11-21,1,0.0,656.78,0.0,0
+CUST-0160,Pari Malhotra,pari.malhotra160@example.com,2025-03-12,North,Tier 1,18-24,Male,Marketplace,2025-03-12,2025-03-12,1,2192.27,0.0,2192.27,0
+CUST-0161,Priya Jain,priya.jain161@example.com,2025-04-26,North,Tier 3,18-24,Female,Marketplace,2025-08-09,2025-08-09,1,0.0,854.05,0.0,0
+CUST-0162,Tanvi Khan,tanvi.khan162@example.com,2025-05-04,West,Tier 1,45-54,Female,Organic,2025-07-24,2025-07-24,1,7377.54,0.0,7377.54,0
+CUST-0163,Krishna Pillai,krishna.pillai163@example.com,2024-12-14,East,Tier 2,45-54,Female,Organic,2025-03-26,2025-05-06,2,10905.32,0.0,5452.66,1
+CUST-0164,Riya Khan,riya.khan164@example.com,2025-02-14,West,Tier 3,35-44,Female,Paid Search,2025-04-01,2025-04-01,1,2079.73,0.0,2079.73,0
+CUST-0165,Ishaan Menon,ishaan.menon165@example.com,2025-09-10,East,Tier 1,25-34,Male,Paid Search,2025-10-14,2025-10-14,1,15975.08,0.0,15975.08,0
+CUST-0166,Ananya Jain,ananya.jain166@example.com,2025-07-24,South,Tier 3,35-44,Female,Paid Search,2025-09-13,2025-09-13,1,1196.9,0.0,1196.9,0
+CUST-0167,Shiv Desai,shiv.desai167@example.com,2025-02-26,North,Metro,35-44,Male,Paid Search,2025-04-13,2025-09-21,3,7466.12,0.0,2488.71,1
+CUST-0168,Aarav Varma,aarav.varma168@example.com,2025-04-09,West,Metro,25-34,Female,Organic,2025-07-26,2025-09-15,2,2676.47,0.0,1338.24,1
+CUST-0169,Ishaan Rao,ishaan.rao169@example.com,2025-05-04,South,Tier 1,18-24,Male,Marketplace,2025-06-09,2025-06-09,1,1798.0,0.0,1798.0,0
+CUST-0170,Yash Mishra,yash.mishra170@example.com,2025-05-10,East,Metro,25-34,Female,Paid Search,2025-08-27,2025-10-17,2,813.6,3275.06,406.8,1
+CUST-0171,Saanvi Rao,saanvi.rao171@example.com,2025-04-12,Central,Tier 3,25-34,Female,Social,2025-06-03,2025-09-26,3,10494.25,0.0,3498.08,1
+CUST-0172,Ved Chandra,ved.chandra172@example.com,2025-06-03,West,Tier 1,18-24,Male,Paid Search,2025-06-26,2025-06-26,1,0.0,872.93,0.0,0
+CUST-0173,Ved Shah,ved.shah173@example.com,2025-01-29,West,Metro,35-44,Other,Social,2025-02-01,2025-05-20,3,2705.39,2280.61,901.8,1
+CUST-0174,Tara Yadav,tara.yadav174@example.com,2025-02-27,East,Tier 1,18-24,Female,Social,2025-02-28,2025-10-29,4,6925.25,0.0,1731.31,1
+CUST-0175,Aditi Desai,aditi.desai175@example.com,2025-02-02,South,Tier 2,55+,Female,Social,2025-04-06,2025-05-21,2,9033.92,0.0,4516.96,1
+CUST-0176,Aisha Rao,aisha.rao176@example.com,2025-06-11,South,Tier 2,25-34,Female,Organic,2025-07-15,2025-07-15,1,759.65,0.0,759.65,0
+CUST-0177,Riya Mehta,riya.mehta177@example.com,2025-05-27,North,Tier 1,18-24,Male,Marketplace,2025-06-06,2025-06-06,1,797.41,0.0,797.41,0
+CUST-0178,Rahul Khan,rahul.khan178@example.com,2025-10-18,East,Tier 2,25-34,Female,Referral,2025-12-13,2025-12-13,1,7116.97,0.0,7116.97,0
+CUST-0179,Priya Joshi,priya.joshi179@example.com,2024-12-31,North,Tier 3,35-44,Male,Organic,2025-02-24,2025-04-12,2,9819.43,0.0,4909.72,1
+CUST-0180,Tanvi Roy,tanvi.roy180@example.com,2025-07-10,Central,Metro,45-54,Female,Organic,2025-07-25,2025-07-25,1,2662.22,0.0,2662.22,0
+CUST-0181,Vikram Mehta,vikram.mehta181@example.com,2024-11-18,South,Tier 1,25-34,Female,Email,2025-02-24,2025-07-23,2,777.63,949.61,388.81,1
+CUST-0182,Diya Zutshi,diya.zutshi182@example.com,2025-06-08,North,Tier 1,18-24,Female,Paid Search,2025-08-07,2025-08-07,1,0.0,5344.22,0.0,0
+CUST-0183,Rohan Khan,rohan.khan183@example.com,2025-10-11,West,Metro,45-54,Female,Paid Search,2025-10-11,2025-12-21,2,4786.4,2016.69,2393.2,1
+CUST-0184,Ananya Chopra,ananya.chopra184@example.com,2025-04-27,West,Tier 1,35-44,Female,Marketplace,2025-08-12,2025-11-06,2,6213.9,0.0,3106.95,1
+CUST-0185,Nisha Nanda,nisha.nanda185@example.com,2025-03-02,South,Tier 3,18-24,Male,Social,2025-05-10,2025-05-10,1,0.0,7548.48,0.0,0
+CUST-0186,Aarav Gandhi,aarav.gandhi186@example.com,2025-07-23,North,Metro,35-44,Female,Organic,2025-10-01,2025-10-01,1,1111.94,0.0,1111.94,0
+CUST-0187,Tanvi Chopra,tanvi.chopra187@example.com,2025-11-22,South,Tier 2,35-44,Male,Paid Search,2025-12-01,2025-12-01,1,3144.65,0.0,3144.65,0
+CUST-0188,Vikram Nanda,vikram.nanda188@example.com,2024-10-16,South,Tier 3,45-54,Female,Organic,2025-02-12,2025-03-24,2,1574.14,0.0,787.07,1
+CUST-0189,Meera Zutshi,meera.zutshi189@example.com,2025-08-20,South,Metro,18-24,Male,Paid Search,2025-08-24,2025-12-10,2,2575.51,0.0,1287.76,1
+CUST-0190,Zara Jain,zara.jain190@example.com,2025-07-28,Central,Tier 2,25-34,Female,Marketplace,2025-10-10,2025-10-10,1,10846.38,0.0,10846.38,0
+CUST-0191,Meera Chopra,meera.chopra191@example.com,2025-07-31,East,Metro,25-34,Female,Social,2025-09-25,2025-12-06,2,5170.05,0.0,2585.03,1
+CUST-0192,Nisha Iyer,nisha.iyer192@example.com,2025-02-15,North,Metro,45-54,Female,Paid Search,2025-04-20,2025-04-20,1,0.0,1335.61,0.0,0
+CUST-0193,Riya Pillai,riya.pillai193@example.com,2025-07-30,West,Tier 2,45-54,Male,Referral,2025-10-06,2025-10-06,1,8702.01,0.0,8702.01,0
+CUST-0194,Sahil Chopra,sahil.chopra194@example.com,2025-04-06,Central,Tier 2,25-34,Female,Organic,2025-05-03,2025-05-03,1,851.35,0.0,851.35,0
+CUST-0195,Rahul Bansal,rahul.bansal195@example.com,2025-05-14,West,Tier 2,18-24,Male,Social,2025-08-04,2025-08-04,1,6552.38,0.0,6552.38,0
+CUST-0196,Kavya Kumar,kavya.kumar196@example.com,2024-11-12,North,Tier 1,45-54,Male,Organic,2025-01-09,2025-01-09,1,1320.62,0.0,1320.62,0
+CUST-0197,Riya Kapoor,riya.kapoor197@example.com,2025-05-08,South,Tier 2,25-34,Female,Social,2025-08-10,2025-11-07,3,8236.77,0.0,2745.59,1
+CUST-0198,Neel Chopra,neel.chopra198@example.com,2025-03-04,West,Tier 2,45-54,Female,Email,2025-04-27,2025-06-17,2,5091.65,0.0,2545.82,1
+CUST-0199,Pari Saxena,pari.saxena199@example.com,2025-08-08,Central,Metro,25-34,Male,Social,2025-11-09,2025-11-09,1,9006.43,0.0,9006.43,0
+CUST-0200,Avni Sinha,avni.sinha200@example.com,2025-09-08,North,Tier 1,35-44,Female,Social,2025-12-05,2025-12-05,1,0.0,6144.24,0.0,0
+CUST-0201,Riya Reddy,riya.reddy201@example.com,2025-02-21,West,Metro,18-24,Other,Marketplace,2025-03-27,2025-05-16,2,1778.4,0.0,889.2,1
+CUST-0202,Dhruv Nanda,dhruv.nanda202@example.com,2025-08-01,East,Metro,18-24,Female,Social,2025-10-26,2025-10-26,1,824.38,0.0,824.38,0
+CUST-0203,Ananya Singh,ananya.singh203@example.com,2025-06-07,West,Tier 1,25-34,Female,Social,2025-06-22,2025-09-02,2,1573.44,0.0,786.72,1
+CUST-0204,Shiv Tiwari,shiv.tiwari204@example.com,2025-07-07,East,Tier 2,25-34,Female,Paid Search,2025-10-12,2025-10-12,1,1037.13,0.0,1037.13,0
+CUST-0205,Tara Kapoor,tara.kapoor205@example.com,2025-07-14,Central,Tier 2,35-44,Male,Social,2025-09-14,2025-09-14,1,1000.33,0.0,1000.33,0
+CUST-0206,Ved Singh,ved.singh206@example.com,2025-11-07,West,Metro,25-34,Female,Referral,2025-11-15,2025-11-15,1,0.0,1522.91,0.0,0
+CUST-0207,Naina Srinivasan,naina.srinivasan207@example.com,2025-01-08,East,Metro,35-44,Female,Organic,2025-01-19,2025-01-19,1,3145.6,0.0,3145.6,0
+CUST-0208,Dhruv Zutshi,dhruv.zutshi208@example.com,2025-05-18,North,Tier 2,25-34,Female,Social,2025-07-16,2025-08-26,2,2393.32,1307.15,1196.66,1
+CUST-0209,Pranav Mishra,pranav.mishra209@example.com,2025-07-28,West,Tier 1,18-24,Male,Marketplace,2025-08-19,2025-12-12,3,6143.82,1613.7,2047.94,1
+CUST-0210,Kavya Srinivasan,kavya.srinivasan210@example.com,2025-09-19,North,Tier 1,55+,Male,Paid Search,2025-10-24,2025-10-24,1,3082.62,0.0,3082.62,0
+CUST-0211,Avni Gandhi,avni.gandhi211@example.com,2025-04-17,West,Metro,35-44,Female,Paid Search,2025-07-26,2025-09-19,2,5351.73,0.0,2675.86,1
+CUST-0212,Om Shetty,om.shetty212@example.com,2025-09-25,North,Tier 3,18-24,Female,Organic,2025-10-12,2025-10-12,1,1413.56,0.0,1413.56,0
+CUST-0213,Krishna Joshi,krishna.joshi213@example.com,2025-08-12,South,Metro,45-54,Male,Paid Search,2025-11-19,2025-11-19,1,518.13,0.0,518.13,0
+CUST-0214,Isha Srinivasan,isha.srinivasan214@example.com,2025-04-12,North,Tier 3,45-54,Female,Organic,2025-05-07,2025-05-07,1,1068.62,0.0,1068.62,0
+CUST-0215,Arjun Sinha,arjun.sinha215@example.com,2025-10-27,Central,Metro,25-34,Male,Social,2025-12-26,2025-12-26,1,2229.11,0.0,2229.11,0
+CUST-0216,Nisha Chopra,nisha.chopra216@example.com,2025-05-20,East,Metro,25-34,Female,Marketplace,2025-07-05,2025-11-24,2,766.85,2383.41,383.43,1
+CUST-0217,Diya Bansal,diya.bansal217@example.com,2024-11-27,East,Tier 2,35-44,Female,Marketplace,2025-02-22,2025-07-06,3,1978.05,2995.14,659.35,1
+CUST-0218,Riya Joshi,riya.joshi218@example.com,2025-09-07,West,Tier 2,55+,Female,Organic,2025-11-24,2025-11-24,1,0.0,2156.64,0.0,0
+CUST-0219,Isha Shetty,isha.shetty219@example.com,2025-04-11,East,Metro,35-44,Female,Marketplace,2025-06-24,2025-06-24,1,0.0,3164.06,0.0,0
+CUST-0220,Aditi Nair,aditi.nair220@example.com,2025-09-06,West,Tier 3,35-44,Female,Organic,2025-11-02,2025-11-02,1,727.89,0.0,727.89,0
+CUST-0221,Riya Nair,riya.nair221@example.com,2025-09-10,East,Tier 3,25-34,Female,Organic,2025-11-17,2025-11-17,1,1816.21,0.0,1816.21,0
+CUST-0222,Krishna Chandra,krishna.chandra222@example.com,2024-11-14,Central,Metro,25-34,Female,Social,2025-01-19,2025-01-19,1,0.0,591.35,0.0,0
+CUST-0223,Meera Sinha,meera.sinha223@example.com,2025-07-05,East,Metro,35-44,Female,Referral,2025-10-01,2025-10-01,1,1246.44,0.0,1246.44,0
+CUST-0224,Zara Gupta,zara.gupta224@example.com,2025-10-24,North,Tier 1,25-34,Male,Paid Search,2025-11-26,2025-11-26,1,1292.14,0.0,1292.14,0
+CUST-0225,Priya Desai,priya.desai225@example.com,2025-04-27,South,Tier 3,25-34,Male,Referral,2025-05-21,2025-09-05,2,3120.42,0.0,1560.21,1
+CUST-0226,Ishaan Yadav,ishaan.yadav226@example.com,2025-07-15,East,Tier 3,18-24,Female,Referral,2025-10-03,2025-10-03,1,2336.22,0.0,2336.22,0
+CUST-0227,Vihaan Shah,vihaan.shah227@example.com,2025-05-09,North,Tier 2,25-34,Female,Marketplace,2025-07-11,2025-11-16,2,2693.1,1959.31,1346.55,1
+CUST-0228,Saanvi Chandra,saanvi.chandra228@example.com,2025-08-05,West,Tier 2,55+,Male,Social,2025-10-28,2025-10-28,1,0.0,2041.68,0.0,0
+CUST-0229,Avni Iyer,avni.iyer229@example.com,2025-02-12,West,Tier 1,25-34,Male,Organic,2025-05-11,2025-05-11,1,3156.1,0.0,3156.1,0
+CUST-0230,Advait Shetty,advait.shetty230@example.com,2025-05-23,North,Tier 1,35-44,Female,Email,2025-06-08,2025-06-08,1,2074.17,0.0,2074.17,0
+CUST-0231,Neel Nair,neel.nair231@example.com,2025-03-30,North,Metro,25-34,Male,Referral,2025-04-04,2025-04-04,1,2270.24,0.0,2270.24,0
+CUST-0232,Aryan Singh,aryan.singh232@example.com,2025-11-22,North,Metro,35-44,Female,Paid Search,2025-12-11,2025-12-11,1,3783.05,0.0,3783.05,0
+CUST-0233,Rohan Nanda,rohan.nanda233@example.com,2025-10-16,West,Tier 1,35-44,Male,Referral,2025-12-01,2025-12-01,1,0.0,3320.55,0.0,0
+CUST-0234,Arjun Srinivasan,arjun.srinivasan234@example.com,2025-01-21,Central,Tier 2,25-34,Female,Organic,2025-04-06,2025-07-05,2,2491.47,0.0,1245.74,1
+CUST-0235,Aditi Shah,aditi.shah235@example.com,2025-01-07,West,Tier 1,25-34,Female,Paid Search,2025-01-13,2025-01-13,1,0.0,2439.02,0.0,0
+CUST-0236,Yash Rao,yash.rao236@example.com,2025-06-17,East,Tier 3,25-34,Female,Paid Search,2025-07-17,2025-08-14,2,680.75,2341.0,340.38,1
+CUST-0237,Tanvi Verma,tanvi.verma237@example.com,2024-09-20,South,Tier 3,25-34,Female,Paid Search,2025-01-10,2025-01-10,1,1956.72,0.0,1956.72,0
+CUST-0238,Vikram Roy,vikram.roy238@example.com,2025-03-06,Central,Tier 1,18-24,Male,Paid Search,2025-06-09,2025-06-09,1,3010.69,0.0,3010.69,0
+CUST-0239,Aryan Nanda,aryan.nanda239@example.com,2025-01-16,Central,Tier 1,35-44,Female,Organic,2025-04-22,2025-04-22,1,3240.07,0.0,3240.07,0
+CUST-0240,Aarav Mishra,aarav.mishra240@example.com,2025-10-26,North,Metro,45-54,Female,Social,2025-11-07,2025-12-30,2,5882.92,0.0,2941.46,1
+CUST-0241,Isha Chandra,isha.chandra241@example.com,2025-04-23,West,Metro,35-44,Male,Social,2025-05-06,2025-05-06,1,0.0,1508.52,0.0,0
+CUST-0242,Tanvi Shetty,tanvi.shetty242@example.com,2025-01-04,North,Tier 1,35-44,Female,Email,2025-03-27,2025-11-17,3,7658.13,0.0,2552.71,1
+CUST-0243,Shiv Kulkarni,shiv.kulkarni243@example.com,2025-05-20,West,Tier 1,18-24,Female,Referral,2025-07-06,2025-07-06,1,8439.19,0.0,8439.19,0
+CUST-0244,Pari Gandhi,pari.gandhi244@example.com,2025-11-28,West,Tier 2,18-24,Female,Organic,2025-12-05,2025-12-05,1,1808.95,0.0,1808.95,0
+CUST-0245,Isha Rao,isha.rao245@example.com,2025-03-28,West,Metro,35-44,Female,Paid Search,2025-06-14,2025-07-30,2,2523.27,0.0,1261.63,1
+CUST-0246,Riya Verma,riya.verma246@example.com,2024-11-23,South,Tier 2,18-24,Female,Social,2025-02-17,2025-02-17,1,722.3,0.0,722.3,0
+CUST-0247,Aditi Zutshi,aditi.zutshi247@example.com,2025-10-29,East,Metro,35-44,Male,Social,2025-12-27,2025-12-27,1,4488.01,0.0,4488.01,0
+CUST-0248,Riya Jain,riya.jain248@example.com,2024-12-17,North,Tier 1,35-44,Female,Paid Search,2025-02-25,2025-02-25,1,2314.07,0.0,2314.07,0
+CUST-0249,Vihaan Bansal,vihaan.bansal249@example.com,2025-03-25,West,Tier 1,25-34,Male,Paid Search,2025-05-02,2025-05-02,1,1500.37,0.0,1500.37,0
+CUST-0250,Diya Patel,diya.patel250@example.com,2025-10-15,North,Tier 1,18-24,Female,Paid Search,2025-11-11,2025-11-11,1,0.0,1935.12,0.0,0
+CUST-0251,Yash Bhat,yash.bhat251@example.com,2024-12-09,West,Metro,35-44,Female,Paid Search,2025-02-08,2025-02-08,1,2579.14,0.0,2579.14,0
+CUST-0252,Naina Yadav,naina.yadav252@example.com,2025-06-16,South,Tier 1,45-54,Female,Organic,2025-09-13,2025-09-13,1,8913.03,0.0,8913.03,0
+CUST-0253,Vikram Joshi,vikram.joshi253@example.com,2025-08-28,North,Tier 1,35-44,Female,Marketplace,2025-10-10,2025-10-10,1,1006.68,0.0,1006.68,0
+CUST-0254,Vikram Gupta,vikram.gupta254@example.com,2025-04-14,South,Tier 2,45-54,Male,Paid Search,2025-05-05,2025-11-18,3,11095.27,3138.6,3698.42,1
+CUST-0255,Pranav Bansal,pranav.bansal255@example.com,2025-06-22,South,Tier 3,35-44,Female,Marketplace,2025-06-27,2025-06-27,1,6469.91,0.0,6469.91,0
+CUST-0256,Nisha Khan,nisha.khan256@example.com,2024-12-10,South,Tier 2,18-24,Female,Marketplace,2025-03-20,2025-03-20,1,6998.0,0.0,6998.0,0
+CUST-0257,Tanvi Dubey,tanvi.dubey257@example.com,2025-06-02,East,Tier 3,55+,Female,Organic,2025-07-02,2025-11-27,2,3846.39,1271.19,1923.19,1
+CUST-0258,Isha Menon,isha.menon258@example.com,2025-09-19,West,Tier 1,18-24,Female,Organic,2025-11-20,2025-11-20,1,5224.26,0.0,5224.26,0
+CUST-0259,Shiv Pillai,shiv.pillai259@example.com,2024-12-30,West,Tier 1,25-34,Female,Social,2025-01-04,2025-01-04,1,1083.45,0.0,1083.45,0
+CUST-0260,Kabir Gupta,kabir.gupta260@example.com,2025-08-27,North,Tier 3,18-24,Female,Referral,2025-12-16,2025-12-16,1,2447.18,0.0,2447.18,0
+CUST-0261,Arjun Gupta,arjun.gupta261@example.com,2025-08-06,East,Tier 1,25-34,Male,Email,2025-10-27,2025-10-27,1,2156.64,0.0,2156.64,0
+CUST-0262,Neel Patel,neel.patel262@example.com,2025-05-02,East,Metro,45-54,Female,Organic,2025-08-09,2025-12-02,2,3484.44,0.0,1742.22,1
+CUST-0263,Kabir Kapoor,kabir.kapoor263@example.com,2025-02-15,West,Tier 2,18-24,Other,Marketplace,2025-02-21,2025-06-12,2,6220.78,0.0,3110.39,1
+CUST-0264,Riya Saxena,riya.saxena264@example.com,2025-08-29,North,Tier 2,35-44,Other,Marketplace,2025-09-27,2025-11-01,2,10093.22,0.0,5046.61,1
+CUST-0265,Vihaan Gupta,vihaan.gupta265@example.com,2025-02-14,West,Tier 2,25-34,Male,Organic,2025-04-12,2025-04-12,1,4248.3,0.0,4248.3,0
+CUST-0266,Dhruv Saxena,dhruv.saxena266@example.com,2024-11-10,West,Metro,35-44,Female,Social,2025-02-09,2025-11-07,4,20259.35,0.0,5064.84,1
+CUST-0267,Advait Khan,advait.khan267@example.com,2025-02-04,North,Tier 3,35-44,Male,Referral,2025-04-05,2025-04-05,1,1491.37,0.0,1491.37,0
+CUST-0268,Kabir Khan,kabir.khan268@example.com,2025-06-07,East,Metro,25-34,Female,Organic,2025-08-24,2025-08-24,1,4525.72,0.0,4525.72,0
+CUST-0269,Nisha Mishra,nisha.mishra269@example.com,2025-10-25,North,Metro,25-34,Female,Organic,2025-12-24,2025-12-24,1,6422.39,0.0,6422.39,0
+CUST-0270,Aarav Tripathi,aarav.tripathi270@example.com,2025-06-05,Central,Metro,35-44,Female,Referral,2025-08-19,2025-10-26,2,4320.85,0.0,2160.43,1
+CUST-0271,Rohan Gandhi,rohan.gandhi271@example.com,2025-01-12,Central,Tier 2,25-34,Female,Marketplace,2025-05-04,2025-07-09,2,2620.25,3979.85,1310.12,1
+CUST-0272,Arjun Gandhi,arjun.gandhi272@example.com,2024-10-20,West,Tier 1,18-24,Male,Paid Search,2025-02-11,2025-02-11,1,4028.39,0.0,4028.39,0
+CUST-0273,Isha Dubey,isha.dubey273@example.com,2025-12-10,East,Tier 2,18-24,Male,Social,2025-12-24,2025-12-24,1,1711.7,0.0,1711.7,0
+CUST-0274,Rohan Tripathi,rohan.tripathi274@example.com,2025-08-09,North,Tier 1,25-34,Male,Marketplace,2025-09-20,2025-11-17,2,4183.02,0.0,2091.51,1
+CUST-0275,Neel Bansal,neel.bansal275@example.com,2025-03-11,South,Metro,45-54,Male,Email,2025-04-19,2025-11-18,3,4138.14,1895.54,1379.38,1
+CUST-0276,Ananya Dubey,ananya.dubey276@example.com,2025-05-28,South,Tier 1,18-24,Female,Social,2025-08-19,2025-08-19,1,7269.58,0.0,7269.58,0
+CUST-0277,Nisha Bansal,nisha.bansal277@example.com,2025-03-26,East,Metro,35-44,Female,Social,2025-05-08,2025-11-27,3,6740.46,0.0,2246.82,1
+CUST-0278,Vikram Dubey,vikram.dubey278@example.com,2025-03-13,East,Tier 2,25-34,Female,Paid Search,2025-04-17,2025-04-17,1,0.0,1566.93,0.0,0
+CUST-0279,Kabir Mishra,kabir.mishra279@example.com,2025-07-13,North,Tier 1,25-34,Female,Paid Search,2025-07-15,2025-07-15,1,5954.03,0.0,5954.03,0
+CUST-0280,Krishna Rao,krishna.rao280@example.com,2025-09-22,West,Metro,35-44,Male,Organic,2025-12-01,2025-12-01,1,6725.08,0.0,6725.08,0
+CUST-0281,Advait Singh,advait.singh281@example.com,2025-03-05,Central,Tier 2,35-44,Male,Social,2025-05-07,2025-08-03,2,639.19,2358.33,319.6,1
+CUST-0282,Aryan Agarwal,aryan.agarwal282@example.com,2025-01-25,North,Metro,25-34,Male,Organic,2025-05-11,2025-07-31,2,6024.36,0.0,3012.18,1
+CUST-0283,Vikram Menon,vikram.menon283@example.com,2025-09-02,South,Tier 2,25-34,Female,Social,2025-09-26,2025-09-26,1,1686.52,0.0,1686.52,0
+CUST-0284,Vikram Bansal,vikram.bansal284@example.com,2025-06-30,North,Tier 2,18-24,Female,Paid Search,2025-09-04,2025-09-04,1,2326.57,0.0,2326.57,0
+CUST-0285,Pranav Khan,pranav.khan285@example.com,2024-12-22,West,Tier 3,45-54,Male,Organic,2025-03-09,2025-06-11,3,3320.99,1593.91,1107.0,1
+CUST-0286,Riya Patel,riya.patel286@example.com,2025-03-07,East,Tier 2,35-44,Male,Social,2025-05-04,2025-08-06,2,4468.16,0.0,2234.08,1
+CUST-0287,Sahil Menon,sahil.menon287@example.com,2025-09-08,North,Metro,35-44,Female,Social,2025-12-23,2025-12-23,1,2406.54,0.0,2406.54,0
+CUST-0288,Rahul Bhat,rahul.bhat288@example.com,2025-01-26,South,Metro,35-44,Female,Marketplace,2025-04-09,2025-04-09,1,3901.03,0.0,3901.03,0
+CUST-0289,Sara Nanda,sara.nanda289@example.com,2024-11-27,North,Tier 1,18-24,Male,Paid Search,2025-01-04,2025-04-23,3,2799.79,0.0,933.26,1
+CUST-0290,Pranav Varma,pranav.varma290@example.com,2025-10-03,West,Tier 3,35-44,Female,Referral,2025-12-02,2025-12-02,1,8666.53,0.0,8666.53,0
+CUST-0291,Tara Nanda,tara.nanda291@example.com,2025-05-03,Central,Tier 1,35-44,Male,Organic,2025-06-08,2025-10-02,3,6181.13,2873.04,2060.38,1
+CUST-0292,Nisha Saxena,nisha.saxena292@example.com,2025-08-30,East,Tier 2,25-34,Male,Referral,2025-09-15,2025-09-15,1,1551.67,0.0,1551.67,0
+CUST-0293,Aryan Saxena,aryan.saxena293@example.com,2025-01-05,East,Tier 2,18-24,Female,Referral,2025-01-23,2025-01-23,1,513.34,0.0,513.34,0
+CUST-0294,Arjun Shah,arjun.shah294@example.com,2025-04-02,North,Metro,35-44,Female,Social,2025-06-07,2025-06-07,1,0.0,506.77,0.0,0
+CUST-0295,Sahil Srinivasan,sahil.srinivasan295@example.com,2025-04-10,West,Tier 1,45-54,Female,Organic,2025-07-26,2025-07-26,1,2347.43,0.0,2347.43,0
+CUST-0296,Naina Verma,naina.verma296@example.com,2025-08-27,West,Tier 2,18-24,Male,Organic,2025-11-24,2025-11-24,1,7542.11,0.0,7542.11,0
+CUST-0297,Ananya Kumar,ananya.kumar297@example.com,2025-01-20,North,Tier 1,35-44,Female,Organic,2025-04-09,2025-04-09,1,2816.69,0.0,2816.69,0
+CUST-0298,Tanvi Mehta,tanvi.mehta298@example.com,2025-10-07,West,Tier 1,35-44,Male,Email,2025-10-24,2025-12-26,2,4197.65,0.0,2098.82,1
+CUST-0299,Pranav Kapoor,pranav.kapoor299@example.com,2024-12-24,South,Tier 1,25-34,Male,Marketplace,2025-03-13,2025-08-07,3,4234.93,0.0,1411.64,1
+CUST-0300,Aryan Chandra,aryan.chandra300@example.com,2025-08-14,South,Metro,18-24,Male,Email,2025-10-15,2025-11-24,2,7530.79,0.0,3765.39,1
+CUST-0301,Diya Desai,diya.desai301@example.com,2024-10-26,Central,Tier 3,18-24,Male,Referral,2025-02-09,2025-07-24,4,6582.72,2104.44,1645.68,1
+CUST-0302,Zara Verma,zara.verma302@example.com,2025-02-27,South,Tier 2,25-34,Female,Paid Search,2025-04-21,2025-04-21,1,2499.0,0.0,2499.0,0
+CUST-0303,Advait Pillai,advait.pillai303@example.com,2025-03-20,West,Metro,35-44,Male,Social,2025-04-05,2025-04-05,1,1675.74,0.0,1675.74,0
+CUST-0304,Vihaan Rao,vihaan.rao304@example.com,2025-03-09,North,Tier 2,18-24,Female,Paid Search,2025-06-10,2025-07-18,2,4297.63,0.0,2148.82,1
+CUST-0305,Pari Agarwal,pari.agarwal305@example.com,2025-09-10,Central,Tier 3,35-44,Female,Paid Search,2025-12-19,2025-12-19,1,2052.42,0.0,2052.42,0
+CUST-0306,Ved Reddy,ved.reddy306@example.com,2024-12-26,North,Tier 2,25-34,Male,Marketplace,2025-01-10,2025-04-16,2,8113.35,0.0,4056.67,1
+CUST-0307,Priya Varma,priya.varma307@example.com,2025-06-17,West,Tier 1,18-24,Male,Social,2025-09-18,2025-09-18,1,1989.2,0.0,1989.2,0
+CUST-0308,Aditi Saxena,aditi.saxena308@example.com,2025-01-05,South,Metro,25-34,Male,Organic,2025-01-23,2025-09-07,4,5732.11,1287.64,1433.03,1
+CUST-0309,Neel Varma,neel.varma309@example.com,2025-05-10,North,Tier 1,35-44,Female,Marketplace,2025-08-01,2025-11-22,2,3670.01,0.0,1835.01,1
+CUST-0310,Nisha Desai,nisha.desai310@example.com,2025-02-14,North,Metro,18-24,Female,Paid Search,2025-04-22,2025-04-22,1,5110.3,0.0,5110.3,0
+CUST-0311,Sneha Desai,sneha.desai311@example.com,2024-12-26,Central,Tier 1,25-34,Male,Social,2025-04-17,2025-04-17,1,2072.31,0.0,2072.31,0
+CUST-0312,Meera Dubey,meera.dubey312@example.com,2025-05-25,West,Metro,18-24,Female,Paid Search,2025-09-03,2025-09-03,1,3215.02,0.0,3215.02,0
+CUST-0313,Nisha Agarwal,nisha.agarwal313@example.com,2025-01-27,West,Metro,25-34,Female,Organic,2025-03-02,2025-03-02,1,889.11,0.0,889.11,0
+CUST-0314,Sneha Yadav,sneha.yadav314@example.com,2025-03-21,South,Metro,18-24,Female,Social,2025-05-28,2025-10-14,2,1189.61,1492.34,594.8,1
+CUST-0315,Vikram Malhotra,vikram.malhotra315@example.com,2025-04-30,West,Tier 2,18-24,Male,Social,2025-08-23,2025-08-23,1,13928.76,0.0,13928.76,0
+CUST-0316,Vihaan Malhotra,vihaan.malhotra316@example.com,2025-03-26,Central,Tier 1,45-54,Male,Paid Search,2025-06-24,2025-06-24,1,1742.64,0.0,1742.64,0
+CUST-0317,Advait Sharma,advait.sharma317@example.com,2024-12-10,West,Tier 1,18-24,Female,Paid Search,2025-01-24,2025-01-24,1,1140.25,0.0,1140.25,0
+CUST-0318,Pari Yadav,pari.yadav318@example.com,2025-09-03,East,Tier 2,45-54,Other,Paid Search,2025-09-13,2025-10-29,2,3902.94,0.0,1951.47,1
+CUST-0319,Sneha Kapoor,sneha.kapoor319@example.com,2024-11-18,East,Tier 1,18-24,Female,Email,2025-03-04,2025-03-04,1,1983.5,0.0,1983.5,0
+CUST-0320,Rohan Kumar,rohan.kumar320@example.com,2025-10-13,West,Tier 1,35-44,Female,Paid Search,2025-10-27,2025-12-18,2,9846.47,0.0,4923.23,1
+CUST-0321,Naina Sinha,naina.sinha321@example.com,2024-11-27,West,Metro,35-44,Female,Marketplace,2025-01-25,2025-01-25,1,2456.52,0.0,2456.52,0
+CUST-0322,Isha Singh,isha.singh322@example.com,2025-04-05,North,Tier 1,25-34,Male,Social,2025-04-27,2025-06-04,2,2771.08,2878.4,1385.54,1
+CUST-0323,Arjun Verma,arjun.verma323@example.com,2024-12-05,North,Metro,45-54,Male,Marketplace,2025-03-20,2025-05-13,2,1443.79,2111.3,721.89,1
+CUST-0324,Zara Reddy,zara.reddy324@example.com,2025-09-23,East,Tier 1,25-34,Female,Organic,2025-10-09,2025-10-09,1,2639.12,0.0,2639.12,0
+CUST-0325,Arjun Zutshi,arjun.zutshi325@example.com,2025-07-07,South,Metro,18-24,Female,Referral,2025-08-05,2025-09-20,2,1037.32,3296.06,518.66,1
+CUST-0326,Avni Khan,avni.khan326@example.com,2025-06-30,East,Tier 1,18-24,Male,Organic,2025-10-16,2025-12-15,2,5562.77,0.0,2781.39,1
+CUST-0327,Saanvi Tripathi,saanvi.tripathi327@example.com,2025-11-05,North,Metro,35-44,Female,Organic,2025-12-07,2025-12-07,1,685.04,0.0,685.04,0
+CUST-0328,Kavya Bansal,kavya.bansal328@example.com,2025-03-30,West,Tier 2,25-34,Female,Social,2025-04-20,2025-08-25,2,4566.03,0.0,2283.01,1
+CUST-0329,Nisha Roy,nisha.roy329@example.com,2025-07-23,North,Metro,35-44,Female,Referral,2025-08-14,2025-12-05,2,14052.61,0.0,7026.31,1
+CUST-0330,Arjun Desai,arjun.desai330@example.com,2025-09-13,West,Tier 2,45-54,Male,Paid Search,2025-10-04,2025-10-04,1,619.23,0.0,619.23,0
+CUST-0331,Rahul Singh,rahul.singh331@example.com,2025-07-15,South,Tier 1,25-34,Male,Organic,2025-07-27,2025-12-29,3,3285.74,2086.85,1095.25,1
+CUST-0332,Pranav Nair,pranav.nair332@example.com,2025-10-03,North,Tier 2,25-34,Male,Organic,2025-12-27,2025-12-27,1,1392.43,0.0,1392.43,0
+CUST-0333,Isha Jain,isha.jain333@example.com,2024-12-12,North,Tier 3,25-34,Male,Paid Search,2025-01-09,2025-07-26,3,3218.15,0.0,1072.72,1
+CUST-0334,Om Iyer,om.iyer334@example.com,2025-10-08,West,Metro,55+,Female,Email,2025-10-21,2025-10-21,1,2424.03,0.0,2424.03,0
+CUST-0335,Neel Khan,neel.khan335@example.com,2025-02-25,North,Metro,25-34,Female,Paid Search,2025-03-21,2025-12-22,5,8851.6,2761.16,1770.32,1
+CUST-0336,Tara Iyer,tara.iyer336@example.com,2025-03-31,North,Tier 2,18-24,Male,Marketplace,2025-07-10,2025-12-13,3,3077.49,2977.65,1025.83,1
+CUST-0337,Rahul Chandra,rahul.chandra337@example.com,2025-04-12,East,Metro,25-34,Female,Marketplace,2025-04-18,2025-04-18,1,0.0,3885.41,0.0,0
+CUST-0338,Naina Saxena,naina.saxena338@example.com,2025-06-17,East,Metro,25-34,Female,Organic,2025-08-25,2025-08-25,1,1894.24,0.0,1894.24,0
+CUST-0339,Vivaan Bhat,vivaan.bhat339@example.com,2025-08-23,East,Metro,25-34,Female,Social,2025-08-26,2025-12-08,2,1851.76,3667.93,925.88,1
+CUST-0340,Om Dubey,om.dubey340@example.com,2025-03-05,Central,Metro,45-54,Male,Organic,2025-03-06,2025-03-06,1,5038.32,0.0,5038.32,0
+CUST-0341,Rahul Kumar,rahul.kumar341@example.com,2025-09-03,West,Tier 1,25-34,Female,Social,2025-11-03,2025-11-03,1,4447.53,0.0,4447.53,0
+CUST-0342,Naina Bhat,naina.bhat342@example.com,2025-11-07,East,Metro,18-24,Other,Paid Search,2025-12-12,2025-12-12,1,6883.21,0.0,6883.21,0
+CUST-0343,Priya Kumar,priya.kumar343@example.com,2024-11-15,North,Tier 1,18-24,Female,Paid Search,2025-02-25,2025-02-25,1,923.23,0.0,923.23,0
+CUST-0344,Sahil Bansal,sahil.bansal344@example.com,2025-02-03,North,Tier 2,18-24,Female,Email,2025-05-20,2025-05-20,1,5365.87,0.0,5365.87,0
+CUST-0345,Pari Varma,pari.varma345@example.com,2025-12-07,East,Tier 2,18-24,Female,Paid Search,2025-12-08,2025-12-08,1,1145.24,0.0,1145.24,0
+CUST-0346,Rohan Zutshi,rohan.zutshi346@example.com,2025-05-22,East,Metro,35-44,Female,Paid Search,2025-06-21,2025-08-08,2,3896.65,0.0,1948.33,1
+CUST-0347,Pranav Agarwal,pranav.agarwal347@example.com,2024-12-08,North,Tier 2,18-24,Male,Email,2025-03-24,2025-03-24,1,2017.43,0.0,2017.43,0
+CUST-0348,Aryan Gupta,aryan.gupta348@example.com,2025-09-11,East,Metro,25-34,Female,Referral,2025-11-16,2025-11-16,1,3897.0,0.0,3897.0,0
+CUST-0349,Meera Kapoor,meera.kapoor349@example.com,2025-08-16,Central,Tier 3,35-44,Female,Paid Search,2025-09-24,2025-09-24,1,5979.88,0.0,5979.88,0
+CUST-0350,Aisha Shetty,aisha.shetty350@example.com,2024-12-03,East,Tier 2,35-44,Female,Paid Search,2025-01-28,2025-06-03,4,4079.83,9513.59,1019.96,1
+CUST-0351,Avni Rao,avni.rao351@example.com,2025-08-24,West,Tier 1,25-34,Other,Social,2025-11-14,2025-11-14,1,2486.17,0.0,2486.17,0
+CUST-0352,Riya Kulkarni,riya.kulkarni352@example.com,2025-02-26,West,Tier 3,25-34,Female,Organic,2025-03-26,2025-03-26,1,2900.67,0.0,2900.67,0
+CUST-0353,Saanvi Kulkarni,saanvi.kulkarni353@example.com,2024-12-22,East,Tier 2,25-34,Female,Marketplace,2025-03-06,2025-03-06,1,825.28,0.0,825.28,0
+CUST-0354,Krishna Bansal,krishna.bansal354@example.com,2025-06-24,North,Metro,45-54,Female,Organic,2025-10-08,2025-10-08,1,0.0,1774.29,0.0,0
+CUST-0355,Sneha Jain,sneha.jain355@example.com,2025-10-05,North,Tier 1,18-24,Male,Organic,2025-12-06,2025-12-06,1,6578.12,0.0,6578.12,0
+CUST-0356,Kabir Bhat,kabir.bhat356@example.com,2025-08-24,South,Metro,35-44,Male,Referral,2025-10-17,2025-10-17,1,2365.42,0.0,2365.42,0
+CUST-0357,Om Desai,om.desai357@example.com,2025-07-06,West,Tier 2,35-44,Male,Referral,2025-10-26,2025-10-26,1,1466.18,0.0,1466.18,0
+CUST-0358,Om Verma,om.verma358@example.com,2024-11-02,North,Metro,25-34,Male,Organic,2025-02-11,2025-02-11,1,2036.91,0.0,2036.91,0
+CUST-0359,Siddharth Dubey,siddharth.dubey359@example.com,2025-09-21,East,Metro,25-34,Male,Paid Search,2025-10-05,2025-10-05,1,6972.68,0.0,6972.68,0
+CUST-0360,Dhruv Yadav,dhruv.yadav360@example.com,2025-07-15,East,Tier 2,55+,Male,Email,2025-08-28,2025-08-28,1,1055.3,0.0,1055.3,0
+CUST-0361,Tara Tiwari,tara.tiwari361@example.com,2025-09-14,North,Metro,45-54,Male,Email,2025-11-22,2025-11-22,1,2136.64,0.0,2136.64,0
+CUST-0362,Pari Menon,pari.menon362@example.com,2024-11-30,South,Metro,35-44,Female,Email,2025-03-09,2025-03-09,1,1062.58,0.0,1062.58,0
+CUST-0363,Sahil Kulkarni,sahil.kulkarni363@example.com,2025-07-15,North,Tier 2,25-34,Male,Referral,2025-09-21,2025-09-21,1,5829.44,0.0,5829.44,0
+CUST-0364,Neel Verma,neel.verma364@example.com,2025-08-20,North,Tier 2,45-54,Female,Organic,2025-08-20,2025-12-22,2,5645.24,2911.17,2822.62,1
+CUST-0365,Rohan Kulkarni,rohan.kulkarni365@example.com,2025-09-19,South,Tier 3,25-34,Female,Organic,2025-10-27,2025-10-27,1,2206.62,0.0,2206.62,0
+CUST-0366,Riya Malhotra,riya.malhotra366@example.com,2025-11-06,Central,Metro,25-34,Female,Paid Search,2025-11-06,2025-12-25,2,4835.15,0.0,2417.57,1
+CUST-0367,Shiv Khan,shiv.khan367@example.com,2025-11-15,East,Tier 3,25-34,Female,Social,2025-12-02,2025-12-02,1,575.28,0.0,575.28,0
+CUST-0368,Krishna Jain,krishna.jain368@example.com,2025-01-16,Central,Tier 1,25-34,Female,Marketplace,2025-05-09,2025-08-24,2,2170.92,0.0,1085.46,1
+CUST-0369,Dhruv Sinha,dhruv.sinha369@example.com,2025-07-18,West,Tier 2,25-34,Male,Marketplace,2025-08-10,2025-09-08,2,1673.44,4888.37,836.72,1
+CUST-0370,Ved Shetty,ved.shetty370@example.com,2025-08-14,North,Metro,18-24,Female,Marketplace,2025-12-01,2025-12-01,1,0.0,3056.6,0.0,0
+CUST-0371,Advait Bhat,advait.bhat371@example.com,2025-07-06,South,Tier 1,25-34,Male,Paid Search,2025-07-12,2025-10-01,2,1073.11,3460.51,536.55,1
+CUST-0372,Ishaan Desai,ishaan.desai372@example.com,2025-08-25,East,Tier 2,18-24,Female,Paid Search,2025-11-08,2025-12-12,2,8498.01,0.0,4249.01,1
+CUST-0373,Shiv Chopra,shiv.chopra373@example.com,2025-06-14,Central,Tier 2,55+,Female,Organic,2025-07-26,2025-09-15,2,3533.28,0.0,1766.64,1
+CUST-0374,Priya Bhat,priya.bhat374@example.com,2024-12-10,West,Tier 2,18-24,Female,Organic,2025-02-01,2025-05-17,2,6142.37,0.0,3071.19,1
+CUST-0375,Saanvi Kumar,saanvi.kumar375@example.com,2025-06-16,South,Metro,25-34,Female,Paid Search,2025-08-01,2025-10-04,2,8275.7,0.0,4137.85,1
+CUST-0376,Arjun Kapoor,arjun.kapoor376@example.com,2025-07-25,West,Tier 1,25-34,Female,Paid Search,2025-10-10,2025-12-21,2,452.84,546.89,226.42,1
+CUST-0377,Krishna Gupta,krishna.gupta377@example.com,2025-08-17,West,Tier 1,18-24,Female,Social,2025-10-12,2025-10-12,1,476.02,0.0,476.02,0
+CUST-0378,Krishna Kapoor,krishna.kapoor378@example.com,2025-04-27,East,Tier 1,25-34,Female,Marketplace,2025-07-05,2025-07-05,1,3503.68,0.0,3503.68,0
+CUST-0379,Diya Mehta,diya.mehta379@example.com,2025-11-19,South,Metro,35-44,Female,Organic,2025-12-27,2025-12-27,1,2554.3,0.0,2554.3,0
+CUST-0380,Shiv Srinivasan,shiv.srinivasan380@example.com,2024-12-26,Central,Metro,45-54,Female,Paid Search,2025-04-17,2025-04-17,1,1781.19,0.0,1781.19,0
+CUST-0381,Tanvi Joshi,tanvi.joshi381@example.com,2025-11-23,West,Metro,25-34,Female,Social,2025-12-26,2025-12-26,1,2612.13,0.0,2612.13,0
+CUST-0382,Aarav Gupta,aarav.gupta382@example.com,2025-01-02,West,Tier 2,45-54,Male,Paid Search,2025-04-02,2025-12-23,5,13788.25,0.0,2757.65,1
+CUST-0383,Sneha Mehta,sneha.mehta383@example.com,2024-12-12,North,Metro,25-34,Female,Paid Search,2025-01-21,2025-08-05,4,7325.34,0.0,1831.34,1
+CUST-0384,Avni Singh,avni.singh384@example.com,2025-06-25,South,Metro,35-44,Female,Email,2025-09-26,2025-09-26,1,1371.87,0.0,1371.87,0
+CUST-0385,Arjun Malhotra,arjun.malhotra385@example.com,2025-07-11,North,Metro,25-34,Female,Marketplace,2025-10-20,2025-10-20,1,10108.61,0.0,10108.61,0
+CUST-0386,Saanvi Tiwari,saanvi.tiwari386@example.com,2025-09-06,Central,Tier 2,18-24,Male,Paid Search,2025-10-14,2025-11-26,2,8025.65,0.0,4012.82,1
+CUST-0387,Ved Iyer,ved.iyer387@example.com,2025-08-06,South,Tier 2,45-54,Male,Email,2025-09-19,2025-11-28,2,3816.35,0.0,1908.18,1
+CUST-0388,Aisha Jain,aisha.jain388@example.com,2025-07-28,Central,Tier 1,25-34,Male,Paid Search,2025-09-12,2025-11-21,2,3201.8,0.0,1600.9,1
+CUST-0389,Riya Chandra,riya.chandra389@example.com,2025-07-21,West,Tier 2,25-34,Male,Organic,2025-09-16,2025-09-16,1,3725.11,0.0,3725.11,0
+CUST-0390,Priya Gandhi,priya.gandhi390@example.com,2025-01-07,West,Tier 1,35-44,Male,Social,2025-03-15,2025-03-15,1,2181.63,0.0,2181.63,0
+CUST-0391,Vikram Kulkarni,vikram.kulkarni391@example.com,2025-08-27,North,Tier 2,25-34,Male,Organic,2025-09-25,2025-09-25,1,564.26,0.0,564.26,0
+CUST-0392,Tara Mishra,tara.mishra392@example.com,2025-06-22,West,Tier 2,45-54,Female,Paid Search,2025-10-07,2025-10-07,1,2001.7,0.0,2001.7,0
+CUST-0393,Rahul Patel,rahul.patel393@example.com,2025-05-26,East,Metro,18-24,Male,Paid Search,2025-09-20,2025-09-20,1,1979.1,0.0,1979.1,0
+CUST-0394,Dhruv Gupta,dhruv.gupta394@example.com,2025-02-02,South,Tier 1,35-44,Female,Paid Search,2025-05-28,2025-05-28,1,4868.05,0.0,4868.05,0
+CUST-0395,Rahul Menon,rahul.menon395@example.com,2024-12-23,West,Metro,35-44,Female,Social,2025-02-17,2025-05-02,2,1774.69,0.0,887.34,1
+CUST-0396,Sneha Bansal,sneha.bansal396@example.com,2025-04-26,North,Metro,25-34,Female,Organic,2025-08-07,2025-11-22,3,13280.94,0.0,4426.98,1
+CUST-0397,Kabir Nair,kabir.nair397@example.com,2025-04-07,North,Tier 1,25-34,Female,Social,2025-06-27,2025-10-20,3,510.95,15561.12,170.32,1
+CUST-0398,Aisha Desai,aisha.desai398@example.com,2025-02-10,South,Metro,25-34,Male,Social,2025-02-24,2025-04-13,2,3430.8,0.0,1715.4,1
+CUST-0399,Ananya Joshi,ananya.joshi399@example.com,2024-12-17,West,Tier 1,18-24,Female,Organic,2025-02-02,2025-05-16,3,3094.24,0.0,1031.41,1
+CUST-0400,Aryan Shetty,aryan.shetty400@example.com,2025-11-21,South,Tier 1,35-44,Female,Organic,2025-12-14,2025-12-14,1,1905.87,0.0,1905.87,0
+CUST-0401,Kabir Kumar,kabir.kumar401@example.com,2025-03-04,East,Metro,18-24,Female,Paid Search,2025-03-07,2025-10-14,4,8046.94,0.0,2011.74,1
+CUST-0402,Meera Gupta,meera.gupta402@example.com,2025-03-15,West,Tier 1,25-34,Other,Paid Search,2025-04-16,2025-04-16,1,7630.09,0.0,7630.09,0
+CUST-0403,Vihaan Shetty,vihaan.shetty403@example.com,2025-02-18,North,Metro,35-44,Female,Paid Search,2025-03-16,2025-03-16,1,1363.92,0.0,1363.92,0
+CUST-0404,Diya Chopra,diya.chopra404@example.com,2025-10-26,South,Tier 3,18-24,Female,Paid Search,2025-12-16,2025-12-16,1,2416.53,0.0,2416.53,0
+CUST-0405,Tara Sinha,tara.sinha405@example.com,2025-05-15,East,Metro,25-34,Male,Social,2025-07-12,2025-07-12,1,0.0,1220.19,0.0,0
+CUST-0406,Naina Gandhi,naina.gandhi406@example.com,2025-09-30,South,Tier 3,18-24,Male,Social,2025-12-25,2025-12-25,1,4015.37,0.0,4015.37,0
+CUST-0407,Rahul Roy,rahul.roy407@example.com,2024-12-05,South,Tier 3,45-54,Female,Marketplace,2025-01-15,2025-01-15,1,1206.69,0.0,1206.69,0
+CUST-0408,Diya Menon,diya.menon408@example.com,2025-05-13,North,Tier 1,35-44,Female,Paid Search,2025-07-22,2025-07-22,1,770.44,0.0,770.44,0
+CUST-0409,Isha Tripathi,isha.tripathi409@example.com,2025-06-26,North,Metro,18-24,Female,Social,2025-09-07,2025-11-01,2,4866.69,0.0,2433.35,1
+CUST-0410,Yash Singh,yash.singh410@example.com,2025-04-16,North,Tier 1,25-34,Female,Paid Search,2025-07-15,2025-12-31,4,3601.57,3259.79,900.39,1
+CUST-0411,Pari Khan,pari.khan411@example.com,2025-11-19,North,Tier 3,25-34,Female,Social,2025-12-06,2025-12-06,1,2246.25,0.0,2246.25,0
+CUST-0412,Neel Dubey,neel.dubey412@example.com,2025-01-22,East,Metro,25-34,Female,Organic,2025-03-12,2025-05-05,2,1603.75,0.0,801.88,1
+CUST-0413,Tanvi Gupta,tanvi.gupta413@example.com,2024-11-13,North,Metro,35-44,Female,Marketplace,2025-03-02,2025-03-02,1,0.0,727.29,0.0,0
+CUST-0414,Aditi Tripathi,aditi.tripathi414@example.com,2025-10-15,North,Metro,25-34,Female,Organic,2025-12-05,2025-12-05,1,2130.36,0.0,2130.36,0
+CUST-0415,Pari Jain,pari.jain415@example.com,2025-06-03,South,Metro,35-44,Female,Social,2025-08-02,2025-08-02,1,3826.11,0.0,3826.11,0
+CUST-0416,Neel Gupta,neel.gupta416@example.com,2025-09-06,North,Metro,25-34,Female,Paid Search,2025-10-23,2025-10-23,1,3545.06,0.0,3545.06,0
+CUST-0417,Sahil Dubey,sahil.dubey417@example.com,2025-03-24,West,Tier 1,35-44,Female,Paid Search,2025-07-13,2025-07-13,1,1991.39,0.0,1991.39,0
+CUST-0418,Aryan Gandhi,aryan.gandhi418@example.com,2025-11-17,East,Tier 1,18-24,Male,Paid Search,2025-12-20,2025-12-20,1,0.0,6186.23,0.0,0
+CUST-0419,Krishna Kulkarni,krishna.kulkarni419@example.com,2025-02-26,South,Tier 1,55+,Male,Paid Search,2025-02-27,2025-10-29,4,10146.49,0.0,2536.62,1
+CUST-0420,Siddharth Shetty,siddharth.shetty420@example.com,2025-03-27,Central,Tier 1,25-34,Female,Organic,2025-05-09,2025-10-30,3,3669.21,6190.56,1223.07,1
+CUST-0421,Shiv Dubey,shiv.dubey421@example.com,2025-09-06,South,Metro,18-24,Female,Paid Search,2025-11-01,2025-11-01,1,2603.13,0.0,2603.13,0
+CUST-0422,Priya Mishra,priya.mishra422@example.com,2025-02-23,East,Metro,18-24,Female,Marketplace,2025-03-25,2025-12-19,4,4219.55,1152.73,1054.89,1
+CUST-0423,Krishna Chopra,krishna.chopra423@example.com,2025-11-21,South,Tier 1,25-34,Female,Paid Search,2025-11-26,2025-11-26,1,0.0,3061.62,0.0,0
+CUST-0424,Ved Nair,ved.nair424@example.com,2025-01-08,South,Metro,18-24,Male,Social,2025-04-01,2025-07-03,2,5034.74,0.0,2517.37,1
+CUST-0425,Vivaan Joshi,vivaan.joshi425@example.com,2025-08-31,South,Metro,25-34,Other,Social,2025-10-25,2025-10-25,1,648.79,0.0,648.79,0
+CUST-0426,Krishna Menon,krishna.menon426@example.com,2025-04-29,North,Metro,35-44,Female,Social,2025-07-26,2025-07-26,1,950.81,0.0,950.81,0
+CUST-0427,Siddharth Zutshi,siddharth.zutshi427@example.com,2024-12-24,North,Tier 1,18-24,Female,Paid Search,2025-01-12,2025-03-09,2,4281.8,3460.69,2140.9,1
+CUST-0428,Om Gandhi,om.gandhi428@example.com,2024-09-20,South,Tier 2,25-34,Male,Paid Search,2025-01-18,2025-04-15,2,3855.74,0.0,1927.87,1
+CUST-0429,Meera Shetty,meera.shetty429@example.com,2025-03-01,North,Tier 3,18-24,Female,Social,2025-03-16,2025-07-17,3,5982.6,0.0,1994.2,1
+CUST-0430,Sahil Reddy,sahil.reddy430@example.com,2025-08-21,North,Metro,18-24,Female,Email,2025-08-24,2025-08-24,1,1939.52,0.0,1939.52,0
+CUST-0431,Ved Agarwal,ved.agarwal431@example.com,2025-03-20,North,Tier 2,45-54,Female,Organic,2025-05-25,2025-05-25,1,3016.14,0.0,3016.14,0
+CUST-0432,Pari Srinivasan,pari.srinivasan432@example.com,2025-09-10,North,Tier 2,25-34,Male,Organic,2025-11-28,2025-11-28,1,751.56,0.0,751.56,0
+CUST-0433,Priya Rao,priya.rao433@example.com,2025-09-06,West,Tier 1,35-44,Male,Referral,2025-09-11,2025-09-11,1,1112.26,0.0,1112.26,0
+CUST-0434,Kavya Patel,kavya.patel434@example.com,2025-08-05,South,Tier 2,35-44,Male,Social,2025-10-24,2025-12-18,2,2651.12,1593.91,1325.56,1
+CUST-0435,Vivaan Nair,vivaan.nair435@example.com,2025-08-18,South,Tier 1,35-44,Female,Social,2025-10-02,2025-10-02,1,2534.43,0.0,2534.43,0
+CUST-0436,Diya Pillai,diya.pillai436@example.com,2025-02-23,North,Tier 1,25-34,Male,Organic,2025-06-23,2025-08-27,2,2797.13,2462.18,1398.57,1
+CUST-0437,Naina Malhotra,naina.malhotra437@example.com,2025-04-09,South,Metro,45-54,Female,Social,2025-05-11,2025-11-21,4,10418.52,1452.53,2604.63,1
+CUST-0438,Kavya Chandra,kavya.chandra438@example.com,2025-11-21,North,Metro,35-44,Female,Referral,2025-12-17,2025-12-17,1,1499.0,0.0,1499.0,0
+CUST-0439,Sara Pillai,sara.pillai439@example.com,2025-01-10,West,Tier 1,25-34,Male,Organic,2025-02-24,2025-02-24,1,0.0,1661.84,0.0,0
+CUST-0440,Sneha Bhat,sneha.bhat440@example.com,2025-04-17,East,Tier 3,25-34,Other,Social,2025-05-19,2025-07-06,2,2907.67,1206.69,1453.84,1
+CUST-0441,Pranav Sinha,pranav.sinha441@example.com,2025-02-13,East,Tier 1,18-24,Male,Social,2025-03-28,2025-03-28,1,2879.68,0.0,2879.68,0
+CUST-0442,Vihaan Joshi,vihaan.joshi442@example.com,2024-10-11,South,Metro,25-34,Female,Organic,2025-02-02,2025-02-02,1,2084.17,0.0,2084.17,0
+CUST-0443,Vihaan Kumar,vihaan.kumar443@example.com,2024-11-25,East,Metro,35-44,Female,Social,2025-02-22,2025-04-27,2,2170.55,1412.06,1085.28,1
+CUST-0444,Avni Reddy,avni.reddy444@example.com,2025-01-15,South,Metro,35-44,Male,Social,2025-02-07,2025-02-07,1,8030.53,0.0,8030.53,0
+CUST-0445,Diya Sharma,diya.sharma445@example.com,2025-07-09,South,Tier 1,25-34,Female,Marketplace,2025-09-21,2025-09-21,1,7854.38,0.0,7854.38,0
+CUST-0446,Shiv Jain,shiv.jain446@example.com,2025-10-17,North,Tier 2,25-34,Other,Marketplace,2025-12-03,2025-12-03,1,2056.68,0.0,2056.68,0
+CUST-0447,Aryan Shah,aryan.shah447@example.com,2024-11-29,North,Metro,35-44,Male,Paid Search,2025-01-27,2025-04-10,2,4199.69,0.0,2099.85,1
+CUST-0448,Isha Patel,isha.patel448@example.com,2025-09-13,South,Tier 2,45-54,Male,Email,2025-10-03,2025-10-03,1,2579.77,0.0,2579.77,0
+CUST-0449,Meera Mishra,meera.mishra449@example.com,2025-08-22,South,Metro,35-44,Female,Referral,2025-11-06,2025-11-06,1,3467.51,0.0,3467.51,0
+CUST-0450,Isha Gandhi,isha.gandhi450@example.com,2025-10-23,North,Tier 1,35-44,Female,Referral,2025-11-21,2025-11-21,1,1389.57,0.0,1389.57,0
+CUST-0451,Pari Patel,pari.patel451@example.com,2025-09-06,West,Metro,25-34,Female,Social,2025-12-26,2025-12-26,1,1049.12,0.0,1049.12,0
+CUST-0452,Neel Sinha,neel.sinha452@example.com,2024-11-20,West,Metro,25-34,Female,Social,2025-03-09,2025-05-26,2,2505.04,0.0,1252.52,1
+CUST-0453,Pranav Patel,pranav.patel453@example.com,2025-08-04,North,Metro,25-34,Male,Social,2025-08-14,2025-08-14,1,4384.54,0.0,4384.54,0
+CUST-0454,Arjun Khan,arjun.khan454@example.com,2025-07-14,South,Metro,45-54,Female,Social,2025-09-19,2025-12-23,2,0.0,2685.42,0.0,1
+CUST-0455,Aryan Kapoor,aryan.kapoor455@example.com,2025-04-14,South,Tier 1,55+,Male,Organic,2025-04-25,2025-04-25,1,7575.47,0.0,7575.47,0
+CUST-0456,Arjun Chopra,arjun.chopra456@example.com,2025-10-07,West,Tier 1,45-54,Female,Paid Search,2025-11-23,2025-11-23,1,645.48,0.0,645.48,0
+CUST-0457,Dhruv Nair,dhruv.nair457@example.com,2025-03-11,West,Tier 2,45-54,Female,Organic,2025-05-09,2025-06-15,2,884.62,3731.07,442.31,1
+CUST-0458,Ved Tripathi,ved.tripathi458@example.com,2024-12-01,East,Tier 2,18-24,Male,Social,2025-01-11,2025-03-09,2,3144.01,0.0,1572.0,1
+CUST-0459,Ishaan Kulkarni,ishaan.kulkarni459@example.com,2025-06-19,South,Metro,25-34,Female,Organic,2025-09-03,2025-09-03,1,1418.05,0.0,1418.05,0
+CUST-0460,Naina Khan,naina.khan460@example.com,2025-03-25,South,Tier 1,18-24,Male,Paid Search,2025-07-13,2025-09-15,2,3275.06,2127.76,1637.53,1
+CUST-0461,Yash Shetty,yash.shetty461@example.com,2025-04-13,North,Tier 2,18-24,Female,Social,2025-06-05,2025-07-20,2,2232.26,0.0,1116.13,1
+CUST-0462,Aarav Patel,aarav.patel462@example.com,2025-10-05,North,Metro,18-24,Male,Social,2025-12-28,2025-12-28,1,2912.03,0.0,2912.03,0
+CUST-0463,Kavya Malhotra,kavya.malhotra463@example.com,2025-02-20,South,Metro,25-34,Male,Organic,2025-03-19,2025-12-02,4,15688.17,0.0,3922.04,1
+CUST-0464,Vivaan Iyer,vivaan.iyer464@example.com,2025-07-12,West,Tier 1,55+,Male,Organic,2025-10-06,2025-10-06,1,2046.68,0.0,2046.68,0
+CUST-0465,Naina Varma,naina.varma465@example.com,2024-12-15,Central,Tier 1,35-44,Male,Referral,2025-01-15,2025-01-15,1,0.0,6172.82,0.0,0
+CUST-0466,Priya Shah,priya.shah466@example.com,2025-08-20,North,Metro,35-44,Male,Referral,2025-12-04,2025-12-04,1,0.0,793.82,0.0,0
+CUST-0467,Siddharth Gupta,siddharth.gupta467@example.com,2024-10-29,West,Metro,45-54,Male,Organic,2025-02-01,2025-02-01,1,1789.17,0.0,1789.17,0
+CUST-0468,Sara Kulkarni,sara.kulkarni468@example.com,2025-08-04,North,Metro,35-44,Female,Email,2025-09-16,2025-09-16,1,3047.63,0.0,3047.63,0
+CUST-0469,Aditi Reddy,aditi.reddy469@example.com,2025-11-13,East,Tier 1,25-34,Male,Organic,2025-11-15,2025-12-19,2,4613.95,0.0,2306.97,1
+CUST-0470,Aisha Menon,aisha.menon470@example.com,2025-09-14,South,Tier 2,25-34,Male,Social,2025-11-02,2025-11-02,1,3231.19,0.0,3231.19,0
+CUST-0471,Advait Tiwari,advait.tiwari471@example.com,2025-08-15,North,Tier 2,45-54,Female,Social,2025-10-05,2025-10-05,1,1181.21,0.0,1181.21,0
+CUST-0472,Kabir Malhotra,kabir.malhotra472@example.com,2025-10-26,South,Metro,25-34,Male,Social,2025-12-12,2025-12-12,1,0.0,4990.34,0.0,0
+CUST-0473,Om Kapoor,om.kapoor473@example.com,2025-03-10,West,Tier 1,35-44,Female,Organic,2025-06-04,2025-06-04,1,601.84,0.0,601.84,0
+CUST-0474,Aarav Yadav,aarav.yadav474@example.com,2025-04-03,Central,Tier 1,18-24,Female,Social,2025-07-02,2025-09-22,2,9262.53,0.0,4631.27,1
+CUST-0475,Sara Joshi,sara.joshi475@example.com,2025-09-29,South,Metro,55+,Female,Paid Search,2025-12-24,2025-12-24,1,0.0,7009.7,0.0,0
+CUST-0476,Aisha Shah,aisha.shah476@example.com,2025-04-04,North,Metro,18-24,Male,Social,2025-08-01,2025-09-23,2,3628.23,0.0,1814.11,1
+CUST-0477,Pranav Joshi,pranav.joshi477@example.com,2025-09-14,North,Tier 2,18-24,Male,Email,2025-11-07,2025-11-07,1,2354.06,0.0,2354.06,0
+CUST-0478,Naina Chandra,naina.chandra478@example.com,2024-12-24,North,Tier 2,18-24,Female,Paid Search,2025-03-11,2025-09-11,4,6486.12,0.0,1621.53,1
+CUST-0479,Naina Iyer,naina.iyer479@example.com,2025-10-22,East,Tier 2,45-54,Female,Email,2025-12-19,2025-12-19,1,1109.35,0.0,1109.35,0
+CUST-0480,Aisha Mehta,aisha.mehta480@example.com,2025-05-18,North,Tier 1,25-34,Male,Organic,2025-07-25,2025-07-25,1,7626.43,0.0,7626.43,0
+CUST-0481,Siddharth Jain,siddharth.jain481@example.com,2025-02-02,East,Tier 3,35-44,Female,Referral,2025-04-25,2025-04-25,1,1977.08,0.0,1977.08,0
+CUST-0482,Tanvi Saxena,tanvi.saxena482@example.com,2025-02-16,Central,Tier 2,45-54,Male,Referral,2025-03-01,2025-05-16,2,1083.45,1485.97,541.73,1
+CUST-0483,Rohan Singh,rohan.singh483@example.com,2025-06-28,East,Tier 1,18-24,Female,Paid Search,2025-09-27,2025-12-20,2,3568.22,2139.14,1784.11,1
+CUST-0484,Arjun Tiwari,arjun.tiwari484@example.com,2025-05-29,East,Tier 2,18-24,Male,Organic,2025-07-14,2025-07-14,1,4157.13,0.0,4157.13,0
+CUST-0485,Tanvi Bhat,tanvi.bhat485@example.com,2025-03-09,Central,Tier 2,35-44,Female,Marketplace,2025-04-24,2025-04-24,1,5374.21,0.0,5374.21,0
+CUST-0486,Nisha Tripathi,nisha.tripathi486@example.com,2025-10-16,North,Metro,35-44,Male,Paid Search,2025-11-02,2025-11-02,1,4323.27,0.0,4323.27,0
+CUST-0487,Meera Menon,meera.menon487@example.com,2025-01-13,East,Tier 2,18-24,Female,Marketplace,2025-01-23,2025-01-23,1,0.0,1905.87,0.0,0
+CUST-0488,Pranav Shah,pranav.shah488@example.com,2025-08-02,West,Tier 1,35-44,Male,Social,2025-10-06,2025-11-15,2,1713.15,0.0,856.58,1
+CUST-0489,Siddharth Desai,siddharth.desai489@example.com,2025-03-14,West,Tier 1,18-24,Female,Organic,2025-05-28,2025-05-28,1,988.0,0.0,988.0,0
+CUST-0490,Kavya Saxena,kavya.saxena490@example.com,2025-05-22,East,Metro,18-24,Male,Social,2025-09-12,2025-12-12,2,4709.02,0.0,2354.51,1
+CUST-0491,Zara Pillai,zara.pillai491@example.com,2025-07-30,East,Tier 1,25-34,Female,Social,2025-08-13,2025-09-20,2,0.0,5197.62,0.0,1
+CUST-0492,Shiv Roy,shiv.roy492@example.com,2025-04-17,West,Tier 1,45-54,Female,Social,2025-05-03,2025-10-12,3,10962.14,0.0,3654.05,1
+CUST-0493,Pari Bhat,pari.bhat493@example.com,2025-03-05,East,Tier 2,25-34,Male,Referral,2025-05-07,2025-05-07,1,1439.04,0.0,1439.04,0
+CUST-0494,Ananya Mehta,ananya.mehta494@example.com,2025-09-03,South,Tier 3,35-44,Female,Organic,2025-09-20,2025-12-15,2,10961.4,0.0,5480.7,1
+CUST-0495,Rahul Chopra,rahul.chopra495@example.com,2025-03-29,South,Tier 2,18-24,Female,Social,2025-04-27,2025-10-28,4,4907.16,9775.38,1226.79,1
+CUST-0496,Aisha Kumar,aisha.kumar496@example.com,2025-02-23,East,Tier 1,25-34,Male,Organic,2025-06-08,2025-06-08,1,1417.43,0.0,1417.43,0
+CUST-0497,Ishaan Sinha,ishaan.sinha497@example.com,2025-01-06,South,Tier 2,25-34,Female,Paid Search,2025-05-02,2025-06-26,2,2948.14,0.0,1474.07,1
+CUST-0498,Aisha Khan,aisha.khan498@example.com,2024-11-26,West,Metro,45-54,Female,Organic,2025-02-01,2025-02-01,1,975.91,0.0,975.91,0
+CUST-0499,Nisha Yadav,nisha.yadav499@example.com,2025-07-09,West,Metro,25-34,Female,Marketplace,2025-07-09,2025-09-29,2,1045.69,3039.39,522.85,1
+CUST-0500,Aisha Mishra,aisha.mishra500@example.com,2025-10-24,Central,Tier 2,25-34,Male,Organic,2025-11-08,2025-11-08,1,2461.51,0.0,2461.51,0
+CUST-0501,Rohan Mehta,rohan.mehta501@example.com,2025-06-22,Central,Tier 1,35-44,Male,Organic,2025-10-17,2025-10-17,1,1634.59,0.0,1634.59,0
+CUST-0502,Meera Srinivasan,meera.srinivasan502@example.com,2025-09-03,West,Metro,35-44,Female,Organic,2025-12-07,2025-12-07,1,2201.62,0.0,2201.62,0
+CUST-0503,Sahil Gandhi,sahil.gandhi503@example.com,2025-05-06,North,Metro,18-24,Female,Marketplace,2025-07-01,2025-07-01,1,1781.73,0.0,1781.73,0
+CUST-0504,Dhruv Bhat,dhruv.bhat504@example.com,2025-09-16,South,Tier 2,25-34,Female,Marketplace,2025-11-09,2025-11-09,1,1819.27,0.0,1819.27,0
+CUST-0505,Pari Kapoor,pari.kapoor505@example.com,2025-09-14,West,Tier 2,35-44,Male,Organic,2025-10-15,2025-10-15,1,645.48,0.0,645.48,0
+CUST-0506,Vivaan Malhotra,vivaan.malhotra506@example.com,2025-10-23,South,Metro,25-34,Female,Email,2025-12-26,2025-12-26,1,753.36,0.0,753.36,0
+CUST-0507,Meera Joshi,meera.joshi507@example.com,2025-03-28,North,Tier 2,35-44,Male,Organic,2025-05-11,2025-05-11,1,3293.03,0.0,3293.03,0
+CUST-0508,Priya Mehta,priya.mehta508@example.com,2025-03-22,North,Metro,55+,Female,Email,2025-04-27,2025-09-05,3,3704.34,0.0,1234.78,1
+CUST-0509,Nisha Gandhi,nisha.gandhi509@example.com,2025-06-08,West,Metro,25-34,Female,Social,2025-09-26,2025-11-20,2,4215.59,0.0,2107.8,1
+CUST-0510,Isha Nair,isha.nair510@example.com,2024-12-17,North,Tier 1,35-44,Male,Paid Search,2025-02-16,2025-08-28,3,5491.22,0.0,1830.41,1
+CUST-0511,Yash Roy,yash.roy511@example.com,2025-07-10,South,Metro,25-34,Male,Marketplace,2025-11-04,2025-12-25,2,2256.6,711.11,1128.3,1
+CUST-0512,Sara Saxena,sara.saxena512@example.com,2024-10-01,West,Tier 1,18-24,Female,Referral,2025-01-09,2025-01-09,1,2444.18,0.0,2444.18,0
+CUST-0513,Dhruv Khan,dhruv.khan513@example.com,2025-08-18,West,Tier 3,25-34,Other,Paid Search,2025-09-10,2025-10-10,2,5609.1,0.0,2804.55,1
+CUST-0514,Kavya Shetty,kavya.shetty514@example.com,2025-09-12,North,Tier 2,35-44,Female,Social,2025-12-19,2025-12-19,1,4613.75,0.0,4613.75,0
+CUST-0515,Riya Varma,riya.varma515@example.com,2025-08-13,West,Tier 1,35-44,Male,Marketplace,2025-10-26,2025-10-26,1,2030.02,0.0,2030.02,0
+CUST-0516,Advait Mishra,advait.mishra516@example.com,2025-05-03,South,Metro,35-44,Female,Social,2025-05-17,2025-08-01,2,6039.35,0.0,3019.68,1
+CUST-0517,Dhruv Roy,dhruv.roy517@example.com,2025-03-09,North,Tier 2,35-44,Male,Referral,2025-06-10,2025-06-10,1,1287.31,0.0,1287.31,0
+CUST-0518,Tanvi Patel,tanvi.patel518@example.com,2025-10-19,West,Tier 1,35-44,Female,Paid Search,2025-10-20,2025-10-20,1,6297.48,0.0,6297.48,0
+CUST-0519,Diya Nanda,diya.nanda519@example.com,2025-09-12,South,Tier 2,25-34,Male,Organic,2025-10-05,2025-10-05,1,600.85,0.0,600.85,0
+CUST-0520,Pranav Gandhi,pranav.gandhi520@example.com,2024-11-29,South,Tier 1,18-24,Female,Marketplace,2025-03-10,2025-07-04,2,4311.57,0.0,2155.78,1
+CUST-0521,Kavya Reddy,kavya.reddy521@example.com,2025-07-07,North,Tier 1,18-24,Female,Organic,2025-07-08,2025-10-23,3,1940.57,1584.92,646.86,1
+CUST-0522,Sara Shetty,sara.shetty522@example.com,2025-01-14,East,Tier 3,35-44,Female,Referral,2025-03-22,2025-11-01,4,2535.14,635.59,633.78,1
+CUST-0523,Kavya Kulkarni,kavya.kulkarni523@example.com,2025-03-21,East,Tier 2,55+,Female,Organic,2025-07-09,2025-07-09,1,741.67,0.0,741.67,0
+CUST-0524,Zara Sharma,zara.sharma524@example.com,2025-01-09,South,Metro,35-44,Female,Social,2025-04-15,2025-04-15,1,0.0,781.23,0.0,0
+CUST-0525,Aarav Reddy,aarav.reddy525@example.com,2024-11-03,East,Tier 3,55+,Female,Email,2025-02-12,2025-02-12,1,5521.42,0.0,5521.42,0
+CUST-0526,Vihaan Srinivasan,vihaan.srinivasan526@example.com,2025-08-15,North,Tier 2,55+,Male,Social,2025-09-09,2025-12-09,2,0.0,2314.89,0.0,1
+CUST-0527,Saanvi Gupta,saanvi.gupta527@example.com,2025-01-05,South,Metro,35-44,Female,Marketplace,2025-05-03,2025-06-29,2,3518.84,944.37,1759.42,1
+CUST-0528,Diya Kulkarni,diya.kulkarni528@example.com,2025-10-06,North,Tier 1,25-34,Female,Organic,2025-11-20,2025-11-20,1,1205.2,0.0,1205.2,0
+CUST-0529,Ved Sharma,ved.sharma529@example.com,2025-06-27,West,Metro,35-44,Female,Email,2025-08-22,2025-11-24,2,1759.14,0.0,879.57,1
+CUST-0530,Neel Jain,neel.jain530@example.com,2025-06-12,North,Metro,55+,Female,Paid Search,2025-09-28,2025-11-02,2,7086.64,0.0,3543.32,1
+CUST-0531,Sara Desai,sara.desai531@example.com,2025-02-17,South,Metro,18-24,Female,Paid Search,2025-04-26,2025-04-26,1,1933.75,0.0,1933.75,0
+CUST-0532,Vihaan Mehta,vihaan.mehta532@example.com,2025-01-08,South,Tier 1,45-54,Female,Paid Search,2025-04-18,2025-04-18,1,1774.06,0.0,1774.06,0
+CUST-0533,Aditi Kulkarni,aditi.kulkarni533@example.com,2025-06-22,West,Tier 2,35-44,Male,Social,2025-09-21,2025-09-21,1,1433.04,0.0,1433.04,0
+CUST-0534,Rohan Kapoor,rohan.kapoor534@example.com,2024-10-12,East,Tier 3,18-24,Female,Marketplace,2025-01-02,2025-11-06,4,2990.04,3808.24,747.51,1
+CUST-0535,Meera Yadav,meera.yadav535@example.com,2025-07-05,North,Tier 2,25-34,Male,Organic,2025-10-10,2025-10-10,1,2144.14,0.0,2144.14,0
+CUST-0536,Vikram Shah,vikram.shah536@example.com,2025-07-16,Central,Tier 1,55+,Female,Marketplace,2025-10-18,2025-10-18,1,785.73,0.0,785.73,0
+CUST-0537,Pranav Kulkarni,pranav.kulkarni537@example.com,2025-12-06,North,Tier 2,45-54,Male,Organic,2025-12-21,2025-12-21,1,0.0,3331.72,0.0,0
+CUST-0538,Kabir Iyer,kabir.iyer538@example.com,2025-05-02,West,Tier 2,55+,Female,Social,2025-07-03,2025-11-02,3,8368.17,0.0,2789.39,1
+CUST-0539,Avni Dubey,avni.dubey539@example.com,2025-01-24,South,Tier 1,55+,Female,Referral,2025-03-18,2025-03-18,1,894.59,0.0,894.59,0
+CUST-0540,Rahul Pillai,rahul.pillai540@example.com,2025-03-06,North,Tier 1,45-54,Female,Social,2025-03-27,2025-03-27,1,4677.27,0.0,4677.27,0
+CUST-0541,Krishna Varma,krishna.varma541@example.com,2025-05-26,North,Tier 2,35-44,Female,Organic,2025-08-05,2025-08-05,1,882.5,0.0,882.5,0
+CUST-0542,Shiv Kapoor,shiv.kapoor542@example.com,2025-05-25,South,Tier 3,35-44,Female,Paid Search,2025-07-20,2025-07-20,1,2927.02,0.0,2927.02,0
+CUST-0543,Yash Khan,yash.khan543@example.com,2025-01-28,East,Metro,45-54,Male,Social,2025-04-12,2025-04-12,1,1257.63,0.0,1257.63,0
+CUST-0544,Isha Mishra,isha.mishra544@example.com,2025-07-17,North,Metro,18-24,Female,Email,2025-07-20,2025-07-20,1,1476.51,0.0,1476.51,0
+CUST-0545,Riya Roy,riya.roy545@example.com,2025-04-05,East,Metro,18-24,Female,Paid Search,2025-07-07,2025-10-10,3,4327.11,0.0,1442.37,1
+CUST-0546,Aditi Roy,aditi.roy546@example.com,2025-06-16,North,Tier 1,55+,Male,Social,2025-08-17,2025-12-09,2,4205.06,0.0,2102.53,1
+CUST-0547,Zara Desai,zara.desai547@example.com,2025-06-14,East,Metro,35-44,Female,Paid Search,2025-07-20,2025-07-20,1,1536.35,0.0,1536.35,0
+CUST-0548,Arjun Tripathi,arjun.tripathi548@example.com,2025-04-04,East,Metro,25-34,Female,Referral,2025-07-26,2025-09-28,2,2957.01,1474.19,1478.51,1
+CUST-0549,Pari Chandra,pari.chandra549@example.com,2025-07-17,West,Metro,45-54,Female,Referral,2025-10-09,2025-10-09,1,1828.91,0.0,1828.91,0
+CUST-0550,Isha Saxena,isha.saxena550@example.com,2025-08-18,South,Tier 1,35-44,Female,Social,2025-09-24,2025-09-24,1,897.2,0.0,897.2,0
+CUST-0551,Om Nair,om.nair551@example.com,2025-02-18,West,Metro,25-34,Female,Referral,2025-05-24,2025-09-25,3,6852.49,0.0,2284.16,1
+CUST-0552,Sara Zutshi,sara.zutshi552@example.com,2025-09-08,East,Metro,25-34,Male,Social,2025-12-04,2025-12-04,1,2033.15,0.0,2033.15,0
+CUST-0553,Tanvi Singh,tanvi.singh553@example.com,2025-05-31,South,Tier 1,25-34,Male,Email,2025-06-15,2025-10-07,3,3939.36,0.0,1313.12,1
+CUST-0554,Isha Malhotra,isha.malhotra554@example.com,2024-11-25,West,Metro,35-44,Female,Referral,2025-02-23,2025-02-23,1,1969.21,0.0,1969.21,0
+CUST-0555,Yash Patel,yash.patel555@example.com,2025-09-21,North,Tier 3,45-54,Male,Social,2025-09-25,2025-09-25,1,0.0,1230.68,0.0,0
+CUST-0556,Neel Yadav,neel.yadav556@example.com,2025-07-08,North,Metro,25-34,Female,Social,2025-10-18,2025-10-18,1,12342.43,0.0,12342.43,0
+CUST-0557,Aditi Khan,aditi.khan557@example.com,2025-09-07,South,Tier 1,55+,Female,Paid Search,2025-11-28,2025-11-28,1,0.0,2884.08,0.0,0
+CUST-0558,Kavya Pillai,kavya.pillai558@example.com,2025-01-30,West,Metro,18-24,Female,Social,2025-04-26,2025-04-26,1,496.57,0.0,496.57,0
+CUST-0559,Ananya Varma,ananya.varma559@example.com,2025-05-21,East,Metro,18-24,Male,Organic,2025-08-03,2025-08-03,1,2935.66,0.0,2935.66,0
+CUST-0560,Vihaan Tiwari,vihaan.tiwari560@example.com,2025-10-12,North,Metro,35-44,Female,Social,2025-11-17,2025-11-17,1,4223.31,0.0,4223.31,0
+CUST-0561,Vihaan Jain,vihaan.jain561@example.com,2024-12-11,South,Tier 1,25-34,Female,Organic,2025-02-10,2025-04-10,2,4319.87,0.0,2159.93,1
+CUST-0562,Kabir Chandra,kabir.chandra562@example.com,2025-03-21,North,Metro,35-44,Female,Organic,2025-05-12,2025-05-12,1,0.0,2329.07,0.0,0
+CUST-0563,Rohan Shah,rohan.shah563@example.com,2024-11-29,North,Tier 1,18-24,Female,Marketplace,2025-03-09,2025-03-09,1,1195.3,0.0,1195.3,0
+CUST-0564,Aryan Dubey,aryan.dubey564@example.com,2025-07-21,West,Tier 3,25-34,Male,Organic,2025-11-06,2025-12-21,2,837.87,1638.25,418.94,1
+CUST-0565,Pranav Srinivasan,pranav.srinivasan565@example.com,2025-06-27,North,Tier 1,35-44,Female,Paid Search,2025-09-19,2025-11-24,2,4192.86,0.0,2096.43,1
+CUST-0566,Aisha Nanda,aisha.nanda566@example.com,2025-01-08,South,Metro,18-24,Female,Social,2025-03-25,2025-03-25,1,1522.91,0.0,1522.91,0
+CUST-0567,Sahil Desai,sahil.desai567@example.com,2025-03-26,South,Tier 2,18-24,Female,Paid Search,2025-07-11,2025-07-11,1,5409.45,0.0,5409.45,0
+CUST-0568,Priya Dubey,priya.dubey568@example.com,2025-08-04,North,Tier 3,35-44,Female,Paid Search,2025-09-21,2025-09-21,1,1485.97,0.0,1485.97,0
+CUST-0569,Meera Desai,meera.desai569@example.com,2025-11-04,East,Tier 3,55+,Female,Paid Search,2025-12-13,2025-12-13,1,5182.27,0.0,5182.27,0
+CUST-0570,Aarav Mehta,aarav.mehta570@example.com,2025-05-28,West,Tier 2,45-54,Female,Paid Search,2025-07-28,2025-09-29,2,1424.81,2319.07,712.4,1
+CUST-0571,Vihaan Gandhi,vihaan.gandhi571@example.com,2025-07-07,North,Metro,25-34,Male,Organic,2025-08-27,2025-11-23,2,8843.7,0.0,4421.85,1
+CUST-0572,Ananya Kulkarni,ananya.kulkarni572@example.com,2025-04-13,Central,Tier 1,18-24,Female,Paid Search,2025-06-01,2025-06-01,1,735.38,0.0,735.38,0
+CUST-0573,Aryan Khan,aryan.khan573@example.com,2025-08-19,South,Tier 2,25-34,Male,Organic,2025-09-25,2025-09-25,1,0.0,708.71,0.0,0
+CUST-0574,Ananya Gandhi,ananya.gandhi574@example.com,2025-08-21,South,Tier 2,25-34,Female,Social,2025-12-15,2025-12-15,1,599.0,0.0,599.0,0
+CUST-0575,Avni Mishra,avni.mishra575@example.com,2025-01-21,East,Tier 3,35-44,Female,Paid Search,2025-04-20,2025-07-04,2,920.83,800.11,460.42,1
+CUST-0576,Dhruv Shah,dhruv.shah576@example.com,2024-10-20,West,Metro,45-54,Male,Paid Search,2025-02-08,2025-02-08,1,1871.75,0.0,1871.75,0
+CUST-0577,Sahil Nanda,sahil.nanda577@example.com,2025-10-08,East,Metro,35-44,Male,Marketplace,2025-11-22,2025-11-22,1,2216.61,0.0,2216.61,0
+CUST-0578,Priya Khan,priya.khan578@example.com,2024-12-17,South,Tier 1,18-24,Female,Marketplace,2025-01-07,2025-07-12,4,13427.7,617.92,3356.92,1
+CUST-0579,Sahil Tiwari,sahil.tiwari579@example.com,2025-06-04,North,Metro,25-34,Female,Organic,2025-08-04,2025-11-03,2,3758.49,0.0,1879.24,1
+CUST-0580,Sneha Singh,sneha.singh580@example.com,2024-12-26,South,Tier 2,25-34,Male,Paid Search,2025-04-03,2025-04-03,1,1892.02,0.0,1892.02,0
+CUST-0581,Dhruv Tiwari,dhruv.tiwari581@example.com,2025-11-18,South,Metro,25-34,Female,Organic,2025-12-20,2025-12-20,1,0.0,826.18,0.0,0
+CUST-0582,Zara Chandra,zara.chandra582@example.com,2025-01-11,North,Metro,35-44,Male,Paid Search,2025-02-18,2025-07-23,3,9219.87,0.0,3073.29,1
+CUST-0583,Priya Tripathi,priya.tripathi583@example.com,2025-03-31,South,Tier 1,18-24,Female,Social,2025-06-02,2025-06-02,1,3432.52,0.0,3432.52,0
+CUST-0584,Zara Shetty,zara.shetty584@example.com,2025-06-22,South,Tier 1,25-34,Female,Paid Search,2025-10-11,2025-10-11,1,1965.91,0.0,1965.91,0
+CUST-0585,Sara Singh,sara.singh585@example.com,2025-01-16,South,Tier 2,35-44,Male,Marketplace,2025-03-26,2025-03-26,1,1603.82,0.0,1603.82,0
+CUST-0586,Aryan Menon,aryan.menon586@example.com,2025-06-20,North,Tier 1,18-24,Female,Organic,2025-06-23,2025-10-04,3,6996.36,0.0,2332.12,1
+CUST-0587,Om Jain,om.jain587@example.com,2025-08-02,West,Metro,35-44,Female,Email,2025-11-24,2025-11-24,1,3471.13,0.0,3471.13,0
+CUST-0588,Sneha Menon,sneha.menon588@example.com,2025-06-13,Central,Metro,35-44,Female,Marketplace,2025-09-27,2025-09-27,1,3663.53,0.0,3663.53,0
+CUST-0589,Saanvi Nair,saanvi.nair589@example.com,2025-10-02,South,Tier 3,25-34,Female,Social,2025-12-27,2025-12-27,1,7982.0,0.0,7982.0,0
+CUST-0590,Riya Gandhi,riya.gandhi590@example.com,2025-08-02,West,Metro,18-24,Female,Paid Search,2025-11-12,2025-11-12,1,2049.18,0.0,2049.18,0
+CUST-0591,Yash Shah,yash.shah591@example.com,2025-09-27,Central,Tier 2,25-34,Female,Social,2025-10-05,2025-10-05,1,0.0,6328.13,0.0,0
+CUST-0592,Nisha Kulkarni,nisha.kulkarni592@example.com,2025-06-26,North,Metro,45-54,Female,Social,2025-10-13,2025-10-13,1,3362.54,0.0,3362.54,0
+CUST-0593,Advait Jain,advait.jain593@example.com,2025-02-09,North,Metro,25-34,Male,Organic,2025-06-06,2025-10-02,2,2801.63,0.0,1400.82,1
+CUST-0594,Vikram Mishra,vikram.mishra594@example.com,2025-03-25,North,Tier 2,18-24,Female,Email,2025-07-12,2025-12-22,3,6915.25,0.0,2305.08,1
+CUST-0595,Dhruv Agarwal,dhruv.agarwal595@example.com,2025-09-21,West,Tier 3,45-54,Male,Social,2025-11-22,2025-11-22,1,5086.3,0.0,5086.3,0
+CUST-0596,Rohan Verma,rohan.verma596@example.com,2025-10-14,North,Metro,55+,Female,Marketplace,2025-10-21,2025-10-21,1,2605.26,0.0,2605.26,0
+CUST-0597,Sara Agarwal,sara.agarwal597@example.com,2025-04-05,West,Metro,18-24,Female,Organic,2025-07-16,2025-07-16,1,1227.68,0.0,1227.68,0
+CUST-0598,Vikram Bhat,vikram.bhat598@example.com,2024-11-09,Central,Tier 2,18-24,Male,Social,2025-01-02,2025-08-03,4,7359.91,0.0,1839.98,1
+CUST-0599,Ishaan Reddy,ishaan.reddy599@example.com,2025-08-08,West,Tier 3,18-24,Male,Social,2025-11-06,2025-11-06,1,1392.57,0.0,1392.57,0
+CUST-0600,Tara Menon,tara.menon600@example.com,2025-01-11,South,Tier 2,35-44,Female,Referral,2025-02-06,2025-10-12,3,10100.62,0.0,3366.87,1
+CUST-0601,Dhruv Verma,dhruv.verma601@example.com,2025-07-24,West,Tier 1,18-24,Male,Paid Search,2025-08-10,2025-08-10,1,2042.87,0.0,2042.87,0
+CUST-0602,Advait Shah,advait.shah602@example.com,2025-11-25,North,Tier 1,35-44,Female,Paid Search,2025-12-24,2025-12-24,1,684.14,0.0,684.14,0
+CUST-0603,Rohan Chopra,rohan.chopra603@example.com,2025-01-20,West,Tier 1,25-34,Female,Paid Search,2025-04-20,2025-04-20,1,4310.04,0.0,4310.04,0
+CUST-0604,Kabir Reddy,kabir.reddy604@example.com,2025-02-08,Central,Tier 1,25-34,Female,Marketplace,2025-04-03,2025-06-14,2,3479.26,0.0,1739.63,1
+CUST-0605,Ishaan Malhotra,ishaan.malhotra605@example.com,2025-02-09,South,Tier 1,25-34,Male,Organic,2025-04-24,2025-04-24,1,0.0,1355.69,0.0,0
+CUST-0606,Sneha Gupta,sneha.gupta606@example.com,2025-07-28,West,Tier 1,25-34,Male,Referral,2025-09-27,2025-12-09,2,4841.41,0.0,2420.7,1
+CUST-0607,Ved Mehta,ved.mehta607@example.com,2025-01-07,North,Metro,25-34,Female,Marketplace,2025-04-06,2025-07-26,2,6403.21,0.0,3201.61,1
+CUST-0608,Kavya Gupta,kavya.gupta608@example.com,2025-08-25,West,Tier 3,55+,Female,Email,2025-09-28,2025-12-23,2,1005.43,594.46,502.71,1
+CUST-0609,Priya Chopra,priya.chopra609@example.com,2025-07-30,West,Metro,35-44,Female,Social,2025-11-08,2025-11-08,1,7722.89,0.0,7722.89,0
+CUST-0610,Tara Malhotra,tara.malhotra610@example.com,2025-03-06,South,Tier 1,18-24,Female,Paid Search,2025-05-20,2025-07-25,2,813.6,1802.42,406.8,1
+CUST-0611,Priya Menon,priya.menon611@example.com,2025-01-01,West,Tier 2,25-34,Male,Organic,2025-01-20,2025-05-08,2,5340.35,0.0,2670.18,1
+CUST-0612,Pari Sharma,pari.sharma612@example.com,2024-11-30,West,Tier 1,35-44,Male,Social,2025-01-06,2025-04-02,2,667.16,1443.54,333.58,1
+CUST-0613,Meera Gandhi,meera.gandhi613@example.com,2024-12-21,South,Tier 1,55+,Male,Marketplace,2025-04-15,2025-05-17,2,2279.97,0.0,1139.99,1
+CUST-0614,Advait Kumar,advait.kumar614@example.com,2025-03-02,North,Metro,18-24,Female,Paid Search,2025-06-23,2025-06-23,1,2486.51,0.0,2486.51,0
+CUST-0615,Pari Shah,pari.shah615@example.com,2025-06-29,North,Metro,35-44,Female,Marketplace,2025-08-25,2025-08-25,1,2484.01,0.0,2484.01,0
+CUST-0616,Kavya Menon,kavya.menon616@example.com,2025-11-13,South,Tier 2,45-54,Female,Organic,2025-12-21,2025-12-21,1,0.0,936.42,0.0,0
+CUST-0617,Diya Gandhi,diya.gandhi617@example.com,2024-12-23,West,Tier 1,45-54,Male,Referral,2025-02-10,2025-03-31,2,2179.55,744.37,1089.78,1
+CUST-0618,Advait Nanda,advait.nanda618@example.com,2025-08-03,Central,Tier 1,18-24,Female,Paid Search,2025-11-16,2025-12-09,2,3311.13,0.0,1655.57,1
+CUST-0619,Diya Saxena,diya.saxena619@example.com,2025-07-14,South,Tier 1,18-24,Female,Social,2025-11-05,2025-12-20,2,6500.08,0.0,3250.04,1
+CUST-0620,Sara Varma,sara.varma620@example.com,2025-03-29,South,Tier 2,18-24,Female,Organic,2025-04-11,2025-05-19,2,5735.24,0.0,2867.62,1
+CUST-0621,Nisha Patel,nisha.patel621@example.com,2024-11-27,South,Tier 1,18-24,Male,Social,2025-03-19,2025-03-19,1,3769.09,0.0,3769.09,0
+CUST-0622,Ved Roy,ved.roy622@example.com,2025-02-08,North,Tier 2,35-44,Male,Paid Search,2025-02-22,2025-02-22,1,1323.62,0.0,1323.62,0
+CUST-0623,Om Menon,om.menon623@example.com,2025-07-07,South,Tier 1,35-44,Female,Marketplace,2025-09-09,2025-09-09,1,0.0,1340.11,0.0,0
+CUST-0624,Aditi Gupta,aditi.gupta624@example.com,2025-09-29,South,Tier 2,35-44,Female,Organic,2025-11-05,2025-11-05,1,586.42,0.0,586.42,0
+CUST-0625,Vivaan Singh,vivaan.singh625@example.com,2024-12-28,West,Tier 1,25-34,Female,Organic,2025-01-03,2025-01-03,1,1050.89,0.0,1050.89,0
+CUST-0626,Rahul Joshi,rahul.joshi626@example.com,2025-01-05,North,Tier 3,25-34,Female,Marketplace,2025-03-03,2025-11-12,5,2791.62,3916.27,558.32,1
+CUST-0627,Sara Iyer,sara.iyer627@example.com,2025-10-13,North,Tier 3,18-24,Female,Referral,2025-11-12,2025-11-12,1,2136.64,0.0,2136.64,0
+CUST-0628,Aarav Singh,aarav.singh628@example.com,2025-03-02,West,Tier 2,18-24,Male,Social,2025-04-26,2025-04-26,1,1217.68,0.0,1217.68,0
+CUST-0629,Tara Rao,tara.rao629@example.com,2025-10-03,West,Tier 2,35-44,Female,Social,2025-11-10,2025-11-10,1,2326.57,0.0,2326.57,0
+CUST-0630,Isha Bansal,isha.bansal630@example.com,2024-12-16,Central,Metro,35-44,Male,Social,2025-01-15,2025-01-15,1,882.82,0.0,882.82,0
+CUST-0631,Om Sharma,om.sharma631@example.com,2025-05-12,North,Metro,18-24,Male,Social,2025-07-02,2025-07-02,1,2096.66,0.0,2096.66,0
+CUST-0632,Priya Sharma,priya.sharma632@example.com,2025-04-30,South,Metro,25-34,Female,Social,2025-08-12,2025-11-21,3,6058.25,739.88,2019.42,1
+CUST-0633,Sara Chopra,sara.chopra633@example.com,2025-08-08,West,Tier 3,18-24,Female,Paid Search,2025-10-25,2025-10-25,1,3890.6,0.0,3890.6,0
+CUST-0634,Advait Reddy,advait.reddy634@example.com,2024-12-18,West,Tier 1,45-54,Female,Email,2025-02-04,2025-02-04,1,1154.64,0.0,1154.64,0
+CUST-0635,Kabir Menon,kabir.menon635@example.com,2025-01-27,West,Tier 2,18-24,Female,Organic,2025-03-22,2025-09-10,3,5198.28,0.0,1732.76,1
+CUST-0636,Aryan Tripathi,aryan.tripathi636@example.com,2025-05-13,West,Tier 3,25-34,Female,Organic,2025-08-28,2025-11-18,3,4353.86,1912.77,1451.29,1
+CUST-0637,Vikram Patel,vikram.patel637@example.com,2025-05-12,North,Tier 2,25-34,Female,Social,2025-07-18,2025-07-18,1,3294.1,0.0,3294.1,0
+CUST-0638,Neel Mehta,neel.mehta638@example.com,2025-11-07,North,Tier 1,35-44,Female,Paid Search,2025-12-27,2025-12-27,1,632.0,0.0,632.0,0
+CUST-0639,Kabir Roy,kabir.roy639@example.com,2025-04-26,West,Tier 2,55+,Female,Social,2025-07-05,2025-07-05,1,6514.89,0.0,6514.89,0
+CUST-0640,Siddharth Nair,siddharth.nair640@example.com,2025-08-25,South,Tier 3,45-54,Female,Organic,2025-11-16,2025-11-16,1,771.34,0.0,771.34,0
+CUST-0641,Tanvi Reddy,tanvi.reddy641@example.com,2025-04-16,West,Tier 1,18-24,Male,Email,2025-08-02,2025-08-02,1,2311.58,0.0,2311.58,0
+CUST-0642,Vihaan Dubey,vihaan.dubey642@example.com,2025-10-21,North,Metro,35-44,Male,Paid Search,2025-10-23,2025-12-31,2,980.75,6606.11,490.38,1
+CUST-0643,Rohan Bansal,rohan.bansal643@example.com,2025-07-13,West,Metro,35-44,Male,Social,2025-08-01,2025-08-01,1,1265.16,0.0,1265.16,0
+CUST-0644,Yash Agarwal,yash.agarwal644@example.com,2025-04-21,North,Metro,25-34,Male,Social,2025-07-22,2025-07-22,1,0.0,898.1,0.0,0
+CUST-0645,Sneha Nanda,sneha.nanda645@example.com,2025-04-30,North,Tier 3,25-34,Female,Social,2025-07-14,2025-11-05,2,756.06,6567.37,378.03,1
+CUST-0646,Rohan Sharma,rohan.sharma646@example.com,2024-11-30,West,Metro,25-34,Male,Social,2025-03-19,2025-05-20,2,4988.4,0.0,2494.2,1
+CUST-0647,Ved Gandhi,ved.gandhi647@example.com,2025-09-24,West,Tier 1,35-44,Female,Referral,2025-12-07,2025-12-07,1,658.46,0.0,658.46,0
+CUST-0648,Naina Chopra,naina.chopra648@example.com,2025-04-29,East,Tier 3,35-44,Male,Organic,2025-06-12,2025-10-09,2,3321.99,0.0,1661.0,1
+CUST-0649,Kavya Gandhi,kavya.gandhi649@example.com,2025-04-20,South,Tier 1,35-44,Male,Paid Search,2025-08-14,2025-08-14,1,414.51,0.0,414.51,0
+CUST-0650,Tara Desai,tara.desai650@example.com,2025-08-24,West,Tier 2,55+,Female,Social,2025-12-20,2025-12-20,1,1746.8,0.0,1746.8,0
+CUST-0651,Shiv Agarwal,shiv.agarwal651@example.com,2025-08-22,West,Metro,35-44,Female,Social,2025-10-08,2025-11-14,2,14124.1,0.0,7062.05,1
+CUST-0652,Avni Pillai,avni.pillai652@example.com,2025-04-12,South,Tier 2,45-54,Female,Social,2025-05-14,2025-05-14,1,2135.29,0.0,2135.29,0
+CUST-0653,Yash Chandra,yash.chandra653@example.com,2025-02-06,North,Tier 1,25-34,Other,Email,2025-03-01,2025-04-19,2,7424.81,0.0,3712.4,1
+CUST-0654,Shiv Rao,shiv.rao654@example.com,2025-08-15,Central,Tier 1,18-24,Female,Organic,2025-11-07,2025-11-07,1,8616.55,0.0,8616.55,0
+CUST-0655,Sara Gandhi,sara.gandhi655@example.com,2025-04-24,North,Tier 2,25-34,Male,Marketplace,2025-07-03,2025-12-25,3,11483.22,0.0,3827.74,1
+CUST-0656,Priya Tiwari,priya.tiwari656@example.com,2025-03-31,South,Tier 1,25-34,Male,Paid Search,2025-05-03,2025-09-04,3,5953.57,0.0,1984.52,1
+CUST-0657,Aarav Bhat,aarav.bhat657@example.com,2025-04-11,East,Tier 2,25-34,Female,Paid Search,2025-04-26,2025-04-26,1,0.0,2267.24,0.0,0
+CUST-0658,Meera Khan,meera.khan658@example.com,2025-02-20,South,Tier 2,25-34,Male,Paid Search,2025-04-03,2025-06-14,2,4817.55,0.0,2408.78,1
+CUST-0659,Vihaan Sinha,vihaan.sinha659@example.com,2025-01-28,Central,Tier 1,25-34,Female,Organic,2025-03-27,2025-05-20,2,6230.88,0.0,3115.44,1
+CUST-0660,Saanvi Srinivasan,saanvi.srinivasan660@example.com,2025-03-19,Central,Tier 2,35-44,Female,Social,2025-06-27,2025-11-27,3,7057.26,2144.14,2352.42,1
+CUST-0661,Riya Zutshi,riya.zutshi661@example.com,2024-12-12,South,Tier 2,25-34,Female,Social,2025-02-10,2025-11-30,4,12876.63,0.0,3219.16,1
+CUST-0662,Naina Mishra,naina.mishra662@example.com,2025-04-13,East,Metro,25-34,Female,Referral,2025-05-23,2025-10-05,3,7180.65,0.0,2393.55,1
+CUST-0663,Zara Bhat,zara.bhat663@example.com,2025-06-17,Central,Tier 2,45-54,Male,Organic,2025-07-08,2025-07-08,1,1160.01,0.0,1160.01,0
+CUST-0664,Advait Dubey,advait.dubey664@example.com,2025-03-15,North,Tier 2,45-54,Female,Social,2025-03-20,2025-07-10,2,3322.38,0.0,1661.19,1
+CUST-0665,Tanvi Mishra,tanvi.mishra665@example.com,2025-06-01,North,Metro,35-44,Female,Social,2025-07-16,2025-08-22,2,4002.86,0.0,2001.43,1
+CUST-0666,Yash Menon,yash.menon666@example.com,2025-04-25,South,Metro,35-44,Male,Referral,2025-07-12,2025-12-01,3,5774.47,0.0,1924.82,1
+CUST-0667,Krishna Shah,krishna.shah667@example.com,2025-10-28,Central,Metro,35-44,Female,Referral,2025-11-04,2025-12-17,2,663.35,727.29,331.68,1
+CUST-0668,Yash Gupta,yash.gupta668@example.com,2025-09-29,East,Metro,35-44,Male,Organic,2025-11-23,2025-11-23,1,0.0,2381.21,0.0,0
+CUST-0669,Kavya Iyer,kavya.iyer669@example.com,2025-08-05,Central,Tier 1,18-24,Male,Referral,2025-11-09,2025-11-09,1,1149.73,0.0,1149.73,0
+CUST-0670,Aditi Nanda,aditi.nanda670@example.com,2025-12-13,North,Tier 1,18-24,Male,Social,2025-12-27,2025-12-27,1,745.27,0.0,745.27,0
+CUST-0671,Rohan Bhat,rohan.bhat671@example.com,2025-04-10,West,Tier 3,18-24,Male,Referral,2025-05-02,2025-07-24,2,3673.18,0.0,1836.59,1
+CUST-0672,Nisha Srinivasan,nisha.srinivasan672@example.com,2025-08-18,North,Metro,35-44,Female,Organic,2025-11-03,2025-11-03,1,0.0,1879.25,0.0,0
+CUST-0673,Advait Mehta,advait.mehta673@example.com,2025-06-15,North,Tier 1,35-44,Female,Marketplace,2025-09-25,2025-12-04,2,571.08,6879.03,285.54,1
+CUST-0674,Zara Yadav,zara.yadav674@example.com,2025-08-29,Central,Tier 3,25-34,Female,Organic,2025-12-13,2025-12-13,1,2096.89,0.0,2096.89,0
+CUST-0675,Ishaan Khan,ishaan.khan675@example.com,2024-12-02,North,Metro,25-34,Female,Organic,2025-01-15,2025-01-15,1,1580.44,0.0,1580.44,0
+CUST-0676,Sara Gupta,sara.gupta676@example.com,2025-04-26,North,Tier 1,25-34,Male,Organic,2025-05-10,2025-08-19,2,2639.54,0.0,1319.77,1
+CUST-0677,Om Khan,om.khan677@example.com,2025-01-30,North,Metro,25-34,Female,Paid Search,2025-04-23,2025-12-07,5,9763.84,1482.51,1952.77,1
+CUST-0678,Vivaan Gandhi,vivaan.gandhi678@example.com,2025-02-18,West,Tier 3,25-34,Male,Social,2025-03-02,2025-08-19,3,5179.21,0.0,1726.4,1
+CUST-0679,Sahil Gupta,sahil.gupta679@example.com,2025-05-10,East,Tier 2,25-34,Female,Marketplace,2025-06-28,2025-06-28,1,1464.53,0.0,1464.53,0
+CUST-0680,Vihaan Reddy,vihaan.reddy680@example.com,2025-06-03,South,Metro,25-34,Female,Organic,2025-07-25,2025-07-25,1,3980.87,0.0,3980.87,0
+CUST-0681,Tanvi Kumar,tanvi.kumar681@example.com,2025-10-13,South,Tier 2,25-34,Female,Paid Search,2025-10-19,2025-10-19,1,1826.51,0.0,1826.51,0
+CUST-0682,Ved Rao,ved.rao682@example.com,2025-04-29,North,Tier 1,25-34,Female,Referral,2025-08-25,2025-08-25,1,806.4,0.0,806.4,0
+CUST-0683,Rohan Patel,rohan.patel683@example.com,2025-05-20,West,Tier 1,18-24,Male,Organic,2025-07-02,2025-08-18,2,2725.18,1372.68,1362.59,1
+CUST-0684,Sara Sharma,sara.sharma684@example.com,2025-03-09,North,Tier 3,25-34,Male,Social,2025-06-10,2025-07-24,2,1853.59,0.0,926.79,1
+CUST-0685,Shiv Mishra,shiv.mishra685@example.com,2024-10-20,North,Metro,25-34,Female,Social,2025-01-03,2025-01-03,1,3503.68,0.0,3503.68,0
+CUST-0686,Tara Varma,tara.varma686@example.com,2025-01-02,West,Tier 1,45-54,Female,Organic,2025-04-22,2025-04-22,1,2885.04,0.0,2885.04,0
+CUST-0687,Saanvi Shah,saanvi.shah687@example.com,2025-11-28,South,Tier 3,25-34,Female,Organic,2025-12-08,2025-12-08,1,752.46,0.0,752.46,0
+CUST-0688,Yash Srinivasan,yash.srinivasan688@example.com,2025-09-12,Central,Metro,18-24,Female,Marketplace,2025-09-21,2025-09-21,1,0.0,4122.74,0.0,0
+CUST-0689,Rahul Kapoor,rahul.kapoor689@example.com,2025-07-04,Central,Tier 1,25-34,Male,Organic,2025-07-09,2025-07-09,1,3697.14,0.0,3697.14,0
+CUST-0690,Siddharth Kumar,siddharth.kumar690@example.com,2025-10-21,East,Metro,35-44,Male,Social,2025-11-23,2025-11-23,1,1199.0,0.0,1199.0,0
+CUST-0691,Ananya Bhat,ananya.bhat691@example.com,2024-12-06,West,Tier 1,35-44,Male,Organic,2025-03-27,2025-03-27,1,0.0,1071.67,0.0,0
+CUST-0692,Ishaan Zutshi,ishaan.zutshi692@example.com,2025-09-01,North,Metro,35-44,Female,Paid Search,2025-11-21,2025-12-23,2,3871.31,0.0,1935.66,1
+CUST-0693,Kavya Yadav,kavya.yadav693@example.com,2025-07-29,West,Metro,18-24,Female,Social,2025-10-26,2025-10-26,1,2416.53,0.0,2416.53,0
+CUST-0694,Kavya Kapoor,kavya.kapoor694@example.com,2025-07-06,North,Tier 2,35-44,Male,Paid Search,2025-09-04,2025-09-04,1,688.74,0.0,688.74,0
+CUST-0695,Rohan Menon,rohan.menon695@example.com,2025-02-10,West,Tier 2,45-54,Male,Marketplace,2025-04-07,2025-12-06,4,2741.21,6928.53,685.3,1
+CUST-0696,Aarav Saxena,aarav.saxena696@example.com,2025-07-12,East,Tier 2,25-34,Female,Organic,2025-08-02,2025-11-15,3,5435.72,0.0,1811.91,1
+CUST-0697,Neel Tiwari,neel.tiwari697@example.com,2025-01-10,North,Tier 2,25-34,Female,Organic,2025-02-15,2025-10-23,4,4319.83,0.0,1079.96,1
+CUST-0698,Neel Zutshi,neel.zutshi698@example.com,2024-11-04,South,Metro,35-44,Female,Paid Search,2025-01-13,2025-04-28,3,3520.86,2414.19,1173.62,1
+CUST-0699,Zara Menon,zara.menon699@example.com,2025-02-26,North,Tier 1,18-24,Female,Paid Search,2025-06-13,2025-10-27,3,4385.5,896.85,1461.83,1
+CUST-0700,Naina Nair,naina.nair700@example.com,2024-11-18,East,Metro,25-34,Male,Email,2025-01-09,2025-08-10,4,11611.84,0.0,2902.96,1
+CUST-0701,Riya Srinivasan,riya.srinivasan701@example.com,2025-08-01,North,Tier 1,25-34,Male,Social,2025-10-25,2025-10-25,1,1245.67,0.0,1245.67,0
+CUST-0702,Sneha Sharma,sneha.sharma702@example.com,2025-08-13,South,Tier 3,25-34,Male,Social,2025-11-25,2025-11-25,1,3972.28,0.0,3972.28,0
+CUST-0703,Krishna Reddy,krishna.reddy703@example.com,2025-07-15,North,Metro,25-34,Female,Social,2025-10-11,2025-10-11,1,6628.02,0.0,6628.02,0
+CUST-0704,Sara Dubey,sara.dubey704@example.com,2025-07-10,West,Tier 2,18-24,Male,Social,2025-07-20,2025-09-23,2,3010.56,0.0,1505.28,1
+CUST-0705,Tara Pillai,tara.pillai705@example.com,2025-02-16,North,Tier 1,18-24,Female,Paid Search,2025-05-15,2025-05-15,1,0.0,1793.6,0.0,0
+CUST-0706,Arjun Nanda,arjun.nanda706@example.com,2024-11-20,West,Metro,18-24,Male,Social,2025-02-03,2025-02-03,1,3993.34,0.0,3993.34,0
+CUST-0707,Sahil Patel,sahil.patel707@example.com,2025-06-03,West,Metro,35-44,Female,Social,2025-09-06,2025-11-16,2,4906.35,0.0,2453.18,1
+CUST-0708,Meera Patel,meera.patel708@example.com,2025-02-09,South,Metro,35-44,Male,Referral,2025-04-13,2025-07-07,2,3548.58,600.05,1774.29,1
+CUST-0709,Sahil Saxena,sahil.saxena709@example.com,2025-06-24,West,Metro,25-34,Male,Organic,2025-08-21,2025-12-27,3,4135.19,0.0,1378.4,1
+CUST-0710,Priya Kulkarni,priya.kulkarni710@example.com,2024-12-15,West,Tier 1,25-34,Female,Social,2025-03-21,2025-03-21,1,1182.71,0.0,1182.71,0
+CUST-0711,Ananya Yadav,ananya.yadav711@example.com,2025-05-11,North,Tier 3,55+,Male,Organic,2025-09-07,2025-11-28,2,3608.44,0.0,1804.22,1
+CUST-0712,Siddharth Sharma,siddharth.sharma712@example.com,2025-05-31,North,Tier 2,25-34,Female,Social,2025-09-03,2025-09-03,1,2234.11,0.0,2234.11,0
+CUST-0713,Ananya Zutshi,ananya.zutshi713@example.com,2025-06-28,East,Tier 2,35-44,Female,Organic,2025-07-02,2025-08-19,2,4110.25,0.0,2055.12,1
+CUST-0714,Shiv Nair,shiv.nair714@example.com,2025-09-19,South,Tier 2,25-34,Male,Social,2025-09-26,2025-09-26,1,6492.4,0.0,6492.4,0
+CUST-0715,Isha Gupta,isha.gupta715@example.com,2024-11-30,North,Metro,25-34,Female,Email,2025-02-25,2025-02-25,1,0.0,2439.02,0.0,0
+CUST-0716,Kavya Sharma,kavya.sharma716@example.com,2025-06-16,East,Metro,45-54,Female,Email,2025-07-06,2025-11-05,3,9122.83,0.0,3040.94,1
+CUST-0717,Saanvi Chopra,saanvi.chopra717@example.com,2025-02-16,East,Metro,35-44,Other,Social,2025-04-22,2025-04-22,1,2955.46,0.0,2955.46,0
+CUST-0718,Shiv Kumar,shiv.kumar718@example.com,2024-11-09,West,Tier 1,25-34,Female,Referral,2025-01-19,2025-01-19,1,2583.71,0.0,2583.71,0
+CUST-0719,Ananya Chandra,ananya.chandra719@example.com,2024-12-16,Central,Tier 3,35-44,Female,Paid Search,2025-02-23,2025-05-11,2,9136.41,0.0,4568.2,1
+CUST-0720,Rahul Yadav,rahul.yadav720@example.com,2025-08-18,West,Tier 1,35-44,Male,Email,2025-10-11,2025-12-27,2,3327.6,0.0,1663.8,1
+CUST-0721,Naina Joshi,naina.joshi721@example.com,2025-09-04,West,Metro,25-34,Female,Paid Search,2025-11-26,2025-11-26,1,785.73,0.0,785.73,0
+CUST-0722,Avni Kulkarni,avni.kulkarni722@example.com,2024-10-13,North,Tier 1,35-44,Male,Organic,2025-01-27,2025-09-25,5,7171.84,0.0,1434.37,1
+CUST-0723,Isha Tiwari,isha.tiwari723@example.com,2025-08-20,North,Tier 2,18-24,Male,Referral,2025-11-16,2025-11-16,1,4223.31,0.0,4223.31,0
+CUST-0724,Sneha Rao,sneha.rao724@example.com,2025-02-23,North,Tier 1,55+,Female,Organic,2025-06-02,2025-07-25,2,729.99,521.13,365.0,1
+CUST-0725,Ved Nanda,ved.nanda725@example.com,2025-04-27,East,Tier 3,35-44,Female,Referral,2025-08-25,2025-08-25,1,849.55,0.0,849.55,0
+CUST-0726,Meera Roy,meera.roy726@example.com,2025-08-03,West,Tier 1,18-24,Male,Email,2025-10-28,2025-12-14,2,1344.6,2256.6,672.3,1
+CUST-0727,Nisha Malhotra,nisha.malhotra727@example.com,2024-11-27,South,Tier 2,35-44,Male,Social,2025-03-08,2025-03-08,1,2327.81,0.0,2327.81,0
+CUST-0728,Dhruv Sharma,dhruv.sharma728@example.com,2025-04-29,West,Tier 2,18-24,Female,Organic,2025-08-25,2025-08-25,1,3507.3,0.0,3507.3,0
+CUST-0729,Om Tiwari,om.tiwari729@example.com,2025-08-24,South,Tier 1,25-34,Female,Social,2025-11-01,2025-11-01,1,2777.07,0.0,2777.07,0
+CUST-0730,Yash Jain,yash.jain730@example.com,2025-07-22,North,Tier 1,35-44,Female,Social,2025-08-04,2025-12-05,2,5632.53,0.0,2816.27,1
+CUST-0731,Pranav Pillai,pranav.pillai731@example.com,2025-04-18,North,Tier 1,35-44,Female,Organic,2025-05-08,2025-06-21,2,3926.89,0.0,1963.44,1
+CUST-0732,Diya Agarwal,diya.agarwal732@example.com,2025-07-10,East,Tier 1,25-34,Female,Organic,2025-09-08,2025-11-15,2,8596.83,0.0,4298.41,1
+CUST-0733,Rahul Saxena,rahul.saxena733@example.com,2025-07-12,North,Tier 1,35-44,Male,Marketplace,2025-10-04,2025-10-04,1,2740.17,0.0,2740.17,0
+CUST-0734,Shiv Shah,shiv.shah734@example.com,2024-10-30,North,Tier 1,45-54,Female,Social,2025-02-20,2025-02-20,1,3769.09,0.0,3769.09,0
+CUST-0735,Riya Shah,riya.shah735@example.com,2024-10-07,West,Tier 2,25-34,Other,Marketplace,2025-01-09,2025-04-04,3,5773.82,0.0,1924.61,1
+CUST-0736,Diya Chandra,diya.chandra736@example.com,2025-05-04,West,Tier 1,18-24,Male,Marketplace,2025-08-07,2025-08-07,1,1589.88,0.0,1589.88,0
+CUST-0737,Advait Gandhi,advait.gandhi737@example.com,2024-12-23,North,Tier 3,25-34,Female,Organic,2025-02-10,2025-04-20,2,7073.02,0.0,3536.51,1
+CUST-0738,Pranav Bhat,pranav.bhat738@example.com,2025-09-17,East,Tier 3,35-44,Female,Social,2025-11-19,2025-11-19,1,1499.0,0.0,1499.0,0
+CUST-0739,Sneha Saxena,sneha.saxena739@example.com,2024-11-19,Central,Metro,35-44,Male,Paid Search,2025-01-16,2025-01-16,1,3645.94,0.0,3645.94,0
+CUST-0740,Vivaan Varma,vivaan.varma740@example.com,2025-12-09,West,Metro,25-34,Male,Marketplace,2025-12-24,2025-12-24,1,1956.72,0.0,1956.72,0
+CUST-0741,Neel Kapoor,neel.kapoor741@example.com,2025-01-27,Central,Tier 1,25-34,Male,Paid Search,2025-03-27,2025-06-20,2,1468.27,0.0,734.13,1
+CUST-0742,Aditi Sharma,aditi.sharma742@example.com,2024-11-29,North,Metro,45-54,Female,Social,2025-03-07,2025-03-07,1,1189.41,0.0,1189.41,0
+CUST-0743,Ved Kulkarni,ved.kulkarni743@example.com,2025-08-06,West,Tier 3,35-44,Female,Paid Search,2025-11-25,2025-11-25,1,1109.35,0.0,1109.35,0
+CUST-0744,Ishaan Jain,ishaan.jain744@example.com,2025-10-13,East,Metro,35-44,Male,Marketplace,2025-11-22,2025-11-22,1,5430.45,0.0,5430.45,0
+CUST-0745,Zara Gandhi,zara.gandhi745@example.com,2025-03-19,West,Tier 1,25-34,Male,Marketplace,2025-05-24,2025-05-24,1,0.0,1307.13,0.0,0
+CUST-0746,Aarav Tiwari,aarav.tiwari746@example.com,2025-04-12,South,Tier 1,35-44,Other,Paid Search,2025-06-05,2025-07-27,2,3637.63,0.0,1818.82,1
+CUST-0747,Advait Saxena,advait.saxena747@example.com,2025-10-14,South,Metro,55+,Other,Organic,2025-11-10,2025-11-10,1,2140.75,0.0,2140.75,0
+CUST-0748,Ishaan Roy,ishaan.roy748@example.com,2024-11-21,South,Tier 1,25-34,Male,Marketplace,2025-01-14,2025-04-06,3,5945.42,0.0,1981.81,1
+CUST-0749,Isha Kulkarni,isha.kulkarni749@example.com,2024-12-12,East,Tier 3,45-54,Female,Social,2025-01-13,2025-01-13,1,1418.05,0.0,1418.05,0
+CUST-0750,Yash Kapoor,yash.kapoor750@example.com,2025-06-19,South,Tier 1,25-34,Male,Organic,2025-09-01,2025-09-01,1,2284.09,0.0,2284.09,0
+CUST-0751,Siddharth Malhotra,siddharth.malhotra751@example.com,2025-04-21,South,Tier 1,18-24,Male,Paid Search,2025-04-23,2025-04-23,1,0.0,819.89,0.0,0
+CUST-0752,Om Joshi,om.joshi752@example.com,2025-11-28,Central,Tier 1,35-44,Female,Email,2025-12-18,2025-12-18,1,4798.4,0.0,4798.4,0
+CUST-0753,Yash Kulkarni,yash.kulkarni753@example.com,2025-08-04,North,Tier 3,25-34,Male,Paid Search,2025-08-15,2025-08-15,1,1997.83,0.0,1997.83,0
+CUST-0754,Sara Rao,sara.rao754@example.com,2025-07-23,Central,Metro,18-24,Male,Organic,2025-10-21,2025-10-21,1,2945.02,0.0,2945.02,0
+CUST-0755,Kabir Chopra,kabir.chopra755@example.com,2025-01-02,West,Tier 3,18-24,Male,Email,2025-01-03,2025-04-20,3,9982.5,0.0,3327.5,1
+CUST-0756,Tanvi Iyer,tanvi.iyer756@example.com,2025-03-04,Central,Metro,25-34,Female,Referral,2025-04-08,2025-08-13,2,5708.61,0.0,2854.3,1
+CUST-0757,Advait Malhotra,advait.malhotra757@example.com,2025-07-20,North,Tier 1,18-24,Female,Organic,2025-11-13,2025-11-13,1,3998.07,0.0,3998.07,0
+CUST-0758,Rohan Shetty,rohan.shetty758@example.com,2025-05-19,West,Metro,18-24,Male,Social,2025-08-22,2025-10-20,2,3676.57,0.0,1838.28,1
+CUST-0759,Dhruv Varma,dhruv.varma759@example.com,2025-03-23,West,Metro,25-34,Female,Social,2025-05-07,2025-10-11,3,8595.06,0.0,2865.02,1
+CUST-0760,Vihaan Zutshi,vihaan.zutshi760@example.com,2024-12-13,North,Tier 2,18-24,Female,Organic,2025-02-26,2025-02-26,1,737.18,0.0,737.18,0
+CUST-0761,Dhruv Mehta,dhruv.mehta761@example.com,2025-10-09,East,Tier 2,25-34,Male,Paid Search,2025-10-09,2025-11-10,2,2201.27,2723.09,1100.63,1
+CUST-0762,Zara Tiwari,zara.tiwari762@example.com,2025-06-18,South,Tier 1,35-44,Female,Paid Search,2025-09-11,2025-09-11,1,2039.0,0.0,2039.0,0
+CUST-0763,Om Roy,om.roy763@example.com,2025-10-05,West,Metro,18-24,Female,Social,2025-12-22,2025-12-22,1,1712.75,0.0,1712.75,0
+CUST-0764,Vivaan Nanda,vivaan.nanda764@example.com,2025-03-20,South,Tier 2,25-34,Female,Social,2025-07-09,2025-11-20,3,3094.99,956.06,1031.66,1
+CUST-0765,Kavya Varma,kavya.varma765@example.com,2025-03-08,West,Tier 1,25-34,Male,Organic,2025-07-02,2025-09-03,2,1210.67,4744.42,605.34,1
+CUST-0766,Aisha Reddy,aisha.reddy766@example.com,2024-12-20,West,Tier 2,45-54,Male,Social,2025-01-22,2025-03-08,2,7344.33,0.0,3672.16,1
+CUST-0767,Arjun Kulkarni,arjun.kulkarni767@example.com,2024-12-29,West,Metro,35-44,Male,Email,2025-01-16,2025-02-24,2,3113.18,0.0,1556.59,1
+CUST-0768,Aisha Singh,aisha.singh768@example.com,2025-09-23,West,Tier 2,18-24,Male,Email,2025-12-09,2025-12-09,1,0.0,14650.99,0.0,0
+CUST-0769,Isha Yadav,isha.yadav769@example.com,2025-02-25,Central,Metro,18-24,Female,Social,2025-05-13,2025-07-11,2,4783.26,0.0,2391.63,1
+CUST-0770,Meera Singh,meera.singh770@example.com,2025-07-18,South,Metro,18-24,Female,Organic,2025-10-07,2025-12-26,2,4106.63,0.0,2053.32,1
+CUST-0771,Kabir Shah,kabir.shah771@example.com,2025-03-18,North,Tier 1,25-34,Male,Organic,2025-06-26,2025-09-11,2,3771.93,0.0,1885.96,1
+CUST-0772,Diya Kapoor,diya.kapoor772@example.com,2025-05-09,East,Metro,45-54,Female,Paid Search,2025-07-13,2025-07-13,1,1893.34,0.0,1893.34,0
+CUST-0773,Meera Kulkarni,meera.kulkarni773@example.com,2025-11-22,South,Metro,45-54,Female,Referral,2025-12-12,2025-12-12,1,1266.5,0.0,1266.5,0
+CUST-0774,Sara Reddy,sara.reddy774@example.com,2024-10-26,North,Tier 1,18-24,Female,Social,2025-01-11,2025-05-12,3,4749.37,0.0,1583.12,1
+CUST-0775,Neel Gandhi,neel.gandhi775@example.com,2025-09-30,South,Metro,25-34,Female,Social,2025-12-11,2025-12-11,1,0.0,1981.3,0.0,0
+CUST-0776,Siddharth Rao,siddharth.rao776@example.com,2025-05-14,North,Tier 1,45-54,Female,Paid Search,2025-05-18,2025-08-17,3,3139.09,1128.75,1046.36,1
+CUST-0777,Ananya Pillai,ananya.pillai777@example.com,2025-01-18,West,Tier 2,25-34,Female,Organic,2025-03-25,2025-03-25,1,1205.47,0.0,1205.47,0
+CUST-0778,Tanvi Nanda,tanvi.nanda778@example.com,2025-02-20,North,Tier 2,35-44,Male,Social,2025-05-23,2025-05-23,1,2648.74,0.0,2648.74,0
+CUST-0779,Vivaan Shetty,vivaan.shetty779@example.com,2025-11-23,West,Metro,35-44,Female,Organic,2025-12-03,2025-12-03,1,773.43,0.0,773.43,0
+CUST-0780,Rahul Iyer,rahul.iyer780@example.com,2025-05-11,North,Tier 1,45-54,Male,Social,2025-06-05,2025-06-05,1,0.0,2486.51,0.0,0
+CUST-0781,Siddharth Mehta,siddharth.mehta781@example.com,2025-07-21,North,Metro,45-54,Female,Organic,2025-09-08,2025-11-13,2,4426.86,0.0,2213.43,1
+CUST-0782,Aisha Sharma,aisha.sharma782@example.com,2025-02-04,Central,Metro,18-24,Female,Referral,2025-04-03,2025-08-25,3,5129.83,0.0,1709.94,1
+CUST-0783,Rahul Reddy,rahul.reddy783@example.com,2025-05-22,North,Tier 1,18-24,Male,Organic,2025-09-09,2025-09-09,1,5462.42,0.0,5462.42,0
+CUST-0784,Aarav Verma,aarav.verma784@example.com,2025-02-09,East,Metro,55+,Other,Referral,2025-05-14,2025-08-12,3,5650.49,1122.75,1883.5,1
+CUST-0785,Kavya Sinha,kavya.sinha785@example.com,2025-07-09,West,Tier 1,18-24,Male,Marketplace,2025-09-18,2025-11-25,2,2335.6,3142.1,1167.8,1
+CUST-0786,Aarav Kulkarni,aarav.kulkarni786@example.com,2025-03-01,Central,Tier 2,25-34,Male,Marketplace,2025-06-05,2025-06-05,1,669.64,0.0,669.64,0
+CUST-0787,Rahul Agarwal,rahul.agarwal787@example.com,2025-07-22,North,Tier 3,25-34,Male,Social,2025-11-07,2025-11-07,1,3105.91,0.0,3105.91,0
+CUST-0788,Riya Bansal,riya.bansal788@example.com,2025-09-27,East,Tier 1,25-34,Female,Referral,2025-10-23,2025-12-17,2,5319.27,0.0,2659.64,1
+CUST-0789,Riya Tripathi,riya.tripathi789@example.com,2025-01-04,South,Tier 2,35-44,Female,Paid Search,2025-01-23,2025-01-23,1,1675.74,0.0,1675.74,0
+CUST-0790,Ananya Mishra,ananya.mishra790@example.com,2024-11-12,East,Metro,35-44,Male,Paid Search,2025-01-12,2025-04-22,3,6116.28,0.0,2038.76,1
+CUST-0791,Arjun Mehta,arjun.mehta791@example.com,2025-05-11,North,Tier 1,35-44,Female,Paid Search,2025-05-24,2025-05-24,1,891.81,0.0,891.81,0
+CUST-0792,Aryan Patel,aryan.patel792@example.com,2025-10-03,West,Metro,45-54,Female,Paid Search,2025-10-11,2025-10-11,1,1283.14,0.0,1283.14,0
+CUST-0793,Rohan Varma,rohan.varma793@example.com,2025-07-03,East,Tier 1,25-34,Female,Paid Search,2025-10-21,2025-12-16,2,1628.1,1582.24,814.05,1
+CUST-0794,Aditi Joshi,aditi.joshi794@example.com,2025-11-05,West,Tier 1,18-24,Male,Organic,2025-12-25,2025-12-25,1,7845.38,0.0,7845.38,0
+CUST-0795,Aisha Kapoor,aisha.kapoor795@example.com,2025-08-02,North,Tier 2,18-24,Female,Marketplace,2025-09-17,2025-11-22,2,2363.49,0.0,1181.75,1
+CUST-0796,Krishna Khan,krishna.khan796@example.com,2025-03-07,South,Tier 1,35-44,Male,Paid Search,2025-04-25,2025-04-25,1,1795.52,0.0,1795.52,0
+CUST-0797,Meera Agarwal,meera.agarwal797@example.com,2025-06-29,South,Metro,35-44,Male,Social,2025-08-03,2025-11-18,2,2633.12,2088.79,1316.56,1
+CUST-0798,Naina Jain,naina.jain798@example.com,2025-09-17,North,Tier 3,18-24,Male,Organic,2025-12-04,2025-12-04,1,2693.1,0.0,2693.1,0
+CUST-0799,Sahil Malhotra,sahil.malhotra799@example.com,2025-11-20,East,Metro,35-44,Male,Organic,2025-12-09,2025-12-09,1,2984.65,0.0,2984.65,0
+CUST-0800,Vihaan Nanda,vihaan.nanda800@example.com,2025-05-02,South,Tier 3,55+,Male,Social,2025-07-14,2025-07-14,1,0.0,1433.41,0.0,0
+CUST-0801,Naina Shetty,naina.shetty801@example.com,2025-05-17,South,Metro,25-34,Other,Social,2025-08-08,2025-11-19,2,1652.93,0.0,826.47,1
+CUST-0802,Siddharth Pillai,siddharth.pillai802@example.com,2024-12-18,East,Tier 2,45-54,Female,Paid Search,2025-03-07,2025-03-07,1,4998.0,0.0,4998.0,0
+CUST-0803,Shiv Saxena,shiv.saxena803@example.com,2025-11-19,South,Metro,55+,Female,Marketplace,2025-12-09,2025-12-09,1,0.0,1881.75,0.0,0
+CUST-0804,Sahil Zutshi,sahil.zutshi804@example.com,2025-01-04,South,Tier 2,55+,Female,Social,2025-02-03,2025-04-21,2,3882.43,0.0,1941.22,1
+CUST-0805,Rahul Tiwari,rahul.tiwari805@example.com,2025-06-21,Central,Metro,45-54,Female,Social,2025-07-28,2025-11-24,3,8178.48,0.0,2726.16,1
+CUST-0806,Tara Sharma,tara.sharma806@example.com,2025-07-01,North,Metro,25-34,Female,Social,2025-07-05,2025-07-05,1,969.99,0.0,969.99,0
+CUST-0807,Rahul Kulkarni,rahul.kulkarni807@example.com,2025-01-27,South,Metro,25-34,Female,Social,2025-02-01,2025-11-17,5,7334.7,3166.6,1466.94,1
+CUST-0808,Sahil Jain,sahil.jain808@example.com,2025-06-28,South,Metro,55+,Male,Organic,2025-10-07,2025-10-07,1,2771.08,0.0,2771.08,0
+CUST-0809,Zara Srinivasan,zara.srinivasan809@example.com,2025-10-29,West,Metro,18-24,Female,Organic,2025-12-28,2025-12-28,1,1356.6,0.0,1356.6,0
+CUST-0810,Neel Reddy,neel.reddy810@example.com,2025-07-28,South,Tier 1,55+,Male,Paid Search,2025-11-02,2025-11-02,1,3357.52,0.0,3357.52,0
+CUST-0811,Neel Agarwal,neel.agarwal811@example.com,2025-05-18,North,Tier 2,35-44,Female,Paid Search,2025-05-20,2025-05-20,1,1328.11,0.0,1328.11,0
+CUST-0812,Rahul Shah,rahul.shah812@example.com,2025-05-11,North,Tier 2,25-34,Male,Marketplace,2025-07-23,2025-09-07,2,8779.37,0.0,4389.68,1
+CUST-0813,Tanvi Gandhi,tanvi.gandhi813@example.com,2025-05-03,East,Metro,35-44,Female,Paid Search,2025-07-08,2025-09-22,2,3945.13,0.0,1972.57,1
+CUST-0814,Sahil Roy,sahil.roy814@example.com,2025-09-29,North,Metro,18-24,Male,Organic,2025-10-05,2025-11-25,2,5060.23,0.0,2530.11,1
+CUST-0815,Ved Zutshi,ved.zutshi815@example.com,2025-02-19,North,Tier 2,18-24,Female,Social,2025-04-17,2025-07-15,2,2159.74,0.0,1079.87,1
+CUST-0816,Avni Tiwari,avni.tiwari816@example.com,2025-09-03,West,Tier 1,35-44,Male,Social,2025-09-20,2025-12-12,2,1688.7,2582.14,844.35,1
+CUST-0817,Aarav Joshi,aarav.joshi817@example.com,2025-06-30,Central,Tier 1,45-54,Female,Organic,2025-09-10,2025-09-10,1,649.98,0.0,649.98,0
+CUST-0818,Vikram Agarwal,vikram.agarwal818@example.com,2025-06-01,South,Metro,18-24,Female,Marketplace,2025-09-05,2025-09-05,1,875.63,0.0,875.63,0
+CUST-0819,Saanvi Singh,saanvi.singh819@example.com,2025-08-24,Central,Tier 1,35-44,Male,Organic,2025-10-04,2025-12-04,2,2261.25,5446.18,1130.62,1
+CUST-0820,Rahul Srinivasan,rahul.srinivasan820@example.com,2025-10-08,South,Metro,35-44,Male,Social,2025-11-18,2025-11-18,1,2142.92,0.0,2142.92,0
+CUST-0821,Ananya Patel,ananya.patel821@example.com,2025-10-08,East,Tier 3,18-24,Female,Social,2025-10-09,2025-10-09,1,13740.56,0.0,13740.56,0
+CUST-0822,Kabir Gandhi,kabir.gandhi822@example.com,2025-08-19,Central,Tier 2,18-24,Female,Email,2025-09-14,2025-09-14,1,2732.58,0.0,2732.58,0
+CUST-0823,Krishna Iyer,krishna.iyer823@example.com,2025-11-20,North,Metro,18-24,Female,Paid Search,2025-11-20,2025-11-20,1,1946.12,0.0,1946.12,0
+CUST-0824,Saanvi Sharma,saanvi.sharma824@example.com,2025-10-27,South,Tier 1,25-34,Male,Referral,2025-12-15,2025-12-15,1,1728.96,0.0,1728.96,0
+CUST-0825,Tanvi Zutshi,tanvi.zutshi825@example.com,2025-04-28,North,Metro,35-44,Female,Organic,2025-06-21,2025-06-21,1,0.0,3404.81,0.0,0
+CUST-0826,Aisha Varma,aisha.varma826@example.com,2025-10-09,Central,Tier 2,25-34,Female,Organic,2025-10-09,2025-10-09,1,0.0,4398.24,0.0,0
+CUST-0827,Pari Tripathi,pari.tripathi827@example.com,2025-07-09,North,Tier 1,35-44,Female,Email,2025-11-04,2025-11-04,1,0.0,702.12,0.0,0
+CUST-0828,Vikram Chandra,vikram.chandra828@example.com,2024-12-28,South,Tier 1,45-54,Female,Social,2025-02-19,2025-09-08,4,7550.04,0.0,1887.51,1
+CUST-0829,Aryan Reddy,aryan.reddy829@example.com,2025-10-20,South,Tier 2,35-44,Female,Social,2025-11-26,2025-11-26,1,0.0,811.8,0.0,0
+CUST-0830,Isha Mehta,isha.mehta830@example.com,2025-08-21,West,Metro,25-34,Male,Organic,2025-12-06,2025-12-06,1,989.17,0.0,989.17,0
+CUST-0831,Saanvi Bansal,saanvi.bansal831@example.com,2025-08-19,South,Metro,25-34,Female,Social,2025-09-01,2025-10-31,2,3385.29,0.0,1692.64,1
+CUST-0832,Ved Saxena,ved.saxena832@example.com,2025-01-11,West,Tier 1,25-34,Male,Paid Search,2025-02-06,2025-04-14,2,0.0,4812.31,0.0,1
+CUST-0833,Aryan Varma,aryan.varma833@example.com,2025-05-06,East,Tier 2,35-44,Male,Referral,2025-05-08,2025-09-01,3,7311.15,0.0,2437.05,1
+CUST-0834,Diya Malhotra,diya.malhotra834@example.com,2025-08-04,North,Metro,45-54,Female,Organic,2025-08-06,2025-10-10,2,7766.63,0.0,3883.32,1
+CUST-0835,Zara Joshi,zara.joshi835@example.com,2025-10-22,North,Metro,18-24,Female,Social,2025-11-28,2025-11-28,1,630.2,0.0,630.2,0
+CUST-0836,Kabir Zutshi,kabir.zutshi836@example.com,2025-02-14,North,Tier 2,25-34,Male,Paid Search,2025-04-10,2025-09-23,3,3949.49,2491.5,1316.5,1
+CUST-0837,Tanvi Kapoor,tanvi.kapoor837@example.com,2025-05-04,South,Metro,55+,Female,Social,2025-06-21,2025-11-08,2,5527.35,0.0,2763.68,1
+CUST-0838,Avni Roy,avni.roy838@example.com,2025-08-29,East,Tier 1,25-34,Female,Organic,2025-11-12,2025-11-12,1,6599.11,0.0,6599.11,0
+CUST-0839,Pari Sinha,pari.sinha839@example.com,2025-03-26,North,Tier 2,25-34,Other,Paid Search,2025-06-02,2025-06-02,1,0.0,4576.66,0.0,0
+CUST-0840,Saanvi Khan,saanvi.khan840@example.com,2025-02-26,Central,Metro,45-54,Female,Email,2025-04-12,2025-04-12,1,674.25,0.0,674.25,0
+CUST-0841,Neel Shetty,neel.shetty841@example.com,2024-11-25,South,Tier 2,25-34,Male,Marketplace,2025-01-20,2025-01-20,1,2039.43,0.0,2039.43,0
+CUST-0842,Ananya Verma,ananya.verma842@example.com,2025-08-13,North,Tier 1,25-34,Male,Paid Search,2025-09-08,2025-09-08,1,14924.27,0.0,14924.27,0
+CUST-0843,Advait Verma,advait.verma843@example.com,2025-05-25,North,Metro,18-24,Female,Organic,2025-07-02,2025-11-22,3,8276.98,0.0,2758.99,1
+CUST-0844,Sara Jain,sara.jain844@example.com,2025-03-31,North,Tier 2,35-44,Female,Organic,2025-06-26,2025-09-30,2,1970.25,0.0,985.12,1
+CUST-0845,Ananya Gupta,ananya.gupta845@example.com,2025-11-13,West,Tier 1,25-34,Male,Organic,2025-12-22,2025-12-22,1,1471.13,0.0,1471.13,0
+CUST-0846,Ishaan Verma,ishaan.verma846@example.com,2024-11-25,North,Metro,35-44,Male,Organic,2025-01-24,2025-01-24,1,2261.25,0.0,2261.25,0
+CUST-0847,Kavya Khan,kavya.khan847@example.com,2025-05-13,South,Metro,35-44,Male,Referral,2025-08-18,2025-08-18,1,2809.7,0.0,2809.7,0
+CUST-0848,Aditi Agarwal,aditi.agarwal848@example.com,2025-07-14,West,Tier 1,45-54,Female,Marketplace,2025-10-12,2025-11-29,2,3333.82,0.0,1666.91,1
+CUST-0849,Siddharth Sinha,siddharth.sinha849@example.com,2025-05-05,Central,Metro,18-24,Male,Organic,2025-08-03,2025-09-14,2,11965.69,0.0,5982.84,1
+CUST-0850,Neel Malhotra,neel.malhotra850@example.com,2025-09-14,East,Tier 1,35-44,Male,Organic,2025-11-06,2025-11-06,1,6524.43,0.0,6524.43,0
+CUST-0851,Shiv Joshi,shiv.joshi851@example.com,2025-08-31,South,Metro,18-24,Other,Referral,2025-11-24,2025-11-24,1,3425.52,0.0,3425.52,0
+CUST-0852,Saanvi Saxena,saanvi.saxena852@example.com,2025-10-15,South,Metro,25-34,Male,Organic,2025-11-06,2025-11-06,1,7094.23,0.0,7094.23,0
+CUST-0853,Isha Chopra,isha.chopra853@example.com,2025-09-11,West,Tier 2,25-34,Male,Paid Search,2025-12-19,2025-12-19,1,635.21,0.0,635.21,0
+CUST-0854,Krishna Srinivasan,krishna.srinivasan854@example.com,2024-09-24,West,Tier 3,35-44,Male,Paid Search,2025-01-03,2025-10-15,5,7373.9,2064.86,1474.78,1
+CUST-0855,Ved Joshi,ved.joshi855@example.com,2025-10-25,South,Tier 1,35-44,Male,Organic,2025-12-01,2025-12-01,1,2451.52,0.0,2451.52,0
+CUST-0856,Avni Tripathi,avni.tripathi856@example.com,2025-09-19,South,Tier 2,18-24,Female,Paid Search,2025-10-28,2025-12-19,2,3189.98,0.0,1594.99,1
+CUST-0857,Nisha Varma,nisha.varma857@example.com,2025-06-16,West,Metro,25-34,Female,Organic,2025-10-04,2025-12-11,2,3467.51,2334.07,1733.76,1
+CUST-0858,Siddharth Kulkarni,siddharth.kulkarni858@example.com,2025-08-19,West,Metro,35-44,Male,Organic,2025-11-25,2025-11-25,1,5535.42,0.0,5535.42,0
+CUST-0859,Diya Yadav,diya.yadav859@example.com,2025-08-23,South,Tier 1,25-34,Female,Paid Search,2025-10-28,2025-10-28,1,809.1,0.0,809.1,0
+CUST-0860,Kabir Agarwal,kabir.agarwal860@example.com,2025-03-10,North,Metro,35-44,Male,Email,2025-03-28,2025-03-28,1,3519.12,0.0,3519.12,0
+CUST-0861,Arjun Iyer,arjun.iyer861@example.com,2024-12-07,South,Tier 2,35-44,Female,Marketplace,2025-03-16,2025-03-16,1,0.0,1448.19,0.0,0
+CUST-0862,Saanvi Zutshi,saanvi.zutshi862@example.com,2024-12-22,West,Tier 2,45-54,Male,Paid Search,2025-04-06,2025-05-14,2,6593.54,0.0,3296.77,1
+CUST-0863,Siddharth Agarwal,siddharth.agarwal863@example.com,2025-11-10,West,Tier 3,18-24,Female,Referral,2025-11-24,2025-11-24,1,7454.14,0.0,7454.14,0
+CUST-0864,Ishaan Tiwari,ishaan.tiwari864@example.com,2025-02-27,East,Tier 1,35-44,Female,Organic,2025-03-28,2025-03-28,1,768.64,0.0,768.64,0
+CUST-0865,Meera Rao,meera.rao865@example.com,2024-09-23,North,Metro,55+,Female,Organic,2025-01-05,2025-01-05,1,2047.22,0.0,2047.22,0
+CUST-0866,Aryan Desai,aryan.desai866@example.com,2025-08-20,South,Tier 1,45-54,Male,Organic,2025-09-20,2025-11-20,2,1747.24,2229.11,873.62,1
+CUST-0867,Isha Kumar,isha.kumar867@example.com,2024-11-13,West,Tier 1,35-44,Female,Organic,2025-03-06,2025-11-13,4,12878.72,0.0,3219.68,1
+CUST-0868,Shiv Singh,shiv.singh868@example.com,2025-04-21,North,Tier 3,45-54,Male,Social,2025-06-22,2025-10-10,2,4036.36,0.0,2018.18,1
+CUST-0869,Sneha Khan,sneha.khan869@example.com,2025-03-15,East,Tier 2,35-44,Female,Paid Search,2025-06-17,2025-10-07,2,4119.24,0.0,2059.62,1
+CUST-0870,Vikram Rao,vikram.rao870@example.com,2025-07-18,West,Tier 2,25-34,Female,Organic,2025-10-01,2025-10-01,1,1345.65,0.0,1345.65,0
+CUST-0871,Naina Singh,naina.singh871@example.com,2025-07-01,South,Metro,18-24,Male,Organic,2025-09-13,2025-09-13,1,1049.3,0.0,1049.3,0
+CUST-0872,Zara Sinha,zara.sinha872@example.com,2025-06-23,West,Tier 1,45-54,Female,Marketplace,2025-09-20,2025-11-11,2,2241.05,0.0,1120.53,1
+CUST-0873,Aisha Verma,aisha.verma873@example.com,2025-09-13,West,Tier 1,25-34,Male,Paid Search,2025-11-02,2025-11-02,1,2734.18,0.0,2734.18,0
+CUST-0874,Pari Desai,pari.desai874@example.com,2025-08-18,East,Metro,18-24,Male,Organic,2025-10-26,2025-12-24,2,7539.69,0.0,3769.84,1
+CUST-0875,Siddharth Yadav,siddharth.yadav875@example.com,2025-08-13,Central,Tier 3,25-34,Female,Paid Search,2025-08-26,2025-10-07,2,11189.96,0.0,5594.98,1
+CUST-0876,Aryan Srinivasan,aryan.srinivasan876@example.com,2025-08-24,North,Tier 1,25-34,Male,Marketplace,2025-12-21,2025-12-21,1,758.76,0.0,758.76,0
+CUST-0877,Meera Mehta,meera.mehta877@example.com,2025-11-10,West,Tier 2,45-54,Female,Organic,2025-12-10,2025-12-10,1,2189.37,0.0,2189.37,0
+CUST-0878,Siddharth Patel,siddharth.patel878@example.com,2025-06-26,South,Tier 1,45-54,Female,Email,2025-09-10,2025-09-10,1,2016.69,0.0,2016.69,0
+CUST-0879,Sahil Shetty,sahil.shetty879@example.com,2025-02-07,South,Tier 2,25-34,Male,Social,2025-05-17,2025-07-30,2,2778.7,0.0,1389.35,1
+CUST-0880,Diya Joshi,diya.joshi880@example.com,2025-04-26,West,Tier 2,55+,Male,Marketplace,2025-05-04,2025-05-04,1,1050.89,0.0,1050.89,0
+CUST-0881,Diya Mishra,diya.mishra881@example.com,2025-02-02,Central,Tier 2,25-34,Female,Paid Search,2025-04-17,2025-04-17,1,2741.09,0.0,2741.09,0
+CUST-0882,Diya Reddy,diya.reddy882@example.com,2024-11-15,West,Metro,35-44,Male,Referral,2025-02-03,2025-02-03,1,2876.18,0.0,2876.18,0
+CUST-0883,Siddharth Iyer,siddharth.iyer883@example.com,2025-08-07,East,Metro,25-34,Male,Organic,2025-09-02,2025-11-22,2,9708.79,0.0,4854.4,1
+CUST-0884,Aisha Chandra,aisha.chandra884@example.com,2025-07-26,West,Tier 1,35-44,Female,Social,2025-10-20,2025-10-20,1,7488.86,0.0,7488.86,0
+CUST-0885,Diya Iyer,diya.iyer885@example.com,2025-04-28,South,Tier 2,45-54,Male,Marketplace,2025-07-28,2025-07-28,1,2032.32,0.0,2032.32,0
+CUST-0886,Aarav Zutshi,aarav.zutshi886@example.com,2025-06-11,North,Tier 1,18-24,Male,Paid Search,2025-09-24,2025-12-14,2,4099.52,0.0,2049.76,1
+CUST-0887,Aarav Kapoor,aarav.kapoor887@example.com,2025-08-01,Central,Metro,25-34,Male,Social,2025-08-23,2025-08-23,1,1358.09,0.0,1358.09,0
+CUST-0888,Vihaan Tripathi,vihaan.tripathi888@example.com,2025-01-02,East,Tier 1,35-44,Female,Organic,2025-03-07,2025-04-26,2,5964.82,0.0,2982.41,1
+CUST-0889,Priya Srinivasan,priya.srinivasan889@example.com,2025-02-04,South,Tier 1,35-44,Male,Paid Search,2025-04-19,2025-04-19,1,1781.19,0.0,1781.19,0
+CUST-0890,Siddharth Joshi,siddharth.joshi890@example.com,2025-08-28,West,Tier 1,18-24,Male,Organic,2025-09-14,2025-11-13,2,4488.83,0.0,2244.41,1
+CUST-0891,Ved Patel,ved.patel891@example.com,2025-07-24,West,Tier 1,35-44,Male,Social,2025-10-17,2025-10-17,1,1807.58,0.0,1807.58,0
+CUST-0892,Vivaan Pillai,vivaan.pillai892@example.com,2025-07-09,South,Tier 1,25-34,Male,Social,2025-10-27,2025-10-27,1,2073.66,0.0,2073.66,0
+CUST-0893,Vikram Zutshi,vikram.zutshi893@example.com,2025-10-17,North,Tier 1,25-34,Male,Referral,2025-10-21,2025-11-28,2,3951.56,0.0,1975.78,1
+CUST-0894,Neel Pillai,neel.pillai894@example.com,2025-09-12,East,Tier 2,55+,Female,Email,2025-10-21,2025-10-21,1,4041.06,0.0,4041.06,0
+CUST-0895,Vivaan Roy,vivaan.roy895@example.com,2025-10-23,West,Tier 1,35-44,Female,Social,2025-12-24,2025-12-24,1,0.0,12522.99,0.0,0
+CUST-0896,Aarav Shah,aarav.shah896@example.com,2025-07-03,East,Tier 1,25-34,Female,Paid Search,2025-07-18,2025-10-21,2,4457.48,0.0,2228.74,1
+CUST-0897,Ishaan Agarwal,ishaan.agarwal897@example.com,2025-09-18,West,Metro,25-34,Male,Paid Search,2025-11-28,2025-11-28,1,3703.12,0.0,3703.12,0
+CUST-0898,Advait Kulkarni,advait.kulkarni898@example.com,2025-05-29,Central,Tier 1,55+,Female,Social,2025-08-09,2025-08-09,1,1931.16,0.0,1931.16,0
+CUST-0899,Shiv Sharma,shiv.sharma899@example.com,2025-06-22,East,Tier 2,25-34,Male,Social,2025-08-16,2025-08-16,1,954.4,0.0,954.4,0
+CUST-0900,Saanvi Verma,saanvi.verma900@example.com,2025-07-16,West,Tier 1,45-54,Male,Paid Search,2025-08-16,2025-08-16,1,797.4,0.0,797.4,0
+CUST-0901,Aryan Kumar,aryan.kumar901@example.com,2024-12-01,South,Tier 1,18-24,Female,Organic,2025-02-28,2025-11-03,3,2678.14,0.0,892.71,1
+CUST-0902,Dhruv Pillai,dhruv.pillai902@example.com,2025-09-09,South,Tier 1,18-24,Male,Paid Search,2025-11-03,2025-11-03,1,655.37,0.0,655.37,0
+CUST-0903,Yash Malhotra,yash.malhotra903@example.com,2025-01-09,East,Tier 1,35-44,Female,Social,2025-05-08,2025-08-18,2,2877.72,0.0,1438.86,1
+CUST-0904,Dhruv Tripathi,dhruv.tripathi904@example.com,2024-12-01,West,Tier 3,45-54,Female,Organic,2025-02-14,2025-08-04,4,3642.72,2858.68,910.68,1
+CUST-0905,Om Chopra,om.chopra905@example.com,2025-10-11,West,Tier 2,45-54,Male,Marketplace,2025-10-19,2025-10-19,1,0.0,1040.73,0.0,0
+CUST-0906,Naina Agarwal,naina.agarwal906@example.com,2025-10-31,South,Metro,25-34,Female,Marketplace,2025-12-17,2025-12-17,1,934.15,0.0,934.15,0
+CUST-0907,Shiv Mehta,shiv.mehta907@example.com,2025-09-25,West,Tier 1,18-24,Male,Organic,2025-10-16,2025-10-16,1,1063.88,0.0,1063.88,0
+CUST-0908,Tanvi Nair,tanvi.nair908@example.com,2024-11-18,North,Tier 3,25-34,Female,Email,2025-03-07,2025-03-07,1,2181.41,0.0,2181.41,0
+CUST-0909,Sahil Shah,sahil.shah909@example.com,2025-02-14,South,Tier 2,35-44,Male,Organic,2025-04-07,2025-05-12,2,4030.15,0.0,2015.07,1
+CUST-0910,Advait Zutshi,advait.zutshi910@example.com,2025-04-26,Central,Metro,25-34,Female,Marketplace,2025-07-12,2025-07-12,1,939.18,0.0,939.18,0
+CUST-0911,Sahil Nair,sahil.nair911@example.com,2025-08-17,South,Tier 2,55+,Male,Social,2025-11-16,2025-11-16,1,0.0,675.15,0.0,0
+CUST-0912,Krishna Shetty,krishna.shetty912@example.com,2025-04-15,West,Tier 1,35-44,Male,Marketplace,2025-06-09,2025-06-09,1,1976.71,0.0,1976.71,0
+CUST-0913,Tanvi Tripathi,tanvi.tripathi913@example.com,2025-08-30,North,Metro,25-34,Male,Marketplace,2025-09-02,2025-12-20,3,1943.3,833.04,647.77,1
+CUST-0914,Vivaan Desai,vivaan.desai914@example.com,2025-01-25,Central,Tier 1,35-44,Female,Social,2025-05-12,2025-05-12,1,4294.7,0.0,4294.7,0
+CUST-0915,Kavya Mishra,kavya.mishra915@example.com,2025-04-04,East,Tier 1,25-34,Female,Organic,2025-04-10,2025-11-03,3,3073.52,0.0,1024.51,1
+CUST-0916,Rohan Yadav,rohan.yadav916@example.com,2025-06-11,North,Metro,45-54,Male,Paid Search,2025-07-12,2025-08-15,2,3569.74,0.0,1784.87,1
+CUST-0917,Siddharth Srinivasan,siddharth.srinivasan917@example.com,2024-12-18,East,Tier 1,35-44,Female,Social,2025-02-06,2025-02-06,1,2477.17,0.0,2477.17,0
+CUST-0918,Nisha Shetty,nisha.shetty918@example.com,2025-03-18,East,Metro,45-54,Female,Organic,2025-05-26,2025-11-19,3,1308.63,4848.25,436.21,1
+CUST-0919,Aryan Sinha,aryan.sinha919@example.com,2024-11-21,West,Tier 2,18-24,Female,Paid Search,2025-02-06,2025-02-06,1,788.42,0.0,788.42,0
+CUST-0920,Zara Mishra,zara.mishra920@example.com,2025-07-09,West,Tier 1,25-34,Male,Social,2025-10-26,2025-10-26,1,1386.58,0.0,1386.58,0
+CUST-0921,Kavya Mehta,kavya.mehta921@example.com,2025-10-22,West,Metro,35-44,Female,Paid Search,2025-12-28,2025-12-28,1,783.03,0.0,783.03,0
+CUST-0922,Arjun Roy,arjun.roy922@example.com,2025-08-01,North,Tier 2,45-54,Female,Organic,2025-11-07,2025-12-31,2,1148.23,1536.43,574.12,1
+CUST-0923,Rahul Desai,rahul.desai923@example.com,2025-05-21,Central,Metro,45-54,Female,Social,2025-08-05,2025-09-24,2,4861.61,0.0,2430.8,1
+CUST-0924,Diya Shetty,diya.shetty924@example.com,2024-10-26,West,Tier 2,25-34,Male,Marketplace,2025-01-28,2025-01-28,1,534.31,0.0,534.31,0
+CUST-0925,Diya Tripathi,diya.tripathi925@example.com,2025-08-25,South,Tier 2,35-44,Female,Social,2025-09-05,2025-11-22,2,1996.18,0.0,998.09,1
+CUST-0926,Priya Verma,priya.verma926@example.com,2025-02-08,North,Metro,35-44,Male,Paid Search,2025-02-09,2025-02-09,1,2453.18,0.0,2453.18,0
+CUST-0927,Naina Menon,naina.menon927@example.com,2025-12-14,South,Tier 1,45-54,Female,Marketplace,2025-12-22,2025-12-22,1,3016.14,0.0,3016.14,0
+CUST-0928,Tanvi Srinivasan,tanvi.srinivasan928@example.com,2025-04-22,North,Metro,35-44,Male,Social,2025-05-18,2025-11-29,3,3095.18,0.0,1031.73,1
+CUST-0929,Tanvi Shah,tanvi.shah929@example.com,2025-04-09,North,Metro,35-44,Male,Social,2025-04-16,2025-07-10,3,5169.59,2119.68,1723.2,1
+CUST-0930,Riya Iyer,riya.iyer930@example.com,2025-03-14,South,Tier 2,35-44,Female,Organic,2025-07-05,2025-08-28,2,10899.41,0.0,5449.7,1
+CUST-0931,Krishna Verma,krishna.verma931@example.com,2025-01-16,West,Tier 2,18-24,Female,Social,2025-03-08,2025-04-03,2,2518.79,0.0,1259.39,1
+CUST-0932,Aarav Sinha,aarav.sinha932@example.com,2025-06-08,West,Metro,18-24,Male,Organic,2025-09-06,2025-09-06,1,954.76,0.0,954.76,0
+CUST-0933,Vikram Tiwari,vikram.tiwari933@example.com,2025-08-03,West,Tier 1,35-44,Female,Marketplace,2025-11-20,2025-11-20,1,3125.39,0.0,3125.39,0
+CUST-0934,Advait Yadav,advait.yadav934@example.com,2024-12-20,West,Tier 2,25-34,Female,Social,2025-01-26,2025-03-16,2,2049.18,1718.04,1024.59,1
+CUST-0935,Naina Tiwari,naina.tiwari935@example.com,2024-12-19,West,Tier 1,18-24,Female,Paid Search,2025-02-23,2025-06-06,2,6049.87,0.0,3024.93,1
+CUST-0936,Sahil Rao,sahil.rao936@example.com,2025-03-26,Central,Tier 3,35-44,Female,Paid Search,2025-05-08,2025-05-08,1,892.06,0.0,892.06,0
+CUST-0937,Pranav Mehta,pranav.mehta937@example.com,2025-01-28,East,Tier 1,55+,Female,Paid Search,2025-05-24,2025-08-09,2,4819.01,0.0,2409.51,1
+CUST-0938,Kabir Tiwari,kabir.tiwari938@example.com,2025-06-05,North,Tier 1,25-34,Female,Paid Search,2025-08-07,2025-11-30,3,7241.75,0.0,2413.92,1
+CUST-0939,Ananya Nanda,ananya.nanda939@example.com,2024-12-06,East,Tier 2,25-34,Male,Marketplace,2025-03-23,2025-10-21,4,6803.49,1728.41,1700.87,1
+CUST-0940,Vihaan Roy,vihaan.roy940@example.com,2025-01-11,North,Tier 1,55+,Female,Paid Search,2025-04-12,2025-08-07,3,10137.7,0.0,3379.23,1
+CUST-0941,Ishaan Saxena,ishaan.saxena941@example.com,2025-01-09,East,Metro,25-34,Male,Organic,2025-02-27,2025-06-27,2,2255.25,3471.13,1127.62,1
+CUST-0942,Sahil Bhat,sahil.bhat942@example.com,2025-01-21,South,Metro,35-44,Male,Paid Search,2025-04-16,2025-07-31,2,2383.41,0.0,1191.7,1
+CUST-0943,Rahul Nanda,rahul.nanda943@example.com,2025-08-25,West,Metro,18-24,Female,Email,2025-09-27,2025-12-28,2,2314.04,0.0,1157.02,1
+CUST-0944,Ishaan Shah,ishaan.shah944@example.com,2024-12-29,Central,Tier 1,55+,Male,Marketplace,2025-04-19,2025-11-19,3,8748.72,0.0,2916.24,1
+CUST-0945,Aryan Tiwari,aryan.tiwari945@example.com,2025-03-30,West,Metro,35-44,Female,Social,2025-05-17,2025-05-17,1,0.0,2281.66,0.0,0
+CUST-0946,Advait Kapoor,advait.kapoor946@example.com,2025-07-07,South,Tier 1,35-44,Male,Organic,2025-09-17,2025-11-22,2,5692.51,0.0,2846.26,1
+CUST-0947,Aditi Pillai,aditi.pillai947@example.com,2025-02-01,North,Tier 1,18-24,Female,Organic,2025-02-12,2025-02-12,1,735.38,0.0,735.38,0
+CUST-0948,Sahil Mishra,sahil.mishra948@example.com,2025-03-23,Central,Tier 1,35-44,Female,Organic,2025-06-18,2025-10-20,3,6570.48,0.0,2190.16,1
+CUST-0949,Sneha Iyer,sneha.iyer949@example.com,2025-04-06,North,Metro,55+,Female,Social,2025-07-17,2025-07-17,1,2036.91,0.0,2036.91,0
+CUST-0950,Saanvi Yadav,saanvi.yadav950@example.com,2025-05-30,East,Tier 1,25-34,Female,Organic,2025-09-09,2025-11-23,2,3677.05,0.0,1838.53,1
+CUST-0951,Meera Nanda,meera.nanda951@example.com,2025-04-16,West,Metro,35-44,Female,Social,2025-06-24,2025-06-24,1,752.46,0.0,752.46,0
+CUST-0952,Rohan Agarwal,rohan.agarwal952@example.com,2025-01-20,East,Tier 1,25-34,Male,Paid Search,2025-04-13,2025-04-13,1,3056.59,0.0,3056.59,0
+CUST-0953,Priya Chandra,priya.chandra953@example.com,2025-02-24,Central,Tier 1,18-24,Female,Organic,2025-03-16,2025-03-16,1,781.23,0.0,781.23,0
+CUST-0954,Neel Kumar,neel.kumar954@example.com,2025-11-09,West,Metro,18-24,Male,Social,2025-12-28,2025-12-28,1,2081.0,0.0,2081.0,0
+CUST-0955,Rohan Mishra,rohan.mishra955@example.com,2025-02-06,East,Metro,25-34,Male,Paid Search,2025-05-16,2025-05-16,1,0.0,2795.7,0.0,0
+CUST-0956,Yash Sinha,yash.sinha956@example.com,2025-06-03,West,Tier 2,25-34,Female,Social,2025-09-06,2025-11-22,2,1698.18,0.0,849.09,1
+CUST-0957,Vikram Saxena,vikram.saxena957@example.com,2025-07-14,South,Tier 1,35-44,Male,Organic,2025-08-13,2025-09-11,2,2928.94,0.0,1464.47,1
+CUST-0958,Meera Nair,meera.nair958@example.com,2025-02-02,West,Metro,25-34,Male,Social,2025-02-17,2025-02-17,1,683.24,0.0,683.24,0
+CUST-0959,Saanvi Sinha,saanvi.sinha959@example.com,2024-10-12,South,Tier 1,55+,Male,Organic,2025-01-01,2025-02-24,2,3470.14,0.0,1735.07,1
+CUST-0960,Kavya Chopra,kavya.chopra960@example.com,2025-11-30,East,Tier 1,25-34,Male,Social,2025-12-08,2025-12-08,1,872.93,0.0,872.93,0
+CUST-0961,Nisha Gupta,nisha.gupta961@example.com,2025-05-16,West,Metro,25-34,Male,Referral,2025-06-19,2025-06-19,1,2184.13,0.0,2184.13,0
+CUST-0962,Vivaan Patel,vivaan.patel962@example.com,2025-05-28,East,Tier 1,35-44,Male,Paid Search,2025-07-21,2025-12-15,3,10958.78,0.0,3652.93,1
+CUST-0963,Rahul Zutshi,rahul.zutshi963@example.com,2025-09-17,North,Tier 2,25-34,Female,Paid Search,2025-09-24,2025-09-24,1,537.53,0.0,537.53,0
+CUST-0964,Dhruv Rao,dhruv.rao964@example.com,2025-03-06,South,Tier 1,35-44,Male,Referral,2025-03-18,2025-06-04,2,3637.0,0.0,1818.5,1
+CUST-0965,Isha Kapoor,isha.kapoor965@example.com,2025-05-15,North,Tier 1,35-44,Other,Organic,2025-07-11,2025-07-11,1,2259.1,0.0,2259.1,0
+CUST-0966,Nisha Shah,nisha.shah966@example.com,2025-08-22,South,Metro,35-44,Female,Social,2025-10-04,2025-12-17,2,4032.67,0.0,2016.34,1
+CUST-0967,Om Chandra,om.chandra967@example.com,2025-09-10,North,Metro,35-44,Female,Social,2025-10-28,2025-10-28,1,0.0,2738.09,0.0,0
+CUST-0968,Ishaan Mehta,ishaan.mehta968@example.com,2025-02-21,West,Tier 1,35-44,Other,Marketplace,2025-06-01,2025-06-01,1,833.37,0.0,833.37,0
+CUST-0969,Vikram Verma,vikram.verma969@example.com,2025-03-15,West,Metro,25-34,Male,Social,2025-06-13,2025-10-02,3,2221.61,14990.62,740.54,1
+CUST-0970,Naina Gupta,naina.gupta970@example.com,2025-05-24,South,Tier 1,35-44,Female,Paid Search,2025-09-13,2025-09-13,1,4598.46,0.0,4598.46,0
+CUST-0971,Meera Pillai,meera.pillai971@example.com,2025-10-03,West,Metro,35-44,Other,Email,2025-10-21,2025-10-21,1,0.0,1489.57,0.0,0
+CUST-0972,Rahul Gandhi,rahul.gandhi972@example.com,2025-06-30,South,Tier 3,25-34,Female,Paid Search,2025-08-09,2025-10-20,2,3210.13,0.0,1605.07,1
+CUST-0973,Ananya Shetty,ananya.shetty973@example.com,2025-09-15,South,Tier 2,35-44,Female,Organic,2025-10-19,2025-10-19,1,2270.24,0.0,2270.24,0
+CUST-0974,Aditi Iyer,aditi.iyer974@example.com,2025-11-01,West,Metro,45-54,Female,Paid Search,2025-11-16,2025-11-16,1,1277.15,0.0,1277.15,0
+CUST-0975,Rahul Dubey,rahul.dubey975@example.com,2024-11-06,East,Tier 3,25-34,Female,Marketplace,2025-02-10,2025-12-08,6,17955.21,0.0,2992.53,1
+CUST-0976,Om Kulkarni,om.kulkarni976@example.com,2025-08-18,West,Metro,25-34,Female,Social,2025-09-12,2025-09-12,1,692.23,0.0,692.23,0
+CUST-0977,Ananya Kapoor,ananya.kapoor977@example.com,2025-01-16,North,Tier 2,25-34,Female,Organic,2025-03-10,2025-06-06,2,7829.9,0.0,3914.95,1
+CUST-0978,Sneha Tiwari,sneha.tiwari978@example.com,2025-05-09,West,Metro,25-34,Female,Paid Search,2025-09-01,2025-09-01,1,1959.22,0.0,1959.22,0
+CUST-0979,Ananya Reddy,ananya.reddy979@example.com,2025-01-28,Central,Tier 2,18-24,Female,Social,2025-05-11,2025-11-29,3,11344.09,0.0,3781.36,1
+CUST-0980,Naina Patel,naina.patel980@example.com,2025-04-20,East,Tier 2,18-24,Female,Marketplace,2025-07-04,2025-07-04,1,0.0,963.86,0.0,0
+CUST-0981,Sahil Pillai,sahil.pillai981@example.com,2025-03-29,North,Metro,25-34,Female,Organic,2025-04-05,2025-04-05,1,2306.23,0.0,2306.23,0
+CUST-0982,Sara Bhat,sara.bhat982@example.com,2025-08-17,Central,Tier 3,55+,Male,Paid Search,2025-10-13,2025-12-23,2,527.75,2723.09,263.88,1
+CUST-0983,Om Patel,om.patel983@example.com,2025-09-07,South,Tier 1,35-44,Male,Social,2025-10-26,2025-10-26,1,7413.53,0.0,7413.53,0
+CUST-0984,Ved Varma,ved.varma984@example.com,2024-11-30,South,Tier 1,55+,Female,Paid Search,2025-03-03,2025-03-03,1,4546.48,0.0,4546.48,0
+CUST-0985,Vihaan Yadav,vihaan.yadav985@example.com,2025-09-29,West,Tier 3,25-34,Male,Organic,2025-11-24,2025-11-24,1,881.02,0.0,881.02,0
+CUST-0986,Ved Malhotra,ved.malhotra986@example.com,2025-02-23,Central,Tier 2,35-44,Female,Organic,2025-04-05,2025-04-05,1,1313.12,0.0,1313.12,0
+CUST-0987,Sara Menon,sara.menon987@example.com,2025-04-16,East,Metro,25-34,Female,Social,2025-05-24,2025-05-24,1,747.97,0.0,747.97,0
+CUST-0988,Yash Chopra,yash.chopra988@example.com,2025-06-15,West,Metro,55+,Female,Organic,2025-07-14,2025-11-25,3,8855.19,0.0,2951.73,1
+CUST-0989,Arjun Menon,arjun.menon989@example.com,2025-04-13,West,Tier 1,45-54,Female,Paid Search,2025-05-07,2025-08-20,2,4768.28,0.0,2384.14,1
+CUST-0990,Sara Nair,sara.nair990@example.com,2025-04-02,West,Tier 1,18-24,Female,Social,2025-05-12,2025-11-20,3,4486.57,0.0,1495.52,1
+CUST-0991,Ved Gupta,ved.gupta991@example.com,2025-07-24,South,Tier 3,25-34,Male,Organic,2025-11-18,2025-11-18,1,485.19,0.0,485.19,0
+CUST-0992,Vivaan Yadav,vivaan.yadav992@example.com,2025-01-28,West,Tier 2,18-24,Female,Marketplace,2025-02-13,2025-02-13,1,1547.14,0.0,1547.14,0
+CUST-0993,Shiv Chandra,shiv.chandra993@example.com,2025-07-25,West,Tier 2,18-24,Female,Organic,2025-09-03,2025-11-10,2,2950.32,0.0,1475.16,1
+CUST-0994,Vihaan Iyer,vihaan.iyer994@example.com,2025-12-03,North,Tier 1,35-44,Female,Paid Search,2025-12-16,2025-12-16,1,2184.13,0.0,2184.13,0
+CUST-0995,Vivaan Menon,vivaan.menon995@example.com,2025-08-21,South,Tier 1,18-24,Male,Paid Search,2025-10-07,2025-10-07,1,4882.37,0.0,4882.37,0
+CUST-0996,Zara Shah,zara.shah996@example.com,2025-04-20,South,Metro,35-44,Female,Referral,2025-06-10,2025-07-27,2,7766.0,0.0,3883.0,1
+CUST-0997,Aarav Kumar,aarav.kumar997@example.com,2025-01-08,West,Metro,25-34,Female,Referral,2025-02-09,2025-09-17,5,16791.14,0.0,3358.23,1
+CUST-0998,Vivaan Bansal,vivaan.bansal998@example.com,2025-07-17,North,Metro,45-54,Female,Social,2025-08-08,2025-10-05,2,1084.44,0.0,542.22,1
+CUST-0999,Vivaan Sharma,vivaan.sharma999@example.com,2025-05-08,West,Tier 1,35-44,Male,Paid Search,2025-09-02,2025-09-02,1,1282.11,0.0,1282.11,0
+CUST-1000,Krishna Tiwari,krishna.tiwari1000@example.com,2025-02-11,West,Tier 2,45-54,Female,Organic,2025-03-27,2025-10-01,3,6784.08,0.0,2261.36,1

@@ -1,0 +1,25 @@
+product_id,product,category,unit_price,unit_cost
+P001,Oversized Cotton Tee,Apparel,899,420
+P002,Linen Blend Shirt,Apparel,1499,720
+P003,Slim Fit Chinos,Apparel,1799,860
+P004,Floral Midi Dress,Apparel,2199,1050
+P005,Denim Jacket,Apparel,2499,1250
+P006,Everyday Sneakers,Footwear,2999,1550
+P007,Leather Loafers,Footwear,3499,1900
+P008,Running Shoes,Footwear,4299,2300
+P009,Block Heels,Footwear,2299,1150
+P010,Canvas Tote,Accessories,799,320
+P011,Minimal Watch,Accessories,3999,2100
+P012,Sunglasses,Accessories,1299,520
+P013,Baseball Cap,Accessories,599,240
+P014,Cotton Bedsheet Set,Home & Living,2499,1250
+P015,Ceramic Mug Set,Home & Living,1199,480
+P016,Scented Candle,Home & Living,899,330
+P017,Cushion Cover Set,Home & Living,1499,620
+P018,Vitamin C Serum,Beauty,1299,390
+P019,Matte Lipstick,Beauty,699,210
+P020,Sunscreen SPF 50,Beauty,899,300
+P021,Hair Mask,Beauty,1099,380
+P022,Wireless Earbuds,Electronics,2999,1800
+P023,Smart Band,Electronics,2499,1450
+P024,Portable Speaker,Electronics,3499,2050
