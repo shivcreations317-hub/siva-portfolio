@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopScope Case Study — Siva Dhanushu</title>
+  <meta name="description" content="ShopScope case study: SQL, Python and Power BI analysis of 1,588 orders and 1,000 customers. RFM segments, cohort retention, return-rate analysis and a live decision dashboard.">
+  <meta name="theme-color" content="#05060a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0d12'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='24' font-weight='700' fill='%2338e8d8' text-anchor='middle'%3ESD%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#05060a;
+      --surface:#0c0f17;
+      --surface-2:#111522;
+      --ink:#f4f6ff;
+      --ink-2:#e3e7f4;
+      --muted:#929bb2;
+      --line:rgba(255,255,255,.09);
+      --line-strong:rgba(255,255,255,.18);
+      --violet:#8b6cff;
+      --aqua:#38e8d8;
+      --amber:#ffb454;
+      --grad:linear-gradient(90deg,#8b6cff,#38e8d8);
+      --grad-3:linear-gradient(120deg,#8b6cff,#38e8d8 55%,#ffb454);
+      --display:"Unbounded",sans-serif;
+      --body:"Manrope",sans-serif;
+      --mono:"DM Mono",monospace;
+      --ease:cubic-bezier(.22,1,.36,1);
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scrollbar-color:rgba(139,108,255,.55) var(--bg)}
+    body{
+      margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+      font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    }
+    body::before{
+      content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+      background:
+        radial-gradient(circle at 8% 4%,rgba(139,108,255,.22),transparent 34%),
+        radial-gradient(circle at 92% 10%,rgba(56,232,216,.14),transparent 32%),
+        radial-gradient(circle at 50% 100%,rgba(255,180,84,.08),transparent 38%),
+        linear-gradient(180deg,#070811 0%,#05060a 50%,#080a12 100%);
+    }
+    body::after{
+      content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.3;
+      background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+      background-size:72px 72px;
+      mask-image:radial-gradient(ellipse at 50% 0,#000 20%,transparent 75%);
+      -webkit-mask-image:radial-gradient(ellipse at 50% 0,#000 20%,transparent 75%);
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    ::selection{background:rgba(56,232,216,.28);color:#fff}
+    .wrap{width:min(var(--max),100% - clamp(2.4rem,10vw,7rem));margin-inline:auto}
+    .mono{font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase}
+    .eyebrow{display:inline-flex;align-items:center;gap:.65rem;font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 1rem}
+    .eyebrow::before{content:"";width:22px;height:1px;background:var(--grad)}
+    .eyebrow span{color:var(--aqua)}
+    .case-header{
+      position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+      background:rgba(5,6,10,.72);backdrop-filter:blur(18px);
+    }
+    .case-header__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+    .brand{font-family:var(--display);font-size:1rem;font-weight:700;letter-spacing:-.06em}
+    .brand span{color:var(--aqua)}
+    .case-header__nav{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap;justify-content:flex-end}
+    .case-header__link{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .75rem;border:1px solid var(--line);border-radius:999px;font-family:var(--mono);font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);transition:border-color .25s,color .25s,background .25s}
+    .case-header__link:hover{border-color:rgba(56,232,216,.35);color:var(--ink);background:rgba(56,232,216,.06)}
+    .case-header__link--solid{border-color:transparent;background:var(--grad);color:#05060a}
+    .case-header__link--solid:hover{background:var(--grad);color:#05060a;opacity:.9}
+    .hero{padding:clamp(4rem,9vw,7rem) 0 2.5rem}
+    .hero__grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:clamp(2rem,5vw,4rem);align-items:end}
+    .hero h1{font-family:var(--display);font-size:clamp(3.2rem,6.8vw,5.8rem);line-height:.92;letter-spacing:-.075em;font-weight:700;margin:0 0 1.2rem;max-width:760px}
+    .hero h1 em{font-style:normal;background:var(--grad-3);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero__lede{max-width:620px;margin:0;color:var(--muted);font-size:clamp(1rem,1.6vw,1.18rem);line-height:1.8}
+    .hero__meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+    .hero__meta span{display:inline-flex;align-items:center;gap:.45rem;padding:.45rem .65rem;border:1px solid var(--line);border-radius:999px;font-family:var(--mono);font-size:.46rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.03)}
+    .hero__meta b{font-weight:500;color:var(--ink-2)}
+    .brief{position:relative;padding:1.4rem;border:1px solid var(--line-strong);border-radius:22px;background:linear-gradient(160deg,rgba(18,22,35,.96),rgba(8,10,17,.99));box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 30px 70px rgba(0,0,0,.45);overflow:hidden}
+    .brief::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 100% 0,rgba(56,232,216,.16),transparent 55%);pointer-events:none}
+    .brief__label{display:flex;align-items:center;justify-content:space-between;gap:1rem;font-family:var(--mono);font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:1.3rem}
+    .brief__label i{width:6px;height:6px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 5px rgba(56,232,216,.08)}
+    .brief h2{font-family:var(--display);font-size:1.25rem;line-height:1.25;letter-spacing:-.04em;font-weight:600;margin:0 0 .8rem;color:#fff}
+    .brief p{margin:0;color:var(--muted);font-size:.84rem;line-height:1.75}
+    .brief__link{display:inline-flex;align-items:center;gap:.45rem;margin-top:1.2rem;font-family:var(--mono);font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;color:var(--aqua)}
+    .brief__link:hover{color:#fff}
+    .metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:.65rem;padding:0 0 clamp(3rem,7vw,5rem)}
+    .metric{padding:1rem .85rem;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.028)}
+    .metric b{display:block;font-family:var(--display);font-size:clamp(1.15rem,2.3vw,1.65rem);line-height:1;letter-spacing:-.05em;color:#fff;margin-bottom:.45rem}
+    .metric b span{color:var(--aqua)}
+    .metric small{display:block;font-family:var(--mono);font-size:.43rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);line-height:1.5}
+    .section{padding:clamp(3.5rem,7vw,5.5rem) 0;border-top:1px solid var(--line)}
+    .section--tint{background:rgba(255,255,255,.018)}
+    .section__head{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.7fr);gap:clamp(1.5rem,4vw,3rem);align-items:end;margin-bottom:2rem}
+    .section h2{font-family:var(--display);font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.05;letter-spacing:-.055em;font-weight:600;margin:0;color:#fff;max-width:720px}
+    .section h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .section__lede{margin:0;color:var(--muted);font-size:.92rem;line-height:1.8;max-width:460px}
+    .questions{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
+    .question{padding:1.2rem;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,rgba(18,22,35,.9),rgba(8,10,17,.98));transition:border-color .3s,transform .3s}
+    .question:hover{border-color:rgba(139,108,255,.35);transform:translateY(-3px)}
+    .question__num{display:block;font-family:var(--display);font-size:1.8rem;line-height:1;letter-spacing:-.08em;color:rgba(255,255,255,.1);margin-bottom:1.2rem}
+    .question h3{font-family:var(--display);font-size:.92rem;line-height:1.25;letter-spacing:-.03em;font-weight:600;color:#fff;margin:0 0 .45rem}
+    .question p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.7}
+    .callout{display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:center;margin-top:1rem;padding:1rem 1.2rem;border:1px solid rgba(56,232,216,.18);border-radius:16px;background:rgba(56,232,216,.045)}
+    .callout__icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(56,232,216,.28);color:var(--aqua);font-family:var(--mono);font-size:.7rem}
+    .callout p{margin:0;color:var(--ink-2);font-size:.82rem;line-height:1.7}
+    .callout b{color:#fff;font-weight:600}
+    .callout a{font-family:var(--mono);font-size:.48rem;letter-spacing:.08em;text-transform:uppercase;color:var(--aqua);white-space:nowrap}
+    .dashboard{margin-top:2rem;border:1px solid var(--line-strong);border-radius:22px;background:#080b12;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.55)}
+    .dashboard__bar{display:flex;align-items:center;gap:.45rem;padding:.8rem 1rem;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .dashboard__bar i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.18)}
+    .dashboard__bar i:nth-child(2){background:rgba(56,232,216,.45)}
+    .dashboard__bar i:nth-child(3){background:rgba(139,108,255,.55)}
+    .dashboard__bar span{margin-left:.5rem;font-family:var(--mono);font-size:.48rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+    .dashboard__bar a{margin-left:auto;font-family:var(--mono);font-size:.48rem;letter-spacing:.08em;text-transform:uppercase;color:var(--aqua)}
+    .dashboard img{width:100%;height:auto}
+    .dashboard__caption{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.9rem 1rem;border-top:1px solid var(--line);font-family:var(--mono);font-size:.46rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+    .dashboard__caption b{font-weight:500;color:var(--ink-2)}
+    .approach{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-top:2rem;counter-reset:step}
+    .step{position:relative;padding:1.1rem;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025);overflow:hidden}
+    .step::before{counter-increment:step;content:"0" counter(step);position:absolute;right:.9rem;top:.7rem;font-family:var(--display);font-size:1.5rem;font-weight:700;letter-spacing:-.08em;color:rgba(255,255,255,.07)}
+    .step h3{font-family:var(--display);font-size:.86rem;line-height:1.25;letter-spacing:-.03em;font-weight:600;color:#fff;margin:0 0 .45rem;padding-right:1.8rem}
+    .step p{margin:0;color:var(--muted);font-size:.76rem;line-height:1.7}
+    .step__tag{display:inline-block;margin-top:.8rem;font-family:var(--mono);font-size:.42rem;letter-spacing:.08em;text-transform:uppercase;color:var(--aqua)}
+    .findings{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
+    .finding{padding:1.3rem;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,rgba(18,22,35,.95),rgba(8,10,17,.99));transition:border-color .3s,transform .3s}
+    .finding:hover{border-color:rgba(56,232,216,.32);transform:translateY(-3px)}
+    .finding__metric{display:block;font-family:var(--display);font-size:clamp(1.8rem,3vw,2.5rem);line-height:1;letter-spacing:-.06em;color:var(--aqua);margin-bottom:.8rem}
+    .finding h3{font-family:var(--display);font-size:.95rem;line-height:1.25;letter-spacing:-.03em;font-weight:600;color:#fff;margin:0 0 .55rem}
+    .finding p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.7}
+    .finding__note{display:block;margin-top:1rem;padding-top:.8rem;border-top:1px solid var(--line);font-family:var(--mono);font-size:.43rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.38)}
+    .signals{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin-top:.8rem}
+    .signal{padding:.9rem 1rem;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.02)}
+    .signal b{display:block;font-family:var(--display);font-size:1rem;letter-spacing:-.04em;color:#fff;margin-bottom:.2rem}
+    .signal span{font-family:var(--mono);font-size:.43rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+    .recs{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:2rem}
+    .rec{position:relative;padding:1.25rem;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.025);transition:border-color .3s,transform .3s}
+    .rec:hover{border-color:rgba(139,108,255,.35);transform:translateY(-3px)}
+    .rec__num{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:1px solid rgba(139,108,255,.3);background:rgba(139,108,255,.08);font-family:var(--mono);font-size:.48rem;color:var(--violet);margin-bottom:1rem}
+    .rec h3{font-family:var(--display);font-size:.95rem;line-height:1.25;letter-spacing:-.03em;font-weight:600;color:#fff;margin:0 0 .5rem}
+    .rec p{margin:0;color:var(--muted);font-size:.78rem;line-height:1.7}
+    .rec__impact{display:block;margin-top:1rem;padding-top:.8rem;border-top:1px solid var(--line);font-family:var(--mono);font-size:.44rem;line-height:1.6;letter-spacing:.05em;text-transform:uppercase;color:var(--aqua)}
+    .deliverables{display:grid;grid-template-columns:repeat(5,1fr);gap:.65rem;margin-top:2rem}
+    .deliverable{display:flex;flex-direction:column;min-height:150px;padding:1rem;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.025);transition:border-color .25s,background .25s,transform .25s}
+    .deliverable:hover{border-color:rgba(56,232,216,.3);background:rgba(56,232,216,.045);transform:translateY(-3px)}
+    .deliverable__tag{font-family:var(--mono);font-size:.42rem;letter-spacing:.08em;text-transform:uppercase;color:var(--aqua)}
+    .deliverable h3{font-family:var(--display);font-size:.8rem;line-height:1.3;letter-spacing:-.02em;font-weight:600;color:#fff;margin:.6rem 0 .3rem}
+    .deliverable p{margin:0;color:var(--muted);font-size:.7rem;line-height:1.6}
+    .deliverable span:last-child{margin-top:auto;padding-top:.8rem;font-family:var(--mono);font-size:.46rem;letter-spacing:.06em;text-transform:uppercase;color:var(--violet)}
+    .note{display:flex;align-items:flex-start;gap:.7rem;margin-top:1.2rem;padding:1rem;border:1px solid rgba(255,180,84,.18);border-radius:14px;background:rgba(255,180,84,.045);color:var(--muted);font-size:.76rem;line-height:1.7}
+    .note b{color:var(--amber);font-weight:500}
+    .next{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;padding:clamp(2.5rem,6vw,4rem) 0;border-top:1px solid var(--line)}
+    .next h2{font-family:var(--display);font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.05;letter-spacing:-.05em;font-weight:600;margin:0;color:#fff;max-width:600px}
+    .next h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .next__actions{display:flex;gap:.55rem;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1rem;border:1px solid var(--line);border-radius:999px;font-family:var(--mono);font-size:.5rem;letter-spacing:.08em;text-transform:uppercase;transition:background .25s,color .25s,border-color .25s,transform .25s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn--solid{background:var(--grad);border-color:transparent;color:#05060a}
+    .btn--solid:hover{opacity:.9}
+    .btn--ghost{color:var(--muted)}
+    .btn--ghost:hover{border-color:rgba(56,232,216,.35);color:var(--ink);background:rgba(56,232,216,.06)}
+    .case-footer{padding:1.4rem 0 2.5rem;border-top:1px solid var(--line);color:var(--muted)}
+    .case-footer__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-family:var(--mono);font-size:.46rem;letter-spacing:.08em;text-transform:uppercase}
+    .case-footer a{color:var(--aqua)}
+    .case-footer a:hover{color:#fff}
+    @media(max-width:960px){
+      .hero__grid,.section__head{grid-template-columns:1fr;align-items:start}
+      .brief{max-width:620px}
+      .metrics{grid-template-columns:repeat(3,1fr)}
+      .questions,.findings,.recs{grid-template-columns:1fr}
+      .approach{grid-template-columns:repeat(2,1fr)}
+      .deliverables{grid-template-columns:repeat(3,1fr)}
+      .section__lede{max-width:none}
+    }
+    @media(max-width:700px){
+      .case-header__nav .case-header__link:first-child{display:none}
+      .hero{padding-top:3rem}
+      .metrics{grid-template-columns:repeat(2,1fr)}
+      .metric:last-child{grid-column:1/-1}
+      .approach{grid-template-columns:1fr}
+      .deliverables{grid-template-columns:1fr 1fr}
+      .callout{grid-template-columns:auto 1fr}
+      .callout a{grid-column:1/-1;padding-left:2.8rem}
+      .dashboard__caption{font-size:.42rem}
+      .next__actions{width:100%}
+    }
+    @media(max-width:460px){
+      .deliverables{grid-template-columns:1fr}
+      .case-header__link--solid{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+      html{scroll-behavior:auto}
+    }
+  </style>
+</head>
+<body>
+  <header class="case-header">
+    <div class="wrap case-header__inner">
+      <a class="brand" href="../../index-v2.html#work" aria-label="Back to Siva Dhanushu portfolio">SD<span>.</span></a>
+      <nav class="case-header__nav" aria-label="Case study navigation">
+        <a class="case-header__link" href="../../index-v2.html#work">&larr; Back to work</a>
+        <a class="case-header__link" href="index.html">Live dashboard &nearr;</a>
+        <a class="case-header__link case-header__link--solid" href="../../index-v2.html#contact">Let's talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow"><span>Case study</span> &middot; Data analytics &middot; 2026</p>
+        <div class="hero__grid">
+          <div>
+            <h1>Shop<br><em>Scope.</em></h1>
+            <p class="hero__lede">A decision surface for a D2C lifestyle brand that was growing revenue but missing the story behind its orders, customers and returns.</p>
+            <div class="hero__meta">
+              <span>Role <b>Data Analyst</b></span>
+              <span>Scope <b>1,588 orders / 1,000 customers</b></span>
+              <span>Stack <b>SQL Server / Python / Power BI</b></span>
+            </div>
+          </div>
+          <aside class="brief" aria-label="Project brief">
+            <div class="brief__label"><span>The brief</span><i></i></div>
+            <h2>One surface. Three questions.</h2>
+            <p>Where is revenue coming from? Are customers coming back? Where is revenue leaking? The answer had to fit on one screen and survive a commercial-team review.</p>
+            <a class="brief__link" href="index.html">Open the live dashboard &nearr;</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="metrics" aria-label="Headline metrics">
+        <div class="metric"><b>1,588</b><small>Orders analysed</small></div>
+        <div class="metric"><b>1,000</b><small>Customers</small></div>
+        <div class="metric"><b>40.1<span>%</span></b><small>Repeat customer rate</small></div>
+        <div class="metric"><b>14.5<span>%</span></b><small>Return rate</small></div>
+        <div class="metric"><b>&#8377;34.01<span>L</span></b><small>Net revenue</small></div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow"><span>01</span> The problem</p>
+            <h2>Growth hid the <em>real questions.</em></h2>
+          </div>
+          <p class="section__lede">NovaCart had revenue, orders and a returns spreadsheet. What it did not have was a shared, trustworthy view of which customers and categories were actually creating value.</p>
+        </div>
+
+        <div class="questions">
+          <article class="question">
+            <span class="question__num">01</span>
+            <h3>Where is revenue coming from?</h3>
+            <p>Which categories, products, channels and customer segments build net revenue &mdash; not just gross sales?</p>
+          </article>
+          <article class="question">
+            <span class="question__num">02</span>
+            <h3>Are customers coming back?</h3>
+            <p>Who repeats, who is drifting, and which segments deserve protection or a win-back play?</p>
+          </article>
+          <article class="question">
+            <span class="question__num">03</span>
+            <h3>Where is revenue leaking?</h3>
+            <p>Which categories and return reasons are quietly eroding margin, and how much is at stake?</p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <span class="callout__icon" aria-hidden="true">&rarr;</span>
+          <p><b>The deliverable:</b> a single decision surface for commercial and CRM teams, backed by a repeatable SQL + Python pipeline and a Power BI build kit.</p>
+          <a href="#findings">See what the data said &darr;</a>
+        </div>
+
+        <div class="dashboard">
+          <div class="dashboard__bar"><i></i><i></i><i></i><span>shopscope / fy2025 dashboard</span><a href="index.html">Open live &nearr;</a></div>
+          <a href="index.html" aria-label="Open the ShopScope live dashboard">
+            <img src="../../assets/shopscope-preview.webp" alt="ShopScope dashboard showing net revenue, orders, repeat customer rate, return rate, category revenue and monthly trends" width="1600" height="1000" loading="eager" decoding="async">
+          </a>
+          <div class="dashboard__caption"><span><b>Live, dependency-free dashboard</b> &middot; custom SVG charts &middot; filters, RFM and cohort views</span><span>FY 2025 &middot; synthetic dataset</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow"><span>02</span> Approach</p>
+            <h2>From raw tables to a <em>point of view.</em></h2>
+          </div>
+          <p class="section__lede">The analysis was built in layers so every number on the dashboard could be traced back to a table, a query and a decision.</p>
+        </div>
+
+        <div class="approach">
+          <article class="step">
+            <h3>Model the data</h3>
+            <p>Built a star schema around orders, customers, products and returns. Ran duplicate, missing-value, refund and orphan checks before analysis.</p>
+            <span class="step__tag">0 data-quality failures</span>
+          </article>
+          <article class="step">
+            <h3>Build the analysis layer</h3>
+            <p>Wrote SQL Server 2008-compatible queries for KPIs, RFM scoring with NTILE, cohort retention, channel mix and return reasons.</p>
+            <span class="step__tag">SQL &middot; Python</span>
+          </article>
+          <article class="step">
+            <h3>Design the surface</h3>
+            <p>Turned the output into a filterable dashboard with custom SVG charts, RFM segments, cohort heatmap and returns drilldown.</p>
+            <span class="step__tag">One decision surface</span>
+          </article>
+          <article class="step">
+            <h3>Package the story</h3>
+            <p>Connected each finding to a rupee impact, then documented the pipeline, Power BI build kit and next actions.</p>
+            <span class="step__tag">Insight &rarr; action</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="findings">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow"><span>03</span> Findings</p>
+            <h2>The revenue engine is also the <em>leak.</em></h2>
+          </div>
+          <p class="section__lede">Three patterns changed the conversation: where the money comes from, who protects it, and what quietly gives it back.</p>
+        </div>
+
+        <div class="findings">
+          <article class="finding">
+            <span class="finding__metric">48.7%</span>
+            <h3>of net revenue comes from footwear + apparel.</h3>
+            <p>Footwear contributes 27.6% and apparel 21.1% of net revenue &mdash; but both return more than one in five orders.</p>
+            <span class="finding__note">Footwear return rate 21.4% &middot; Apparel 21.3%</span>
+          </article>
+          <article class="finding">
+            <span class="finding__metric">40.1%</span>
+            <h3>of customers come back for another order.</h3>
+            <p>Champions + Loyal Customers drive 49.0% of net revenue. At Risk customers hold 21.8% of revenue &mdash; 220 people worth prioritising.</p>
+            <span class="finding__note">At Risk AOV &#8377;1,812 &middot; 2.3 avg orders</span>
+          </article>
+          <article class="finding">
+            <span class="finding__metric">14.5%</span>
+            <h3>of orders are returned. Size/fit is the top reason.</h3>
+            <p>Size/fit accounts for 35.9% of returns. Footwear alone accounts for &#8377;2.47L in refunds.</p>
+            <span class="finding__note">231 returns &middot; &#8377;5.83L refunded</span>
+          </article>
+        </div>
+
+        <div class="signals" aria-label="Supporting signals">
+          <div class="signal"><b>12.1%</b><span>Average month-1 retention</span></div>
+          <div class="signal"><b>&#8377;4.50L</b><span>October net revenue peak</span></div>
+          <div class="signal"><b>16.2%</b><span>Marketplace return rate</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow"><span>04</span> Recommendations</p>
+            <h2>Fix the leak before <em>buying more traffic.</em></h2>
+          </div>
+          <p class="section__lede">The analysis was only useful once it pointed to a small set of decisions with a visible rupee impact.</p>
+        </div>
+
+        <div class="recs">
+          <article class="rec">
+            <span class="rec__num">01</span>
+            <h3>Fix fit before buying more traffic.</h3>
+            <p>Add fit guidance, model measurements and review-led size prompts for footwear and apparel. Make size confidence part of the product page, not a support ticket.</p>
+            <span class="rec__impact">A 2 pp return reduction avoids ~&#8377;33K &middot; 10 pp protects ~&#8377;1.7L</span>
+          </article>
+          <article class="rec">
+            <span class="rec__num">02</span>
+            <h3>Run a targeted At Risk win-back.</h3>
+            <p>220 At Risk customers hold 21.8% of revenue at an AOV of &#8377;1,812. A focused reactivation play is a better use of budget than a blanket discount.</p>
+            <span class="rec__impact">10% reactivation at current AOV &asymp; &#8377;40K net revenue</span>
+          </article>
+          <article class="rec">
+            <span class="rec__num">03</span>
+            <h3>Build the 90-day second-purchase journey.</h3>
+            <p>Trigger a personalised recommendation and fit reminder 21&ndash;35 days after first delivery. Month-1 retention is the biggest lever in the cohort matrix.</p>
+            <span class="rec__impact">Protect Champions with early access, not discounts</span>
+          </article>
+        </div>
+
+        <div class="note">
+          <span aria-hidden="true">&#9670;</span>
+          <span><b>Also in the readout:</b> shift acquisition spend toward high-retention sources, reassess Marketplace economics, and prepare size-guide content and inventory before the Q4 peak.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow"><span>05</span> Deliverables</p>
+            <h2>Built to be <em>re-run.</em></h2>
+          </div>
+          <p class="section__lede">The project is not a static screenshot. The data generator, analysis layer, dashboard and Power BI kit are all in the repository.</p>
+        </div>
+
+        <div class="deliverables">
+          <a class="deliverable" href="index.html">
+            <span class="deliverable__tag">Live</span>
+            <h3>ShopScope dashboard</h3>
+            <p>Filterable KPI, RFM, cohort and returns views.</p>
+            <span>Open dashboard &nearr;</span>
+          </a>
+          <a class="deliverable" href="sql/ecommerce_analysis.sql">
+            <span class="deliverable__tag">SQL</span>
+            <h3>Analysis layer</h3>
+            <p>SQL Server 2008 queries for KPIs, RFM and cohorts.</p>
+            <span>View SQL &nearr;</span>
+          </a>
+          <a class="deliverable" href="python/analyze.py">
+            <span class="deliverable__tag">Python</span>
+            <h3>Reproducible pipeline</h3>
+            <p>Pandas analysis that rebuilds the dashboard payload.</p>
+            <span>View Python &nearr;</span>
+          </a>
+          <a class="deliverable" href="powerbi/README.md">
+            <span class="deliverable__tag">Power BI</span>
+            <h3>Build kit</h3>
+            <p>Model, DAX measures, theme and report spec.</p>
+            <span>View build kit &nearr;</span>
+          </a>
+          <a class="deliverable" href="README.md">
+            <span class="deliverable__tag">Docs</span>
+            <h3>Full case study</h3>
+            <p>Data model, quality checks, findings and next steps.</p>
+            <span>Read README &nearr;</span>
+          </a>
+        </div>
+
+        <div class="note">
+          <span aria-hidden="true">&#9670;</span>
+          <span><b>Data note:</b> this is a portfolio project built on a deterministic synthetic dataset. No real customer or transaction data is used. The dashboard is dependency-free and deploys as static content on GitHub Pages.</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap next">
+      <h2>See the rest of the <em>work.</em></h2>
+      <div class="next__actions">
+        <a class="btn btn--solid" href="../../index-v2.html#work">Back to selected work &nearr;</a>
+        <a class="btn btn--ghost" href="../../index-v2.html#contact">Start a conversation</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="case-footer">
+    <div class="wrap case-footer__inner">
+      <span>&copy; 2026 Siva Dhanushu &middot; ShopScope case study</span>
+      <span><a href="../../index-v2.html#work">Portfolio</a> &middot; <a href="index.html">Live dashboard</a> &middot; <a href="README.md">README</a></span>
+    </div>
+  </footer>
+</body>
+</html>

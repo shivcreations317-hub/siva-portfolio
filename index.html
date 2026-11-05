@@ -5,27 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Siva Dhanushu — UI/UX Designer & Data Analyst</title>
 <meta name="description" content="Portfolio of Siva Dhanushu — UI/UX designer and data analyst crafting intuitive digital experiences and clear, decision-ready analytics."/>
+<meta name="theme-color" content="#080a0e"/>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080a0e'/%3E%3Ctext x='32' y='43' font-family='Arial' font-size='26' font-weight='bold' fill='%23c8f060' text-anchor='middle'%3ESD%3C/text%3E%3C/svg%3E"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
   :root {
+    color-scheme: dark;
     --bg: #080a0e;
     --bg2: #0d1117;
     --surface: #111620;
+    --surface-2: #0f1520;
+    --ink: #fff;
     --border: rgba(255,255,255,0.07);
+    --border-strong: rgba(255,255,255,0.12);
     --accent: #c8f060;
     --accent2: #60f0c8;
     --accent3: #8b5cf6;
+    --lime: #c8f060;
+    --teal: #60f0c8;
     --grad: linear-gradient(90deg,#c8f060,#60f0c8,#8b5cf6);
+    --grad-vivid: linear-gradient(90deg,#c8f060,#60f0c8,#8b5cf6);
     --text: #e8eaf0;
     --muted: #6b7280;
     --card-bg: rgba(17,22,32,0.8);
+    --shadow-soft: 0 1px 2px rgba(0,0,0,.45), 0 12px 32px rgba(0,0,0,.30);
+    --shadow-hover: 0 24px 70px rgba(0,0,0,.50);
     --ease-out: cubic-bezier(.16,1,.3,1);
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;scroll-snap-type:none}
+  html{scroll-behavior:smooth;scroll-snap-type:none;overflow-x:hidden;scrollbar-color:rgba(255,255,255,.22) var(--bg);scrollbar-width:thin}
   body{
     background:var(--bg);
     color:var(--text);
@@ -36,6 +46,10 @@
     cursor:none;
   }
   ::selection{background:rgba(200,240,96,.25);color:#fff}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:rgba(255,255,255,.18);border:2px solid var(--bg);border-radius:10px}
+  ::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.30)}
   a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
   @media(pointer:coarse){
     body{cursor:auto}
@@ -86,12 +100,11 @@
     width:12px;height:12px;
     border-radius:50%;
     background:var(--accent);
-    box-shadow:0 0 14px rgba(200,240,96,.7);
+    box-shadow:0 0 14px rgba(200,240,96,.45);
     pointer-events:none;
     z-index:9999;
     transform:translate(-50%,-50%);
     transition:width .2s,height .2s,opacity .2s;
-    mix-blend-mode:exclusion;
   }
   #cursor.clicking{width:6px;height:6px}
   #cursor-ring{
@@ -129,6 +142,7 @@
     border-color:var(--border);
     backdrop-filter:blur(18px);
     padding:1rem 3.5rem;
+    box-shadow:0 8px 30px rgba(0,0,0,.35);
   }
   .nav-logo{
     font-family:'Bebas Neue',sans-serif;
@@ -168,7 +182,7 @@
   }
   .status-dot{
     width:8px;height:8px;border-radius:50%;
-    background:#60f0c8;
+    background:var(--accent2);
     animation:ping 2s ease-out infinite;
   }
   @keyframes ping{
@@ -310,6 +324,24 @@
     vertical-align:-.12em;margin-left:3px;
   }
   @keyframes blink{50%{opacity:0}}
+  .hero-tags{
+    display:flex;flex-wrap:wrap;gap:.55rem;
+    margin-top:1.8rem;
+    opacity:0;transform:translateY(18px);
+    animation:fadeUp .7s var(--ease-out) 1.7s forwards;
+    position:relative;z-index:1;
+  }
+  .hero-tags span{
+    display:inline-flex;align-items:center;gap:.4rem;
+    padding:.45rem .95rem;
+    border:1px solid var(--border);
+    border-radius:999px;
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(10px);
+    color:var(--muted);
+    font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;
+  }
+  .hero-tags span b{color:var(--accent);font-weight:600}
   .hero-cta{
     margin-top:3rem;
     display:flex;gap:1.2rem;
@@ -324,6 +356,7 @@
     background-size:200% auto;
     animation:gradShift 6s linear infinite;
     color:#080a0e;
+    border:none;
     border-radius:3px;
     font-weight:600;
     font-size:.85rem;
@@ -363,7 +396,10 @@
     transform:skewX(-20deg);
     transition:left .55s ease;z-index:-1;
   }
-  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .btn-ghost:hover{
+    border-color:var(--accent);
+    color:var(--accent);
+  }
   .btn-ghost:hover::after{left:125%}
   .scroll-hint{
     position:absolute;bottom:6.5rem;left:3.5rem;
@@ -406,7 +442,7 @@
     border-top:1px solid var(--border);
     border-bottom:1px solid var(--border);
     background:rgba(8,10,14,.72);
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(10px);
     padding:.85rem 0;
     overflow:hidden;
   }
@@ -446,6 +482,12 @@
     background:var(--grad);
     background-size:200% auto;
     animation:gradShift 5s linear infinite;
+  }
+  .label-num{
+    color:var(--muted);
+    font-weight:400;
+    letter-spacing:.12em;
+    margin-right:.15rem;
   }
   .section-title{
     font-family:'DM Serif Display',serif;
@@ -695,6 +737,20 @@
     display:flex;align-items:flex-end;justify-content:space-between;
     margin-bottom:4rem;
   }
+  .projects-meta{
+    display:flex;gap:2.2rem;flex-wrap:wrap;align-items:flex-end;
+    padding-bottom:.5rem;
+  }
+  .projects-meta div{display:flex;flex-direction:column;gap:.15rem}
+  .projects-meta b{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:1.7rem;line-height:1;
+    color:var(--text);letter-spacing:.05em;
+  }
+  .projects-meta span{
+    font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--muted);
+  }
   .projects-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -728,24 +784,17 @@
   }
   .project-card:hover::before{opacity:1}
   .project-card:hover::after{left:120%}
-  .project-card:hover{background:#0f1520}
-  .project-emoji{
-    font-size:2rem;
-    margin-bottom:1.5rem;
-    display:inline-block;
-    transition:transform .5s var(--ease-out);
-    transform:translateZ(20px);
-  }
-  .project-card:hover .project-emoji{transform:translateZ(40px) scale(1.3) rotate(-8deg)}
+  .project-card:hover{background:var(--surface-2)}
   .project-num{
-    position:absolute;top:2rem;right:2.2rem;
+    position:absolute;top:1.4rem;right:1.6rem;
     font-family:'Bebas Neue',sans-serif;
-    font-size:4.5rem;
+    font-size:3.2rem;
     color:rgba(255,255,255,.04);
     line-height:1;
+    z-index:4;pointer-events:none;
     transition:color .3s,transform .4s var(--ease-out);
   }
-  .project-card:hover .project-num{color:rgba(200,240,96,.08);transform:translateY(-6px)}
+  .project-card:hover .project-num{color:rgba(200,240,96,.08);transform:translateY(-4px)}
   .project-title{
     font-family:'DM Serif Display',serif;
     font-size:1.5rem;
@@ -778,6 +827,7 @@
   .ptag{
     padding:.25rem .75rem;
     background:rgba(200,240,96,.08);
+    border:none;
     border-radius:2px;
     font-size:.7rem;
     letter-spacing:.08em;
@@ -833,7 +883,7 @@
   .project-preview{
     position:relative;z-index:2;
     display:flex;flex-direction:column;
-    aspect-ratio:16/10;
+    aspect-ratio:16/10.8;
     border:1px solid rgba(255,255,255,.12);
     border-radius:6px;
     overflow:hidden;
@@ -845,6 +895,17 @@
   .project-card.featured:hover .project-preview{
     transform:translateZ(40px) translateY(-4px);
     box-shadow:0 36px 90px rgba(0,0,0,.62),0 0 0 1px rgba(200,240,96,.12);
+  }
+  .project-preview-sm{
+    aspect-ratio:16/10.8;
+    margin-bottom:1.6rem;
+    border-radius:6px;
+    box-shadow:0 20px 50px rgba(0,0,0,.45),0 0 0 1px rgba(200,240,96,.05);
+    transform:none;
+  }
+  .project-card:hover .project-preview-sm{
+    transform:translateY(-3px);
+    box-shadow:0 28px 60px rgba(0,0,0,.55),0 0 0 1px rgba(200,240,96,.12);
   }
   .preview-bar{
     display:flex;align-items:center;gap:5px;
@@ -864,10 +925,10 @@
   }
   .project-preview img{
     display:block;width:100%;flex:1;min-height:0;
-    object-fit:cover;object-position:top left;
+    object-fit:cover;object-position:top center;
     transition:transform .7s var(--ease-out);
   }
-  .project-card.featured:hover .project-preview img{transform:scale(1.025)}
+  .project-card:hover .project-preview img{transform:scale(1.025)}
 
   /* ─── SKILLS MARQUEE ─── */
   #skills-marquee{
@@ -908,10 +969,19 @@
     pointer-events:none;
   }
   .resume-icon{
-    font-size:3rem;
-    margin-bottom:1.2rem;
-    display:block;
+    width:78px;height:78px;
+    margin:0 auto 1.4rem;
+    display:grid;place-items:center;
+    border-radius:22px;
+    background:linear-gradient(145deg,#1a2235,#0d1117);
+    border:1px solid rgba(200,240,96,.16);
+    box-shadow:0 14px 34px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08);
     animation:float 4s ease-in-out infinite;
+  }
+  .resume-icon svg{
+    width:42px;height:42px;
+    display:block;
+    overflow:visible;
   }
   .resume-box h3{
     font-family:'DM Serif Display',serif;
@@ -937,7 +1007,7 @@
     line-height:.95;
     letter-spacing:-.01em;
     color:transparent;
-    -webkit-text-stroke:1px rgba(255,255,255,.2);
+    -webkit-text-stroke:1.2px rgba(255,255,255,.2);
     margin-bottom:2rem;
     transition:color .5s,-webkit-text-stroke .5s,transform .6s var(--ease-out);
     position:relative;
@@ -1117,7 +1187,7 @@
   @media(prefers-reduced-motion:reduce){
     *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
     html{scroll-behavior:auto}
-    .reveal,.hero-eyebrow,.hero-sub,.hero-cta,.scroll-hint{opacity:1;transform:none}
+    .reveal,.hero-eyebrow,.hero-sub,.hero-tags,.hero-cta,.scroll-hint{opacity:1;transform:none}
     .hero-name .char-in,.section-title .tw-in{transform:none;opacity:1}
   }
 </style>
@@ -1168,6 +1238,12 @@
     <span class="word">Siva </span><span class="word outline">Dhanushu</span>
   </h1>
   <p class="hero-sub">UI/UX Designer &amp; Data Analyst crafting <span class="typed-text" id="typed"></span><span class="typed-caret"></span></p>
+  <div class="hero-tags">
+    <span><b>UI/UX</b> Design</span>
+    <span><b>Data</b> Analytics</span>
+    <span><b>SQL</b> · Python · Power BI</span>
+    <span><b>Figma</b> Prototyping</span>
+  </div>
   <div class="hero-cta">
     <a href="#projects" class="btn-primary" data-magnetic="0.25">View My Work ↓</a>
     <a href="#contact" class="btn-ghost" data-magnetic="0.25">Get in Touch</a>
@@ -1200,7 +1276,7 @@
 <section id="about">
   <div class="section-orb orb-1" data-parallax="0.25"></div>
   <div class="about-text">
-    <p class="section-label reveal">About Me</p>
+    <p class="section-label reveal"><span class="label-num">01</span>About Me</p>
     <h2 class="section-title reveal">Designing for <em>humans</em>, deciding with <em>data</em>.</h2>
     <div class="reveal reveal-delay-1">
       <p>I am a UI/UX designer and data analyst dedicated to creating intuitive digital experiences and turning raw data into clear decisions. My skills span user research, wireframing, prototyping and usability testing — plus SQL, Python and Power BI for sales, customer and returns analysis.</p>
@@ -1244,7 +1320,7 @@
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-orb orb-3" data-parallax="0.2"></div>
-  <p class="section-label reveal" style="justify-content:center">Experience</p>
+  <p class="section-label reveal" style="justify-content:center"><span class="label-num">02</span>Experience</p>
   <h2 class="section-title reveal reveal-delay-1">Data-driven <em>by design.</em></h2>
   <div class="timeline" id="timeline">
     <div class="tl-item" data-delay="0">
@@ -1312,8 +1388,13 @@
   <div class="section-orb orb-2" data-parallax="0.25"></div>
   <div class="projects-header">
     <div>
-      <p class="section-label reveal">Selected Work</p>
+      <p class="section-label reveal"><span class="label-num">03</span>Selected Work</p>
       <h2 class="section-title reveal reveal-delay-1">Projects that <em>ship.</em></h2>
+    </div>
+    <div class="projects-meta reveal reveal-delay-2">
+      <div><b>05</b><span>Selected projects</span></div>
+      <div><b>UI/UX</b><span>+ Data</span></div>
+      <div><b>2026</b><span>Portfolio</span></div>
     </div>
   </div>
   <div class="projects-grid">
@@ -1321,7 +1402,10 @@
     <!-- Card 1 -->
     <div class="project-card reveal reveal-delay-1" data-index="1">
       <span class="project-num">01</span>
-      <span class="project-emoji">🌿</span>
+      <div class="project-preview project-preview-sm">
+        <div class="preview-bar"><span></span><span></span><span></span><em>plant finder / ux case study</em></div>
+        <img src="assets/project-plant.webp" alt="Plant Finder app case study cover showing the mobile plant care interface" loading="lazy"/>
+      </div>
       <div class="project-tags">
         <span class="ptag">Mobile App</span>
         <span class="ptag">UX Design</span>
@@ -1335,7 +1419,10 @@
     <!-- Card 2 -->
     <div class="project-card reveal reveal-delay-2" data-index="2">
       <span class="project-num">02</span>
-      <span class="project-emoji">🤖</span>
+      <div class="project-preview project-preview-sm">
+        <div class="preview-bar"><span></span><span></span><span></span><em>support ai / nlp product</em></div>
+        <img src="assets/project-chatbot.webp" alt="Support AI case study cover showing a customer support chat interface and resolution metric" loading="lazy"/>
+      </div>
       <div class="project-tags">
         <span class="ptag">AI / ML</span>
         <span class="ptag">NLP</span>
@@ -1349,7 +1436,10 @@
     <!-- Card 3 -->
     <div class="project-card reveal reveal-delay-3" data-index="3">
       <span class="project-num">03</span>
-      <span class="project-emoji">🚗</span>
+      <div class="project-preview project-preview-sm">
+        <div class="preview-bar"><span></span><span></span><span></span><em>parksmart / iot dashboard</em></div>
+        <img src="assets/project-parking.webp" alt="ParkSmart IoT case study cover showing a live parking availability dashboard" loading="lazy"/>
+      </div>
       <div class="project-tags">
         <span class="ptag">IoT</span>
         <span class="ptag">Arduino</span>
@@ -1363,7 +1453,10 @@
     <!-- Card 4 -->
     <div class="project-card reveal reveal-delay-4" data-index="4">
       <span class="project-num">04</span>
-      <span class="project-emoji">🚘</span>
+      <div class="project-preview project-preview-sm">
+        <div class="preview-bar"><span></span><span></span><span></span><em>drivenow / booking ux</em></div>
+        <img src="assets/project-car.webp" alt="DriveNow automobile rental case study cover showing a car booking app and pickup map" loading="lazy"/>
+      </div>
       <div class="project-tags">
         <span class="ptag">App Design</span>
         <span class="ptag">Figma</span>
@@ -1405,10 +1498,18 @@
 
 <!-- RESUME -->
 <section id="resume">
-  <p class="section-label reveal" style="justify-content:center">Resume</p>
+  <p class="section-label reveal" style="justify-content:center"><span class="label-num">04</span>Resume</p>
   <h2 class="section-title reveal reveal-delay-1">Download my <em>story.</em></h2>
   <div class="resume-box reveal reveal-delay-2">
-    <span class="resume-icon">📄</span>
+    <span class="resume-icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.5 5.5h14L37 15v25.5a2.5 2.5 0 0 1-2.5 2.5h-21A2.5 2.5 0 0 1 11 40.5V8a2.5 2.5 0 0 1 2.5-2.5Z" fill="#111620" stroke="#c8f060" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M27.5 5.5V15H37" stroke="#c8f060" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M17 21h14M17 26h14M17 31h9" stroke="#60f0c8" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="34" cy="35" r="7" fill="#c8f060"/>
+        <path d="M34 31v7M31 35l3 3 3-3" stroke="#080a0e" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
     <h3>Siva Dhanushu</h3>
     <p>Full resume including experience, education, and skills across UI/UX, MS SQL, Python and Power BI — ready to view or download from Google Drive.</p>
     <a href="https://drive.google.com/file/d/1YLBG78mmSSqbtUEKPIyIFi4HLHHLbtXb/view?usp=drivesdk" target="_blank" class="btn-primary" data-magnetic="0.2">View & Download Resume ↗</a>
@@ -1420,7 +1521,7 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-orb orb-1" data-parallax="0.2"></div>
-  <p class="section-label reveal" style="justify-content:center">Contact</p>
+  <p class="section-label reveal" style="justify-content:center"><span class="label-num">05</span>Contact</p>
   <div class="contact-big reveal" id="contact-big">
     LET'S<br/>WORK
     <span class="fill">LET'S<br/>WORK</span>
@@ -1700,7 +1801,7 @@ function animRing(){
   requestAnimationFrame(animRing);
 }
 animRing();
-document.querySelectorAll('a,button,.project-card,.skill-tag,.btn-primary,.btn-ghost,.ptag,.stat,.contact-link').forEach(el=>{
+document.querySelectorAll('a,button,.project-card,.skill-tag,.btn-primary,.btn-ghost,.ptag,.stat,.contact-link,.hero-tags span').forEach(el=>{
   el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));
   el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));
 });
@@ -1793,7 +1894,7 @@ if(cBig){
   });
   cBig.addEventListener('mouseleave',()=>{
     cBig.style.color='transparent';
-    cBig.style.webkitTextStroke='1px rgba(255,255,255,.2)';
+    cBig.style.webkitTextStroke='1.2px rgba(255,255,255,.2)';
   });
 }
 
