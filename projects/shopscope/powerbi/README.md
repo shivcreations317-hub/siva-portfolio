@@ -104,14 +104,14 @@ Open `measures.dax` and add the measures to the `Orders` table. The key measures
 
 ## 5. Theme
 
-Import `theme.json` via **View → Themes → Browse for themes**. The palette is:
+Import `theme.json` via **View → Themes → Browse for themes**. The palette matches the portfolio's obsidian theme:
 
-- Lime `#C8F060`
-- Teal `#60F0C8`
-- Violet `#8B5CF6`
-- Orange `#FFB86B`
-- Pink `#FF7EB6`
-- Blue `#6EA8FE`
+- Violet `#8B6CFF`
+- Aqua `#38E8D8`
+- Amber `#FFB454`
+- Pink `#FF8FB1`
+- Blue `#7AA7FF`
+- Lavender `#B6A4FF`
 
 ## 6. Notes
 

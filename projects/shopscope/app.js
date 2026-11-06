@@ -41,22 +41,22 @@
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   const SEGMENT_ORDER = ['Champions','Loyal Customers','New / Potential','Need Attention','At Risk','Hibernating'];
   const SEGMENT_COLORS = {
-    'Champions':'#c8f060',
-    'Loyal Customers':'#60f0c8',
-    'New / Potential':'#6ea8fe',
-    'Need Attention':'#ffb86b',
-    'At Risk':'#ff7eb6',
-    'Hibernating':'#8b5cf6'
+    'Champions':'#8b6cff',
+    'Loyal Customers':'#38e8d8',
+    'New / Potential':'#7aa7ff',
+    'Need Attention':'#ffb454',
+    'At Risk':'#ff8fb1',
+    'Hibernating':'#b6a4ff'
   };
   const CATEGORY_COLORS = {
-    'Apparel':'#c8f060',
-    'Footwear':'#60f0c8',
-    'Accessories':'#8b5cf6',
-    'Home & Living':'#ffb86b',
-    'Beauty':'#ff7eb6',
-    'Electronics':'#6ea8fe'
+    'Apparel':'#8b6cff',
+    'Footwear':'#38e8d8',
+    'Accessories':'#ffb454',
+    'Home & Living':'#ff8fb1',
+    'Beauty':'#7aa7ff',
+    'Electronics':'#b6a4ff'
   };
-  const FALLBACK_COLORS = ['#c8f060','#60f0c8','#8b5cf6','#ffb86b','#ff7eb6','#6ea8fe'];
+  const FALLBACK_COLORS = ['#8b6cff','#38e8d8','#7aa7ff','#ffb454','#ff8fb1','#b6a4ff'];
 
   const state = { quarter:'All', category:'All', channel:'All', segment:'All' };
 
@@ -272,16 +272,16 @@
     const compareCurrent = compare.current && compare.current.length ? metrics(compare.current) : current;
 
     const cards = [
-      { label:'Net revenue', hint:'Gross revenue minus refunds', value:compactINR(current.netRevenue), raw:exactINR(current.netRevenue), delta:deltaMarkup(compareCurrent.netRevenue, prior && prior.netRevenue), color:'#c8f060', spark:'revenue' },
-      { label:'Gross profit', hint:'Net revenue minus product cost', value:compactINR(current.profit), raw:exactINR(current.profit) + ' · ' + pct(current.margin) + ' margin', delta:deltaMarkup(compareCurrent.profit, prior && prior.profit), color:'#60f0c8', spark:'profit', small:pct(current.margin) },
-      { label:'Orders', hint:'Completed orders in the selected period', value:nf.format(current.orders), raw:nf.format(current.orders) + ' orders', delta:deltaMarkup(compareCurrent.orders, prior && prior.orders), color:'#6ea8fe', spark:'orders' },
-      { label:'Avg order value', hint:'Net revenue divided by orders', value:compactINR(current.aov), raw:exactINR(current.aov), delta:deltaMarkup(compareCurrent.aov, prior && prior.aov), color:'#ffb86b', spark:'aov' },
-      { label:'Repeat customer rate', hint:'Customers with 2+ orders in the selected period', value:pct(current.repeatRate), raw:pct(current.repeatRate, 2) + ' · ' + nf.format(current.repeatCustomers) + ' repeat customers', delta:deltaMarkup(compareCurrent.repeatRate, prior && prior.repeatRate, 'pp'), color:'#ff7eb6', spark:'repeatRate' },
-      { label:'Return rate', hint:'Returned orders divided by total orders', value:pct(current.returnRate), raw:pct(current.returnRate, 2) + ' · ' + nf.format(current.returned) + ' returned orders', delta:deltaMarkup(compareCurrent.returnRate, prior && prior.returnRate, 'pp', true), color:'#8b5cf6', spark:'returnRate', invert:true }
+      { label:'Net revenue', hint:'Gross revenue minus refunds', value:compactINR(current.netRevenue), raw:exactINR(current.netRevenue), delta:deltaMarkup(compareCurrent.netRevenue, prior && prior.netRevenue), color:'#8b6cff', spark:'revenue' },
+      { label:'Gross profit', hint:'Net revenue minus product cost', value:compactINR(current.profit), raw:exactINR(current.profit) + ' · ' + pct(current.margin) + ' margin', delta:deltaMarkup(compareCurrent.profit, prior && prior.profit), color:'#38e8d8', spark:'profit', small:pct(current.margin) },
+      { label:'Orders', hint:'Completed orders in the selected period', value:nf.format(current.orders), raw:nf.format(current.orders) + ' orders', delta:deltaMarkup(compareCurrent.orders, prior && prior.orders), color:'#7aa7ff', spark:'orders' },
+      { label:'Avg order value', hint:'Net revenue divided by orders', value:compactINR(current.aov), raw:exactINR(current.aov), delta:deltaMarkup(compareCurrent.aov, prior && prior.aov), color:'#ffb454', spark:'aov' },
+      { label:'Repeat customer rate', hint:'Customers with 2+ orders in the selected period', value:pct(current.repeatRate), raw:pct(current.repeatRate, 2) + ' · ' + nf.format(current.repeatCustomers) + ' repeat customers', delta:deltaMarkup(compareCurrent.repeatRate, prior && prior.repeatRate, 'pp'), color:'#ff8fb1', spark:'repeatRate' },
+      { label:'Return rate', hint:'Returned orders divided by total orders', value:pct(current.returnRate), raw:pct(current.returnRate, 2) + ' · ' + nf.format(current.returned) + ' returned orders', delta:deltaMarkup(compareCurrent.returnRate, prior && prior.returnRate, 'pp', true), color:'#b6a4ff', spark:'returnRate', invert:true }
     ];
 
-    grid.innerHTML = cards.map(card => `
-      <article class="kpi-card">
+    grid.innerHTML = cards.map((card, index) => `
+      <article class="kpi-card" data-tilt="4" style="--i:${index}">
         <div class="kpi-label"${card.hint ? ` title="${escapeHTML(card.hint)}"` : ''}>${card.label}</div>
         <div class="kpi-value" title="${escapeHTML(card.raw)}">${card.value}${card.small ? `<small>${card.small} margin</small>` : ''}</div>
         <div class="kpi-foot">${card.delta}<span class="kpi-compare">${escapeHTML(compare.label)}</span></div>
@@ -329,8 +329,8 @@
       const value = maxRevenue * (4 - index) / 4;
       const y = top + (plotH * index) / 4;
       return `<line x1="${left}" y1="${y}" x2="${W - right}" y2="${y}" stroke="rgba(255,255,255,.07)" stroke-width="1"/>
-        <text x="${left - 9}" y="${y + 3.5}" text-anchor="end" fill="#5c6577" font-size="9" font-family="Outfit, sans-serif">${compactINR(value)}</text>
-        <text x="${W - right + 9}" y="${y + 3.5}" text-anchor="start" fill="#5c6577" font-size="9" font-family="Outfit, sans-serif">${Math.round(maxReturn * (4 - index) / 4)}%</text>`;
+        <text x="${left - 9}" y="${y + 3.5}" text-anchor="end" fill="#5f687e" font-size="9" font-family="Manrope, sans-serif">${compactINR(value)}</text>
+        <text x="${W - right + 9}" y="${y + 3.5}" text-anchor="start" fill="#5f687e" font-size="9" font-family="Manrope, sans-serif">${Math.round(maxReturn * (4 - index) / 4)}%</text>`;
     }).join('');
 
     const bars = series.map((item, index) => {
@@ -346,11 +346,11 @@
       return { x, y, ...item };
     });
     const linePath = linePoints.map((point, index) => `${index === 0 ? 'M' : 'L'}${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(' ');
-    const dots = linePoints.map(point => `<circle cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="3.2" fill="#0c1017" stroke="#ff7eb6" stroke-width="2"/>`).join('');
+    const dots = linePoints.map(point => `<circle cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="3.2" fill="#0c0f17" stroke="#ffb454" stroke-width="2"/>`).join('');
 
     const xLabels = series.map((item, index) => {
       const x = left + index * step + step / 2;
-      return `<text x="${x.toFixed(1)}" y="${H - 12}" text-anchor="middle" fill="#5c6577" font-size="9" font-family="Outfit, sans-serif">${item.month}</text>`;
+      return `<text x="${x.toFixed(1)}" y="${H - 12}" text-anchor="middle" fill="#5f687e" font-size="9" font-family="Manrope, sans-serif">${item.month}</text>`;
     }).join('');
 
     const hits = series.map((item, index) => {
@@ -363,13 +363,13 @@
     container.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Monthly net revenue bars and return rate line for the selected period">
       <defs>
         <linearGradient id="barGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#c8f060"/>
-          <stop offset="100%" stop-color="#60f0c8" stop-opacity=".22"/>
+          <stop offset="0%" stop-color="#8b6cff"/>
+          <stop offset="100%" stop-color="#38e8d8" stop-opacity=".22"/>
         </linearGradient>
       </defs>
       ${gridLines}
       ${bars}
-      <path d="${linePath}" fill="none" stroke="#ff7eb6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="${linePath}" fill="none" stroke="#ffb454" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       ${dots}
       ${xLabels}
       ${hits}
@@ -637,9 +637,9 @@
       const cells = Array.from({ length: 12 }, (_, period) => {
         const cell = cohort.retention[period];
         if (!cell) return '<div class="cohort-cell empty"></div>';
-        const alpha = 0.05 + cell.rate * 0.87;
-        const textColor = cell.rate > 0.55 ? '#07100a' : 'rgba(255,255,255,.78)';
-        return `<div class="cohort-cell" style="background:rgba(200,240,96,${alpha.toFixed(3)});color:${textColor}" data-cohort="${cohort.month}" data-period="${period}" data-retained="${cell.retained}" data-size="${cohort.size}" data-rate="${cell.rate}">${Math.round(cell.rate * 100)}%</div>`;
+        const alpha = 0.06 + cell.rate * 0.88;
+        const textColor = cell.rate > 0.55 ? '#05060a' : 'rgba(255,255,255,.8)';
+        return `<div class="cohort-cell" style="background:rgba(139,108,255,${alpha.toFixed(3)});color:${textColor}" data-cohort="${cohort.month}" data-period="${period}" data-retained="${cell.retained}" data-size="${cohort.size}" data-rate="${cell.rate}">${Math.round(cell.rate * 100)}%</div>`;
       }).join('');
       return `<div class="cohort-label">${cohort.month} <span>${cohort.size}</span></div>${cells}`;
     }).join('');
@@ -773,29 +773,29 @@
 
     const cards = [
       {
-        icon:'repeat', color:'#c8f060', title:'Repeat revenue engine',
+        icon:'repeat', color:'#8b6cff', title:'Repeat revenue engine',
         text:`<strong>${pct(repeatRevenueShare)}</strong> of net revenue comes from repeat orders, while <strong>${pct(current.repeatRate)}</strong> of customers have ordered more than once. Retention is already the growth engine.`
       },
       {
-        icon:'revenue', color:'#60f0c8', title:'Category concentration',
+        icon:'revenue', color:'#38e8d8', title:'Category concentration',
         text:`<strong>${escapeHTML(topCategory.category)}</strong> contributes <strong>${pct(topCategory.share)}</strong> of net revenue at ${pct(topCategory.margin)} margin. Its return rate is ${pct(topCategory.returnRate)} — protect the category, but fix the leak.`
       },
       {
-        icon:'users', color:'#ff7eb6', title:'At Risk opportunity',
+        icon:'users', color:'#ff8fb1', title:'At Risk opportunity',
         text:`<strong>${nf.format(atRisk.customers)}</strong> ${escapeHTML(atRisk.name)} customers hold <strong>${pct(atRisk.revenueShare)}</strong> of revenue (AOV ${compactINR(atRisk.aov)}). A targeted win-back play is the fastest retention lever.`
       },
       {
-        icon:'return', color:'#ffb86b', title:'Returns hotspot',
+        icon:'return', color:'#ffb454', title:'Returns hotspot',
         text:`<strong>${escapeHTML(hotspot.category)}</strong> returns <strong>${pct(hotspot.returnRate)}</strong> of orders. <strong>${escapeHTML(topReason[0])}</strong> is the top reason at ${pct(topReason[1] / Math.max(1, returned.length))} of returns. Fix fit guidance first.`
       },
       {
-        icon:'calendar', color:'#8b5cf6', title:'Retention signal',
+        icon:'calendar', color:'#b6a4ff', title:'Retention signal',
         text:`Month-1 retention averages <strong>${pct(m1Average)}</strong>. <strong>${peak.month} 2025</strong> was the strongest revenue month at ${compactINR(peak.revenue)} — build the repeat journey before the festive peak.`
       }
     ];
 
-    grid.innerHTML = cards.map(card => `
-      <article class="insight" style="--c:${card.color}">
+    grid.innerHTML = cards.map((card, index) => `
+      <article class="insight" data-tilt="2" style="--c:${card.color};--i:${index}">
         <span class="insight-icon">${icons[card.icon]}</span>
         <div>
           <h3>${card.title}</h3>

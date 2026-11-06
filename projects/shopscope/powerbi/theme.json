@@ -1,41 +1,41 @@
 {
-  "name": "ShopScope Dark",
+  "name": "ShopScope Obsidian",
   "dataColors": [
-    "#C8F060",
-    "#60F0C8",
-    "#8B5CF6",
-    "#FFB86B",
-    "#FF7EB6",
-    "#6EA8FE",
-    "#7EE787",
-    "#FFC857"
+    "#8B6CFF",
+    "#38E8D8",
+    "#FFB454",
+    "#FF8FB1",
+    "#7AA7FF",
+    "#B6A4FF",
+    "#7EE7B0",
+    "#FFC46B"
   ],
-  "background": "#080A0E",
-  "foreground": "#E8EAF0",
-  "tableAccent": "#C8F060",
-  "good": "#7EE787",
-  "neutral": "#FFC857",
-  "bad": "#FF6B7A",
+  "background": "#05060A",
+  "foreground": "#F4F6FF",
+  "tableAccent": "#8B6CFF",
+  "good": "#7EE7B0",
+  "neutral": "#FFC46B",
+  "bad": "#FF7E8E",
   "textClasses": {
     "callout": {
       "fontSize": 28,
-      "fontFace": "Outfit",
-      "color": "#E8EAF0"
+      "fontFace": "Unbounded",
+      "color": "#F4F6FF"
     },
     "title": {
       "fontSize": 14,
-      "fontFace": "Outfit",
-      "color": "#E8EAF0"
+      "fontFace": "Unbounded",
+      "color": "#F4F6FF"
     },
     "header": {
       "fontSize": 11,
-      "fontFace": "Outfit",
-      "color": "#8A93A6"
+      "fontFace": "DM Mono",
+      "color": "#929BB2"
     },
     "label": {
       "fontSize": 10,
-      "fontFace": "Outfit",
-      "color": "#5C6577"
+      "fontFace": "DM Mono",
+      "color": "#5F687E"
     }
   },
   "visualStyles": {
@@ -45,7 +45,7 @@
           {
             "color": {
               "solid": {
-                "color": "#10151F"
+                "color": "#0C0F17"
               }
             },
             "transparency": 0
@@ -55,28 +55,28 @@
           {
             "color": {
               "solid": {
-                "color": "#1D2635"
+                "color": "#252A3A"
               }
             },
             "show": true,
-            "radius": 8
+            "radius": 12
           }
         ],
         "title": [
           {
             "fontColor": {
               "solid": {
-                "color": "#E8EAF0"
+                "color": "#F4F6FF"
               }
             },
             "background": {
               "solid": {
-                "color": "#10151F"
+                "color": "#0C0F17"
               }
             },
             "alignment": "left",
             "fontSize": 12,
-            "fontFamily": "Outfit"
+            "fontFamily": "Unbounded"
           }
         ]
       }
@@ -87,7 +87,7 @@
           {
             "color": {
               "solid": {
-                "color": "#080A0E"
+                "color": "#05060A"
               }
             },
             "transparency": 0
@@ -97,7 +97,7 @@
           {
             "color": {
               "solid": {
-                "color": "#080A0E"
+                "color": "#05060A"
               }
             },
             "transparency": 0

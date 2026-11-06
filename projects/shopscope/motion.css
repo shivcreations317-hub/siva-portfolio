@@ -1,0 +1,79 @@
+/* Shared motion layer for the ShopScope dashboard and case study.
+   Keeps the ShopScope surfaces aligned with the portfolio's spatial theme. */
+#progress{
+  position:fixed;top:0;left:0;height:2px;width:0;z-index:400;
+  background:linear-gradient(90deg,var(--violet,#8b6cff),var(--aqua,#38e8d8));
+  box-shadow:0 0 24px rgba(139,108,255,.8);
+  pointer-events:none;
+}
+#cursor,#cursor-ring{
+  position:fixed;top:0;left:0;z-index:9999;pointer-events:none;border-radius:50%;
+  opacity:0;transform:translate(-50%,-50%);
+  transition:width .25s var(--ease,cubic-bezier(.16,1,.3,1)),height .25s var(--ease,cubic-bezier(.16,1,.3,1)),background .25s,border-color .25s,opacity .25s;
+  will-change:transform;
+}
+#cursor{
+  width:9px;height:9px;
+  background:radial-gradient(circle,#fff 0 34%,var(--aqua,#38e8d8) 55%,transparent 72%);
+  box-shadow:0 0 16px rgba(56,232,216,.85),0 0 34px rgba(139,108,255,.45);
+  mix-blend-mode:screen;
+}
+#cursor-ring{
+  width:48px;height:48px;
+  border:1px solid rgba(56,232,216,.55);
+  background:radial-gradient(circle,rgba(139,108,255,.12),transparent 66%);
+  box-shadow:0 0 0 1px rgba(255,255,255,.04) inset,0 0 28px rgba(139,108,255,.18);
+  display:grid;place-items:center;
+}
+#cursor-ring::before{
+  content:'';position:absolute;inset:5px;border-radius:50%;
+  border:1px dashed rgba(255,255,255,.22);animation:cursorOrbit 8s linear infinite;
+}
+#cursor-ring::after{
+  content:'VIEW';font-family:var(--mono,'DM Mono',monospace);font-size:.42rem;letter-spacing:.12em;
+  color:var(--aqua,#38e8d8);opacity:0;transform:scale(.8);transition:opacity .2s,transform .2s;
+}
+body.cursor-ready #cursor,body.cursor-ready #cursor-ring{opacity:1}
+body.cursor-hover #cursor{width:16px;height:16px}
+body.cursor-hover #cursor-ring{width:64px;height:64px;border-color:rgba(56,232,216,.85);background:rgba(56,232,216,.06)}
+body.cursor-view #cursor-ring{width:92px;height:92px;border-color:var(--aqua,#38e8d8);background:rgba(56,232,216,.09)}
+body.cursor-view #cursor-ring::after{opacity:1;transform:scale(1)}
+@media(pointer:fine){
+  body.cursor-enabled,body.cursor-enabled a,body.cursor-enabled button,body.cursor-enabled select,body.cursor-enabled [data-tilt]{cursor:none}
+}
+@media(pointer:coarse),(max-width:900px){
+  #cursor,#cursor-ring{display:none!important}
+  body.cursor-enabled,body.cursor-enabled a,body.cursor-enabled button,body.cursor-enabled select,body.cursor-enabled [data-tilt]{cursor:auto}
+}
+@keyframes cursorOrbit{to{transform:rotate(360deg)}}
+
+/* Scroll reveal: only hide content once JS has confirmed it can reveal it. */
+.js [data-reveal]{
+  opacity:0;transform:translateY(30px);
+  transition:opacity .85s var(--ease,cubic-bezier(.16,1,.3,1)),transform .85s var(--ease,cubic-bezier(.16,1,.3,1));
+  transition-delay:var(--delay,0s);
+  will-change:opacity,transform;
+}
+.js [data-reveal].is-visible{opacity:1;transform:none;will-change:auto}
+
+/* 3D tilt target. JS supplies the transform; this keeps the transition smooth. */
+[data-tilt]{
+  transform-style:preserve-3d;
+  will-change:transform;
+  transition:transform .55s var(--ease,cubic-bezier(.16,1,.3,1)),border-color .3s,box-shadow .3s;
+}
+[data-tilt].is-tilting{transition:transform .08s linear,border-color .3s,box-shadow .3s}
+
+/* The case study and dashboard both use the portfolio's film grain. */
+.noise{
+  position:fixed;inset:0;z-index:90;pointer-events:none;opacity:.055;mix-blend-mode:screen;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='.55'/%3E%3C/svg%3E");
+  background-size:180px 180px;
+}
+
+@media(prefers-reduced-motion:reduce){
+  .js [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}
+  [data-tilt]{transform:none!important}
+  #cursor,#cursor-ring{display:none!important}
+  #progress{display:none}
+}

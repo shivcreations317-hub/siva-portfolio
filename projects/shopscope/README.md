@@ -100,8 +100,11 @@ October was the strongest month at **₹4.50 L net revenue**, followed by Novemb
 ```
 shopscope/
 ├── index.html                  Live dashboard
+├── case-study.html             Narrative case study
 ├── styles.css                  Dashboard styling
+├── motion.css                  Shared cursor, reveal and tilt motion layer
 ├── app.js                      Dashboard logic (filters, SVG charts, RFM, cohorts)
+├── motion.js                   Shared motion behaviour for both pages
 ├── data/
 │   ├── customers.csv           Raw customer master (1,000 customers)
 │   ├── customers_scored.csv    RFM-scored customer dimension
